@@ -23,6 +23,8 @@ parse those syscalls to detect rev shell related activity.
 terminal activity, epolling (event polling), really really suspicious...
 
 
+Another thing you can check is file access. i think in strace u can see the uh whats it. i think you can see some stuff when u ls'd i forgot when exactly though.
+
 ------------------------------------------------------------------------------------------------
 
 Upon testing on my own virtual machines, a Sliver Server running on Kali Linux and a victim Ubuntu Desktop, I found that the syscalls made by the executable were the following: futex, epoll_ctl, fcntl, and of course, read and write.
