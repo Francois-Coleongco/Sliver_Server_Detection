@@ -141,7 +141,13 @@ func tracer(pid string) {
 	for scanner.Scan() {
 		line := scanner.Text()
 
-		if strings.Contains(line, "i forgot what it looked like but it had write and \\27\\3\\3\\etc etc i dont remember. i think that was it though") {
+		fmt.Println("from strace:", line)
+
+        write_syscall := strings.Contains(line, "write")
+        read_syscall := strings.Contains(line, "read")
+        tls_start := strings.Contains(line, "\27\3\3\")
+        
+		if  {
 			fmt.Println("EVILLLL")
 		}
 	}
@@ -156,9 +162,11 @@ func main() {
 	// in strace output, see if it makes encrypted communications (tls)
 
 	file, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+
 	if err != nil {
 		log.Fatal("unable to open log file", err)
 	}
+
 	defer file.Close()
 
 	// Set the log output to the log file
