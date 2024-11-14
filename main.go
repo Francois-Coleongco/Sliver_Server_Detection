@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"io"
 	"log"
 	"os"
 	"os/exec"
@@ -34,9 +35,16 @@ func socket_stats() {
 			port := handle_conn(conn_lines[i])
 			pid := find_and_handle_process(port)
 
-			fmt.Println("this is from handle_conn", port)
-			fmt.Println("this is from find_and_handle_process")
-			recon(pid)
+			fmt.Println("handle_conn ====>", port)
+			fmt.Println("find_and_handle_process ====>", pid)
+			pipe := tracer(pid) // this just constructs the command and returns the pipe, no need for go routine here
+
+			// if i run something like tracer anywhere, it will run indefinitely. this is fine, but i need to make sure i can continue searching while the other straces are going. therefore i need go routines here
+
+			// need goroutine for initial_tracer
+
+			go initial_tracer()
+
 		}
 
 	}
@@ -97,31 +105,33 @@ func find_and_handle_process(port string) string {
 
 }
 
-func recon(pid string) string {
+func recon(pid string) {
 
-	ps_cmd := exec.Command("ps", "aux")
+	ps_cmd := exec.Command("watch -n 1", "ps", "--ppid", pid)
 
-	output, err := ps_cmd.CombinedOutput()
+	pipe, err := ps_cmd.StdoutPipe()
 
 	if err != nil {
-		log.Fatal("unable to run ps", err)
+		log.Fatal("unable to retrieve stdout pipe from ps --ppid", err)
 	}
 
-	ps_filter := exec.Command("grep", pid)
+	err = ps_cmd.Start()
 
-	ps_filter.Stdin = strings.NewReader(string(output))
+	if err != nil {
+		log.Fatal("ps --ppid could not start", err)
+	}
 
-	ps_filtered_output, err := ps_filter.CombinedOutput()
+	scanner := bufio.NewScanner(pipe)
 
-	ps_filtered_output_str := string(ps_filtered_output)
-	fmt.Println("from ps", ps_filtered_output_str)
+	for scanner.Scan() {
+		line := scanner.Text()
 
-	log.Println(ps_filtered_output_str)
-	return ps_filtered_output_str
+		fmt.Println("from ps --ppid ====>", line)
+
+	}
 
 }
-
-func tracer(pid string) {
+func tracer(pid string) io.ReadCloser {
 	strace := exec.Command("strace", "-p", pid)
 
 	pipe, err := strace.StdoutPipe()
@@ -136,6 +146,11 @@ func tracer(pid string) {
 		log.Fatal("strace could not start", err)
 	}
 
+	return pipe
+
+}
+
+func initial_tracer(pipe io.ReadCloser) bool {
 	scanner := bufio.NewScanner(pipe)
 
 	for scanner.Scan() {
@@ -143,14 +158,15 @@ func tracer(pid string) {
 
 		fmt.Println("from strace:", line)
 
-        write_syscall := strings.Contains(line, "write")
-        read_syscall := strings.Contains(line, "read")
-        tls_start := strings.Contains(line, "\27\3\3\")
-        
-		if  {
-			fmt.Println("EVILLLL")
-		}
+		enc_comms := strings.Contains(line, "\\27\\3\\3\\")
+
+		if enc_comms {
+			// when you see this, you should immediately run ps --ppid <current_pid> to see any child processes spawned by the one you're currently looking at
+			return true
+		} // omg i almost made this return false./ that woulda just completely killed the for loop :sob:
 	}
+
+	return false
 
 }
 

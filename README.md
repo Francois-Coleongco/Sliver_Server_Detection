@@ -51,6 +51,7 @@ further checks:
 
 `inotify` to listen to file reads and writes, as well as creations and modifies.
 
+`file hashes` use sha256sum on that sucker and use programmatically get a result from virustotal using their api
 
 ---------------------------------------------------------------------------------------------------
 
@@ -60,7 +61,4 @@ since the SliverC2 framework does not have linux stager compatibility, the only 
 
 ---------------------------------------------------------------------------------------------------
 
-IT APPEARS TO USE TLS 1.2 when sending data to and from the victim. See screenshot TLS.png
 
-
-based on this, I can perhaps use my sniffer on this
