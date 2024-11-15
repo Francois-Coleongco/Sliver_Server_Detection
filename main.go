@@ -11,7 +11,7 @@ import (
 	"sync"
 )
 
-func socket_stats() {
+func socket_stats() []string {
 	ss_run := exec.Command("ss")
 
 	ss_output, err := ss_run.CombinedOutput()
@@ -28,43 +28,8 @@ func socket_stats() {
 
 	conn_lines := strings.Split(string(output), "\n")
 
-	var wg sync.WaitGroup
+	return conn_lines
 
-	port_chan := make(chan string)
-
-	for i := 0; i < len(conn_lines); i++ {
-		if len(conn_lines[i]) > 0 {
-
-			fmt.Println(conn_lines[i])
-
-			wg.Add(1)
-
-			go func() {
-				defer wg.Done()
-				handle_conn(conn_lines[i], port_chan)
-			}()
-
-			// pid := find_and_handle_process(port)
-
-			// fmt.println("handle_conn ====>", port)
-			// fmt.println("find_and_handle_process ====>", pid)
-			// pipe := tracer(pid) // this just constructs the command and returns the pipe, no need for go routine here
-
-			// if i run something like tracer anywhere, it will run indefinitely. this is fine, but i need to make sure i can continue searching while the other straces are going. therefore i need go routines here
-
-			// go initial_tracer()
-
-		}
-	}
-
-	go func() {
-		wg.Wait()
-		close(port_chan)
-	}()
-
-	for port := range port_chan {
-		fmt.Println(port)
-	}
 }
 
 func handle_conn(conn_string string, port_chan chan string) {
@@ -207,6 +172,43 @@ func main() {
 	// Set the log output to the log file
 	log.SetOutput(file)
 
-	socket_stats()
+	conn_lines := socket_stats()
 
+	var wg sync.WaitGroup
+
+	port_chan := make(chan string)
+
+	for i := 0; i < len(conn_lines); i++ {
+		if len(conn_lines[i]) > 0 {
+
+			fmt.Println(conn_lines[i])
+
+			wg.Add(1)
+
+			go func() {
+				defer wg.Done()
+				handle_conn(conn_lines[i], port_chan)
+			}()
+
+			// pid := find_and_handle_process(port)
+
+			// fmt.println("handle_conn ====>", port)
+			// fmt.println("find_and_handle_process ====>", pid)
+			// pipe := tracer(pid) // this just constructs the command and returns the pipe, no need for go routine here
+
+			// if i run something like tracer anywhere, it will run indefinitely. this is fine, but i need to make sure i can continue searching while the other straces are going. therefore i need go routines here
+
+			// go initial_tracer()
+
+		}
+	}
+
+	go func() {
+		wg.Wait()
+		close(port_chan)
+	}()
+
+	for port := range port_chan {
+		fmt.Println(port)
+	}
 }
