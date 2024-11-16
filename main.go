@@ -58,7 +58,7 @@ func handle_conn(conn_string string, port_chan chan string) {
 
 }
 
-func find_and_handle_process(port string) string {
+func find_and_handle_process(port string, pid_chan chan string) {
 	// execute lsof here
 	lsof_cmd_args := fmt.Sprintf(":%s", port)
 
@@ -85,7 +85,7 @@ func find_and_handle_process(port string) string {
 
 	fmt.Println("this is pid", strings.Fields(data)[1])
 
-	return strings.Fields(data)[1]
+	pid_chan <- strings.Fields(data)[1]
 
 }
 
@@ -208,7 +208,26 @@ func main() {
 		close(port_chan)
 	}()
 
-	for port := range port_chan {
-		fmt.Println(port)
+	pid_chan := make(chan string)
+
+	go func() {
+		for port := range port_chan {
+			wg.Add(1)
+			fmt.Println(port)
+			go func() {
+				defer wg.Done()
+				find_and_handle_process(port, pid_chan)
+			}()
+		}
+	}()
+
+	go func() {
+		wg.Wait()
+		close(pid_chan)
+	}()
+
+	for pid := range pid_chan {
+		fmt.Println("huh", pid)
 	}
+
 }
