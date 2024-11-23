@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"io"
 	"log"
 	"os"
 	"os/exec"
@@ -115,46 +114,41 @@ func recon(pid string) {
 	}
 
 }
-func tracer(pid string) io.ReadCloser {
+
+func tracer(pid string) {
+	fmt.Println("entering tracer")
+	// Execute strace with the provided PID
 	strace := exec.Command("strace", "-p", pid)
 
+	// Get the stdout pipe of the strace command
 	pipe, err := strace.StdoutPipe()
-
 	if err != nil {
-		log.Fatal("unable to retrieve stdout pipe from strace", err)
+		log.Fatalf("Failed to get stdout pipe: %v", err)
 	}
 
+	// Start the strace command
 	err = strace.Start()
-
 	if err != nil {
-		log.Fatal("strace could not start", err)
+		log.Fatalf("Failed to start strace: %v", err)
 	}
+	defer strace.Wait() // Ensure the strace process finishes when we're done
 
-	return pipe
-
-}
-
-func initial_tracer(pipe io.ReadCloser) bool {
+	// Use a scanner to read the output of the strace command
 	scanner := bufio.NewScanner(pipe)
 
 	for scanner.Scan() {
-		line := scanner.Text()
-
-		fmt.Println("from strace:", line)
-
-		enc_comms := strings.Contains(line, "\\27\\3\\3\\")
-
-		if enc_comms {
-			// when you see this, you should immediately run ps --ppid <current_pid> to see any child processes spawned by the one you're currently looking at
-			return true
-		} // omg i almost made this return false./ that woulda just completely killed the for loop :sob:
+		// Print each line of the output
+		fmt.Println(scanner.Text())
 	}
 
-	return false
-
+	// Handle any errors that occurred while scanning
+	if err := scanner.Err(); err != nil {
+		fmt.Printf("Error while scanning strace output: %v", err)
+	}
 }
 
 func main() {
+	fmt.Println("Current PID:", os.Getpid())
 
 	// find network connections (ss)
 	// find processes making those network connections (lsof)
@@ -190,12 +184,6 @@ func main() {
 				handle_conn(conn_lines[i], port_chan)
 			}()
 
-			// pid := find_and_handle_process(port)
-
-			// fmt.println("handle_conn ====>", port)
-			// fmt.println("find_and_handle_process ====>", pid)
-			// pipe := tracer(pid) // this just constructs the command and returns the pipe, no need for go routine here
-
 			// if i run something like tracer anywhere, it will run indefinitely. this is fine, but i need to make sure i can continue searching while the other straces are going. therefore i need go routines here
 
 			// go initial_tracer()
@@ -228,6 +216,7 @@ func main() {
 
 	for pid := range pid_chan {
 		fmt.Println("huh", pid)
+		go tracer(pid)
 	}
 
 }
