@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"log"
 	"os"
@@ -90,9 +91,9 @@ func find_and_handle_process(port string) string {
 	return ""
 }
 
-func recon(pid string) string {
+func ps_recon(pid string) string {
 
-	ps_cmd := exec.Command("ps", "--ppid", pid) // listen for children
+	ps_cmd := exec.Command("ps", "--ppid", pid) // listen for children | the sliver implant may spawn another process for a shell
 
 	output, err := ps_cmd.CombinedOutput()
 
@@ -101,6 +102,53 @@ func recon(pid string) string {
 	}
 
 	return string(output)
+
+}
+
+func tracer(pid string) {
+	cmd := exec.Command("/bin/sh", "-c", "sudo strace -p 3515")
+	pipe, err := cmd.StdoutPipe()
+	if err != nil {
+		fmt.Println("Error getting StdoutPipe:", err)
+		return
+	}
+
+	stderrPipe, err := cmd.StderrPipe()
+	if err != nil {
+		fmt.Println("Error getting StderrPipe:", err)
+		return
+	}
+
+	// Create a reader to capture both stdout and stderr
+	go func() {
+		scanner := bufio.NewScanner(pipe)
+		for scanner.Scan() {
+			fmt.Println(scanner.Text())
+		}
+		if err := scanner.Err(); err != nil {
+			fmt.Println("Error reading from stdout:", err)
+		}
+	}()
+
+	go func() {
+		scanner := bufio.NewScanner(stderrPipe)
+		for scanner.Scan() {
+			fmt.Fprintln(os.Stderr, scanner.Text()) // Print to stderr
+		}
+		if err := scanner.Err(); err != nil {
+			fmt.Println("Error reading from stderr:", err)
+		}
+	}()
+
+	if err := cmd.Start(); err != nil {
+		fmt.Println("Error starting command:", err)
+		return
+	}
+
+	// Wait for the command to finish
+	if err := cmd.Wait(); err != nil {
+		fmt.Println("Error waiting for command to finish:", err)
+	}
 
 }
 
@@ -135,8 +183,10 @@ func main() {
 			pid := find_and_handle_process(port)
 
 			if pid != "" { // handling no pid case
-				fmt.Println(recon(pid))
+				fmt.Println(ps_recon(pid))
+				tracer(pid)
 			}
 		}
 	}
+
 }

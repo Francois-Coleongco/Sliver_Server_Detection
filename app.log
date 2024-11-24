@@ -2454,3 +2454,1029 @@ soy       131937  0.0  0.4 1212251868 70520 ?    SNl  15:05   0:00 /opt/brave.co
 2024/11/23 20:34:48 couldnt ps exit status 1
 2024/11/23 20:34:48 tcp ESTAB 0 0 10.0.0.189:56930 34.107.243.93:https
 2024/11/23 20:34:48 could not run lsofexit status 1
+2024/11/23 20:44:30 tcp ESTAB 0 0 10.0.0.189:49302 140.82.113.26:https
+2024/11/23 20:44:30 couldnt ps exit status 1
+2024/11/23 20:44:30 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 20:44:30 couldnt ps exit status 1
+2024/11/23 20:44:30 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 20:44:30 couldnt ps exit status 1
+2024/11/23 20:44:30 tcp ESTAB 0 0 10.0.0.189:40400 162.247.241.14:https
+2024/11/23 20:44:30 couldnt ps exit status 1
+2024/11/23 20:44:30 tcp ESTAB 0 0 10.0.0.189:48270 140.82.114.5:https
+2024/11/23 20:44:31 couldnt ps exit status 1
+2024/11/23 20:44:31 tcp ESTAB 0 0 10.0.0.189:57028 140.82.114.22:https
+2024/11/23 20:44:31 couldnt ps exit status 1
+2024/11/23 20:44:31 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 20:44:31 couldnt ps exit status 1
+2024/11/23 20:44:31 tcp ESTAB 0 0 10.0.0.189:33876 185.199.109.154:https
+2024/11/23 20:44:31 couldnt ps exit status 1
+2024/11/23 20:44:31 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:50590 [2a04:4e42:5::760]:https
+2024/11/23 20:44:31 couldnt ps exit status 1
+2024/11/23 20:44:31 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 20:44:31 couldnt ps exit status 1
+2024/11/23 20:44:31 tcp ESTAB 0 0 [::ffff:10.0.0.189]:56922 [::ffff:162.247.243.29]:https
+2024/11/23 20:44:31 couldnt ps exit status 1
+2024/11/23 20:44:36 tcp ESTAB 0 0 10.0.0.189:49302 140.82.113.26:https
+2024/11/23 20:44:36 couldnt ps exit status 1
+2024/11/23 20:44:36 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 20:44:36 couldnt ps exit status 1
+2024/11/23 20:44:36 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 20:44:36 couldnt ps exit status 1
+2024/11/23 20:44:36 tcp ESTAB 0 0 10.0.0.189:40400 162.247.241.14:https
+2024/11/23 20:44:36 couldnt ps exit status 1
+2024/11/23 20:44:36 tcp ESTAB 0 0 10.0.0.189:48270 140.82.114.5:https
+2024/11/23 20:44:37 couldnt ps exit status 1
+2024/11/23 20:44:37 tcp ESTAB 0 0 10.0.0.189:57028 140.82.114.22:https
+2024/11/23 20:44:37 couldnt ps exit status 1
+2024/11/23 20:44:37 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 20:44:37 couldnt ps exit status 1
+2024/11/23 20:44:37 tcp ESTAB 0 0 10.0.0.189:33876 185.199.109.154:https
+2024/11/23 20:44:37 couldnt ps exit status 1
+2024/11/23 20:44:37 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:50590 [2a04:4e42:5::760]:https
+2024/11/23 20:44:37 couldnt ps exit status 1
+2024/11/23 20:44:37 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 20:44:37 couldnt ps exit status 1
+2024/11/23 20:44:37 tcp ESTAB 0 0 [::ffff:10.0.0.189]:56922 [::ffff:162.247.243.29]:https
+2024/11/23 20:44:37 couldnt ps exit status 1
+2024/11/23 20:45:02 tcp ESTAB 0 0 10.0.0.189:58368 140.82.113.3:https
+2024/11/23 20:45:02 couldnt ps exit status 1
+2024/11/23 20:45:02 tcp ESTAB 0 0 10.0.0.189:43006 185.199.109.154:https
+2024/11/23 20:45:02 couldnt ps exit status 1
+2024/11/23 20:45:02 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 20:45:03 couldnt ps exit status 1
+2024/11/23 20:45:03 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 20:45:03 couldnt ps exit status 1
+2024/11/23 20:45:03 tcp ESTAB 0 0 10.0.0.189:40400 162.247.241.14:https
+2024/11/23 20:45:03 couldnt ps exit status 1
+2024/11/23 20:45:03 tcp ESTAB 0 0 10.0.0.189:48202 140.82.114.6:https
+2024/11/23 20:45:03 couldnt ps exit status 1
+2024/11/23 20:45:03 tcp ESTAB 0 0 10.0.0.189:44876 140.82.112.25:https
+2024/11/23 20:45:03 couldnt ps exit status 1
+2024/11/23 20:45:03 tcp ESTAB 0 0 10.0.0.189:57028 140.82.114.22:https
+2024/11/23 20:45:03 couldnt ps exit status 1
+2024/11/23 20:45:03 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 20:45:03 couldnt ps exit status 1
+2024/11/23 20:45:03 tcp ESTAB 0 0 10.0.0.189:33876 185.199.109.154:https
+2024/11/23 20:45:03 couldnt ps exit status 1
+2024/11/23 20:45:03 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:50590 [2a04:4e42:5::760]:https
+2024/11/23 20:45:03 couldnt ps exit status 1
+2024/11/23 20:45:03 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 20:45:04 couldnt ps exit status 1
+2024/11/23 20:45:04 tcp ESTAB 0 0 [::ffff:10.0.0.189]:56922 [::ffff:162.247.243.29]:https
+2024/11/23 20:45:04 couldnt ps exit status 1
+2024/11/23 20:45:05 tcp ESTAB 0 0 10.0.0.189:58368 140.82.113.3:https
+2024/11/23 20:45:06 couldnt ps exit status 1
+2024/11/23 20:45:06 tcp ESTAB 0 0 10.0.0.189:43006 185.199.109.154:https
+2024/11/23 20:45:06 couldnt ps exit status 1
+2024/11/23 20:45:06 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 20:45:06 couldnt ps exit status 1
+2024/11/23 20:45:06 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 20:45:06 couldnt ps exit status 1
+2024/11/23 20:45:06 tcp ESTAB 0 0 10.0.0.189:40400 162.247.241.14:https
+2024/11/23 20:45:06 couldnt ps exit status 1
+2024/11/23 20:45:06 tcp ESTAB 0 0 10.0.0.189:48202 140.82.114.6:https
+2024/11/23 20:45:06 couldnt ps exit status 1
+2024/11/23 20:45:06 tcp ESTAB 0 0 10.0.0.189:44876 140.82.112.25:https
+2024/11/23 20:45:06 couldnt ps exit status 1
+2024/11/23 20:45:06 tcp ESTAB 0 0 10.0.0.189:57028 140.82.114.22:https
+2024/11/23 20:45:06 couldnt ps exit status 1
+2024/11/23 20:45:06 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 20:45:06 couldnt ps exit status 1
+2024/11/23 20:45:06 tcp ESTAB 0 0 10.0.0.189:33876 185.199.109.154:https
+2024/11/23 20:45:06 couldnt ps exit status 1
+2024/11/23 20:45:06 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:50590 [2a04:4e42:5::760]:https
+2024/11/23 20:45:07 couldnt ps exit status 1
+2024/11/23 20:45:07 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 20:45:07 couldnt ps exit status 1
+2024/11/23 20:45:07 tcp ESTAB 0 0 [::ffff:10.0.0.189]:56922 [::ffff:162.247.243.29]:https
+2024/11/23 20:45:07 couldnt ps exit status 1
+2024/11/23 20:45:08 tcp ESTAB 0 0 10.0.0.189:58368 140.82.113.3:https
+2024/11/23 20:45:09 couldnt ps exit status 1
+2024/11/23 20:45:09 tcp ESTAB 0 0 10.0.0.189:43006 185.199.109.154:https
+2024/11/23 20:45:09 couldnt ps exit status 1
+2024/11/23 20:45:09 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 20:45:09 couldnt ps exit status 1
+2024/11/23 20:45:09 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 20:45:09 couldnt ps exit status 1
+2024/11/23 20:45:09 tcp ESTAB 0 0 10.0.0.189:40400 162.247.241.14:https
+2024/11/23 20:45:09 couldnt ps exit status 1
+2024/11/23 20:45:09 tcp ESTAB 0 0 10.0.0.189:48202 140.82.114.6:https
+2024/11/23 20:45:09 couldnt ps exit status 1
+2024/11/23 20:45:09 tcp ESTAB 0 0 10.0.0.189:44876 140.82.112.25:https
+2024/11/23 20:45:09 couldnt ps exit status 1
+2024/11/23 20:45:09 tcp ESTAB 0 0 10.0.0.189:57028 140.82.114.22:https
+2024/11/23 20:45:09 couldnt ps exit status 1
+2024/11/23 20:45:09 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 20:45:09 couldnt ps exit status 1
+2024/11/23 20:45:09 tcp ESTAB 0 0 10.0.0.189:33876 185.199.109.154:https
+2024/11/23 20:45:09 couldnt ps exit status 1
+2024/11/23 20:45:09 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:50590 [2a04:4e42:5::760]:https
+2024/11/23 20:45:10 couldnt ps exit status 1
+2024/11/23 20:45:10 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 20:45:10 couldnt ps exit status 1
+2024/11/23 20:45:10 tcp ESTAB 0 0 [::ffff:10.0.0.189]:56922 [::ffff:162.247.243.29]:https
+2024/11/23 20:45:10 couldnt ps exit status 1
+2024/11/23 20:58:53 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 20:58:53 couldnt ps exit status 1
+2024/11/23 20:58:53 error with tracer exit status 1
+2024/11/23 20:58:53 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 20:58:53 couldnt ps exit status 1
+2024/11/23 20:58:53 error with tracer exit status 1
+2024/11/23 20:58:53 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 20:58:54 couldnt ps exit status 1
+2024/11/23 20:58:54 error with tracer exit status 1
+2024/11/23 20:58:54 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 20:59:30 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 20:59:30 couldnt ps exit status 1
+2024/11/23 20:59:30 error with tracer exit status 1
+2024/11/23 20:59:30 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 20:59:30 couldnt ps exit status 1
+2024/11/23 20:59:30 error with tracer exit status 1
+2024/11/23 20:59:30 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 20:59:30 couldnt ps exit status 1
+2024/11/23 20:59:30 error with tracer exit status 1
+2024/11/23 20:59:30 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 20:59:31 couldnt ps exit status 1
+2024/11/23 20:59:31 error with tracer exit status 1
+2024/11/23 20:59:31 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 20:59:36 couldnt ps exit status 1
+2024/11/23 20:59:36 error with tracer exit status 1
+2024/11/23 20:59:36 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 20:59:36 couldnt ps exit status 1
+2024/11/23 20:59:36 error with tracer exit status 1
+2024/11/23 20:59:36 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 20:59:37 couldnt ps exit status 1
+2024/11/23 20:59:37 error with tracer exit status 1
+2024/11/23 20:59:37 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 20:59:37 couldnt ps exit status 1
+2024/11/23 20:59:37 error with tracer exit status 1
+2024/11/23 20:59:37 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:47752 [2001:4e8:0:b051::18f4:2251]:https
+2024/11/23 20:59:37 could not run lsofexit status 1
+2024/11/23 20:59:49 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 20:59:49 couldnt ps exit status 1
+2024/11/23 20:59:49 error with tracer exit status 1
+2024/11/23 20:59:49 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 20:59:49 couldnt ps exit status 1
+2024/11/23 20:59:49 error with tracer exit status 1
+2024/11/23 20:59:49 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 20:59:49 couldnt ps exit status 1
+2024/11/23 20:59:49 error with tracer exit status 1
+2024/11/23 20:59:49 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 20:59:49 couldnt ps exit status 1
+2024/11/23 20:59:49 error with tracer exit status 1
+2024/11/23 20:59:49 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 20:59:49 couldnt ps exit status 1
+2024/11/23 20:59:49 error with tracer exit status 1
+2024/11/23 20:59:49 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 20:59:49 couldnt ps exit status 1
+2024/11/23 20:59:49 error with tracer exit status 1
+2024/11/23 20:59:49 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 20:59:49 couldnt ps exit status 1
+2024/11/23 20:59:49 error with tracer exit status 1
+2024/11/23 20:59:49 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 20:59:50 couldnt ps exit status 1
+2024/11/23 20:59:50 error with tracer exit status 1
+2024/11/23 20:59:50 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 20:59:50 couldnt ps exit status 1
+2024/11/23 20:59:50 error with tracer exit status 1
+2024/11/23 20:59:51 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 20:59:51 couldnt ps exit status 1
+2024/11/23 20:59:51 error with tracer exit status 1
+2024/11/23 20:59:51 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 20:59:51 couldnt ps exit status 1
+2024/11/23 20:59:51 error with tracer exit status 1
+2024/11/23 20:59:51 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 20:59:51 couldnt ps exit status 1
+2024/11/23 20:59:51 error with tracer exit status 1
+2024/11/23 20:59:51 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 20:59:52 couldnt ps exit status 1
+2024/11/23 20:59:52 error with tracer exit status 1
+2024/11/23 20:59:52 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 20:59:52 couldnt ps exit status 1
+2024/11/23 20:59:52 error with tracer exit status 1
+2024/11/23 20:59:52 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 20:59:52 couldnt ps exit status 1
+2024/11/23 20:59:52 error with tracer exit status 1
+2024/11/23 20:59:52 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 20:59:52 couldnt ps exit status 1
+2024/11/23 20:59:52 error with tracer exit status 1
+2024/11/23 20:59:52 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 20:59:52 couldnt ps exit status 1
+2024/11/23 20:59:52 error with tracer exit status 1
+2024/11/23 20:59:52 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 20:59:52 couldnt ps exit status 1
+2024/11/23 20:59:52 error with tracer exit status 1
+2024/11/23 20:59:53 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 20:59:53 couldnt ps exit status 1
+2024/11/23 20:59:53 error with tracer exit status 1
+2024/11/23 20:59:53 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 20:59:53 couldnt ps exit status 1
+2024/11/23 20:59:53 error with tracer exit status 1
+2024/11/23 20:59:53 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 20:59:54 couldnt ps exit status 1
+2024/11/23 20:59:54 error with tracer exit status 1
+2024/11/23 20:59:54 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 20:59:54 couldnt ps exit status 1
+2024/11/23 20:59:54 error with tracer exit status 1
+2024/11/23 20:59:54 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 20:59:54 couldnt ps exit status 1
+2024/11/23 20:59:54 error with tracer exit status 1
+2024/11/23 20:59:54 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 20:59:54 couldnt ps exit status 1
+2024/11/23 20:59:54 error with tracer exit status 1
+2024/11/23 20:59:54 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 20:59:54 couldnt ps exit status 1
+2024/11/23 20:59:54 error with tracer exit status 1
+2024/11/23 20:59:54 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 20:59:54 couldnt ps exit status 1
+2024/11/23 20:59:54 error with tracer exit status 1
+2024/11/23 20:59:54 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 20:59:54 couldnt ps exit status 1
+2024/11/23 20:59:54 error with tracer exit status 1
+2024/11/23 20:59:55 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 20:59:56 couldnt ps exit status 1
+2024/11/23 20:59:56 error with tracer exit status 1
+2024/11/23 20:59:56 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 20:59:56 couldnt ps exit status 1
+2024/11/23 20:59:56 error with tracer exit status 1
+2024/11/23 20:59:56 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 20:59:56 couldnt ps exit status 1
+2024/11/23 20:59:56 error with tracer exit status 1
+2024/11/23 20:59:56 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 20:59:56 couldnt ps exit status 1
+2024/11/23 20:59:56 error with tracer exit status 1
+2024/11/23 20:59:56 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 20:59:56 couldnt ps exit status 1
+2024/11/23 20:59:56 error with tracer exit status 1
+2024/11/23 20:59:56 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 20:59:56 couldnt ps exit status 1
+2024/11/23 20:59:56 error with tracer exit status 1
+2024/11/23 20:59:56 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 20:59:56 couldnt ps exit status 1
+2024/11/23 20:59:56 error with tracer exit status 1
+2024/11/23 20:59:56 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 20:59:56 couldnt ps exit status 1
+2024/11/23 20:59:56 error with tracer exit status 1
+2024/11/23 20:59:56 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 20:59:57 couldnt ps exit status 1
+2024/11/23 20:59:57 error with tracer exit status 1
+2024/11/23 20:59:58 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 20:59:58 couldnt ps exit status 1
+2024/11/23 20:59:58 error with tracer exit status 1
+2024/11/23 20:59:58 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 20:59:58 couldnt ps exit status 1
+2024/11/23 20:59:58 error with tracer exit status 1
+2024/11/23 20:59:58 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 20:59:58 couldnt ps exit status 1
+2024/11/23 20:59:58 error with tracer exit status 1
+2024/11/23 20:59:58 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 20:59:58 couldnt ps exit status 1
+2024/11/23 20:59:58 error with tracer exit status 1
+2024/11/23 20:59:58 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 20:59:58 couldnt ps exit status 1
+2024/11/23 20:59:58 error with tracer exit status 1
+2024/11/23 20:59:58 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 20:59:58 couldnt ps exit status 1
+2024/11/23 20:59:59 error with tracer exit status 1
+2024/11/23 20:59:59 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 20:59:59 couldnt ps exit status 1
+2024/11/23 20:59:59 error with tracer exit status 1
+2024/11/23 20:59:59 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 20:59:59 couldnt ps exit status 1
+2024/11/23 20:59:59 error with tracer exit status 1
+2024/11/23 20:59:59 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 20:59:59 couldnt ps exit status 1
+2024/11/23 20:59:59 error with tracer exit status 1
+2024/11/23 21:00:05 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 21:00:05 couldnt ps exit status 1
+2024/11/23 21:00:05 error with tracer exit status 1
+2024/11/23 21:00:05 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:00:06 couldnt ps exit status 1
+2024/11/23 21:00:06 error with tracer exit status 1
+2024/11/23 21:00:06 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:00:06 couldnt ps exit status 1
+2024/11/23 21:00:06 error with tracer exit status 1
+2024/11/23 21:00:06 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:00:06 couldnt ps exit status 1
+2024/11/23 21:00:06 error with tracer exit status 1
+2024/11/23 21:00:06 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 21:00:06 couldnt ps exit status 1
+2024/11/23 21:00:06 error with tracer exit status 1
+2024/11/23 21:00:06 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:00:06 couldnt ps exit status 1
+2024/11/23 21:00:06 error with tracer exit status 1
+2024/11/23 21:00:06 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 21:00:06 couldnt ps exit status 1
+2024/11/23 21:00:06 error with tracer exit status 1
+2024/11/23 21:00:06 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:00:06 couldnt ps exit status 1
+2024/11/23 21:00:06 error with tracer exit status 1
+2024/11/23 21:00:06 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 21:00:06 couldnt ps exit status 1
+2024/11/23 21:00:06 error with tracer exit status 1
+2024/11/23 21:00:09 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 21:00:09 couldnt ps exit status 1
+2024/11/23 21:00:09 error with tracer exit status 1
+2024/11/23 21:00:09 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:00:10 couldnt ps exit status 1
+2024/11/23 21:00:10 error with tracer exit status 1
+2024/11/23 21:00:10 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:00:10 couldnt ps exit status 1
+2024/11/23 21:00:10 error with tracer exit status 1
+2024/11/23 21:00:10 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:00:10 couldnt ps exit status 1
+2024/11/23 21:00:10 error with tracer exit status 1
+2024/11/23 21:00:10 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 21:00:10 couldnt ps exit status 1
+2024/11/23 21:00:10 error with tracer exit status 1
+2024/11/23 21:00:10 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:00:10 couldnt ps exit status 1
+2024/11/23 21:00:10 error with tracer exit status 1
+2024/11/23 21:00:10 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 21:00:10 couldnt ps exit status 1
+2024/11/23 21:00:10 error with tracer exit status 1
+2024/11/23 21:00:10 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:00:10 couldnt ps exit status 1
+2024/11/23 21:00:10 error with tracer exit status 1
+2024/11/23 21:00:10 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 21:00:10 couldnt ps exit status 1
+2024/11/23 21:00:10 error with tracer exit status 1
+2024/11/23 21:00:37 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 21:00:37 couldnt ps exit status 1
+2024/11/23 21:00:37 error with tracer exit status 1
+2024/11/23 21:00:37 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:00:37 couldnt ps exit status 1
+2024/11/23 21:00:37 error with tracer exit status 1
+2024/11/23 21:00:37 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:00:37 couldnt ps exit status 1
+2024/11/23 21:00:37 error with tracer exit status 1
+2024/11/23 21:00:37 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:00:37 couldnt ps exit status 1
+2024/11/23 21:00:37 error with tracer exit status 1
+2024/11/23 21:00:37 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 21:00:37 couldnt ps exit status 1
+2024/11/23 21:00:37 error with tracer exit status 1
+2024/11/23 21:00:37 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:00:37 couldnt ps exit status 1
+2024/11/23 21:00:37 error with tracer exit status 1
+2024/11/23 21:00:37 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 21:00:38 couldnt ps exit status 1
+2024/11/23 21:00:38 error with tracer exit status 1
+2024/11/23 21:00:38 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:00:38 couldnt ps exit status 1
+2024/11/23 21:00:38 error with tracer exit status 1
+2024/11/23 21:00:38 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 21:00:38 couldnt ps exit status 1
+2024/11/23 21:00:38 error with tracer exit status 1
+2024/11/23 21:00:56 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 21:00:56 couldnt ps exit status 1
+2024/11/23 21:00:56 error with tracer exit status 1
+2024/11/23 21:00:56 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:00:56 couldnt ps exit status 1
+2024/11/23 21:00:56 error with tracer exit status 1
+2024/11/23 21:00:56 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:00:56 couldnt ps exit status 1
+2024/11/23 21:00:56 error with tracer exit status 1
+2024/11/23 21:00:56 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:00:56 couldnt ps exit status 1
+2024/11/23 21:00:56 error with tracer exit status 1
+2024/11/23 21:00:56 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 21:00:56 couldnt ps exit status 1
+2024/11/23 21:00:56 error with tracer exit status 1
+2024/11/23 21:00:56 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:00:56 couldnt ps exit status 1
+2024/11/23 21:00:56 error with tracer exit status 1
+2024/11/23 21:00:56 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 21:00:57 couldnt ps exit status 1
+2024/11/23 21:00:57 error with tracer exit status 1
+2024/11/23 21:00:57 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:00:57 couldnt ps exit status 1
+2024/11/23 21:00:57 error with tracer exit status 1
+2024/11/23 21:00:57 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 21:00:57 couldnt ps exit status 1
+2024/11/23 21:00:57 error with tracer exit status 1
+2024/11/23 21:01:00 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 21:01:01 couldnt ps exit status 1
+2024/11/23 21:01:01 error with tracer exit status 1
+2024/11/23 21:01:01 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:01:01 couldnt ps exit status 1
+2024/11/23 21:01:01 error with tracer exit status 1
+2024/11/23 21:01:01 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:01:01 couldnt ps exit status 1
+2024/11/23 21:01:01 error with tracer exit status 1
+2024/11/23 21:01:01 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:01:01 couldnt ps exit status 1
+2024/11/23 21:01:01 error with tracer exit status 1
+2024/11/23 21:01:01 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 21:01:01 couldnt ps exit status 1
+2024/11/23 21:01:01 error with tracer exit status 1
+2024/11/23 21:01:01 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:01:01 couldnt ps exit status 1
+2024/11/23 21:01:01 error with tracer exit status 1
+2024/11/23 21:01:01 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 21:01:01 couldnt ps exit status 1
+2024/11/23 21:01:01 error with tracer exit status 1
+2024/11/23 21:01:01 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:01:01 couldnt ps exit status 1
+2024/11/23 21:01:01 error with tracer exit status 1
+2024/11/23 21:01:01 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 21:01:01 couldnt ps exit status 1
+2024/11/23 21:01:01 error with tracer exit status 1
+2024/11/23 21:01:09 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 21:01:09 couldnt ps exit status 1
+2024/11/23 21:01:43 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 21:01:43 couldnt ps exit status 1
+2024/11/23 21:01:43 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:01:43 couldnt ps exit status 1
+2024/11/23 21:01:43 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:01:43 error with tracer exit status 1
+2024/11/23 21:01:43 couldnt ps exit status 1
+2024/11/23 21:01:43 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:01:43 couldnt ps exit status 1
+2024/11/23 21:01:43 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 21:01:43 error with tracer exit status 1
+2024/11/23 21:01:43 couldnt ps exit status 1
+2024/11/23 21:01:43 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:01:43 error with tracer exit status 1
+2024/11/23 21:01:43 couldnt ps exit status 1
+2024/11/23 21:01:43 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 21:01:43 error with tracer exit status 1
+2024/11/23 21:01:43 couldnt ps exit status 1
+2024/11/23 21:01:43 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:01:43 error with tracer exit status 1
+2024/11/23 21:01:44 couldnt ps exit status 1
+2024/11/23 21:01:44 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 21:01:44 error with tracer exit status 1
+2024/11/23 21:01:44 couldnt ps exit status 1
+2024/11/23 21:01:50 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 21:01:50 couldnt ps exit status 1
+2024/11/23 21:01:50 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:01:50 couldnt ps exit status 1
+2024/11/23 21:01:50 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:01:50 error with tracer exit status 1
+2024/11/23 21:01:50 couldnt ps exit status 1
+2024/11/23 21:01:50 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:01:50 couldnt ps exit status 1
+2024/11/23 21:01:50 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 21:01:50 error with tracer exit status 1
+2024/11/23 21:01:50 couldnt ps exit status 1
+2024/11/23 21:01:50 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:01:50 error with tracer exit status 1
+2024/11/23 21:01:50 couldnt ps exit status 1
+2024/11/23 21:01:50 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 21:01:50 error with tracer exit status 1
+2024/11/23 21:01:51 couldnt ps exit status 1
+2024/11/23 21:01:51 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:01:51 error with tracer exit status 1
+2024/11/23 21:01:51 couldnt ps exit status 1
+2024/11/23 21:01:51 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 21:01:51 error with tracer exit status 1
+2024/11/23 21:01:51 couldnt ps exit status 1
+2024/11/23 21:02:11 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 21:02:11 couldnt ps exit status 1
+2024/11/23 21:02:11 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:02:11 couldnt ps exit status 1
+2024/11/23 21:02:11 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:02:11 error with tracer exit status 1
+2024/11/23 21:02:11 couldnt ps exit status 1
+2024/11/23 21:02:11 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:02:11 couldnt ps exit status 1
+2024/11/23 21:02:11 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 21:02:11 error with tracer exit status 1
+2024/11/23 21:02:12 couldnt ps exit status 1
+2024/11/23 21:02:12 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:02:12 error with tracer exit status 1
+2024/11/23 21:02:12 couldnt ps exit status 1
+2024/11/23 21:02:12 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 21:02:12 error with tracer exit status 1
+2024/11/23 21:02:12 couldnt ps exit status 1
+2024/11/23 21:02:12 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:02:12 error with tracer exit status 1
+2024/11/23 21:02:12 couldnt ps exit status 1
+2024/11/23 21:02:12 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 21:02:12 error with tracer exit status 1
+2024/11/23 21:02:12 couldnt ps exit status 1
+2024/11/23 21:02:39 tcp ESTAB 0 0 10.0.0.189:39564 162.247.241.14:https
+2024/11/23 21:02:40 couldnt ps exit status 1
+2024/11/23 21:02:40 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:02:40 couldnt ps exit status 1
+2024/11/23 21:02:40 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:02:40 error with tracer exit status 1
+2024/11/23 21:02:40 couldnt ps exit status 1
+2024/11/23 21:02:40 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:02:40 couldnt ps exit status 1
+2024/11/23 21:02:40 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 21:02:40 error with tracer exit status 1
+2024/11/23 21:02:40 couldnt ps exit status 1
+2024/11/23 21:02:40 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:02:40 error with tracer exit status 1
+2024/11/23 21:02:40 couldnt ps exit status 1
+2024/11/23 21:02:40 tcp ESTAB 0 0 10.0.0.189:56100 162.247.241.14:https
+2024/11/23 21:02:40 error with tracer exit status 1
+2024/11/23 21:02:40 couldnt ps exit status 1
+2024/11/23 21:02:40 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:02:40 error with tracer exit status 1
+2024/11/23 21:02:40 couldnt ps exit status 1
+2024/11/23 21:02:40 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45594 [2606:50c0:8000::154]:https
+2024/11/23 21:02:40 error with tracer exit status 1
+2024/11/23 21:02:41 couldnt ps exit status 1
+2024/11/23 21:02:41 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:32784 [2a04:4e42:5::760]:https
+2024/11/23 21:02:41 error with tracer exit status 1
+2024/11/23 21:02:41 couldnt ps exit status 1
+2024/11/23 21:06:16 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:06:16 couldnt ps exit status 1
+2024/11/23 21:06:16 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:06:16 couldnt ps exit status 1
+2024/11/23 21:06:16 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:06:17 couldnt ps exit status 1
+2024/11/23 21:06:17 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 21:06:17 error with tracer exit status 1
+2024/11/23 21:06:17 couldnt ps exit status 1
+2024/11/23 21:06:17 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:06:17 error with tracer exit status 1
+2024/11/23 21:06:17 couldnt ps exit status 1
+2024/11/23 21:06:17 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:06:17 error with tracer exit status 1
+2024/11/23 21:06:17 couldnt ps exit status 1
+2024/11/23 21:06:17 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:38842 [2607:f8b0:400a:80a::200a]:https
+2024/11/23 21:06:17 error with tracer exit status 1
+2024/11/23 21:06:17 couldnt ps exit status 1
+2024/11/23 21:06:17 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:35766 [2606:4700:4400::ac40:9bd1]:https
+2024/11/23 21:06:17 error with tracer exit status 1
+2024/11/23 21:06:17 couldnt ps exit status 1
+2024/11/23 21:06:17 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:43368 [2606:4700:4400::6812:299e]:https
+2024/11/23 21:06:17 error with tracer exit status 1
+2024/11/23 21:06:17 couldnt ps exit status 1
+2024/11/23 21:06:17 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:53264 [2606:4700:4400::ac40:9bd1]:https
+2024/11/23 21:06:17 error with tracer exit status 1
+2024/11/23 21:06:17 couldnt ps exit status 1
+2024/11/23 21:06:17 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:40786 [2600:1901:0:47fc::]:https
+2024/11/23 21:06:17 error with tracer exit status 1
+2024/11/23 21:06:18 couldnt ps exit status 1
+2024/11/23 21:06:18 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:32784 [2a04:4e42:5::760]:https
+2024/11/23 21:06:19 error with tracer exit status 1
+2024/11/23 21:06:19 couldnt ps exit status 1
+2024/11/23 21:06:30 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:06:30 couldnt ps exit status 1
+2024/11/23 21:06:30 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:06:30 couldnt ps exit status 1
+2024/11/23 21:06:30 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:06:30 couldnt ps exit status 1
+2024/11/23 21:06:30 tcp ESTAB 0 0 10.0.0.189:43586 140.82.114.26:https
+2024/11/23 21:06:30 error with tracer exit status 1
+2024/11/23 21:06:30 couldnt ps exit status 1
+2024/11/23 21:06:30 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:06:30 error with tracer exit status 1
+2024/11/23 21:06:30 couldnt ps exit status 1
+2024/11/23 21:06:30 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:06:30 error with tracer exit status 1
+2024/11/23 21:06:30 couldnt ps exit status 1
+2024/11/23 21:06:30 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:38842 [2607:f8b0:400a:80a::200a]:https
+2024/11/23 21:06:30 error with tracer exit status 1
+2024/11/23 21:06:31 couldnt ps exit status 1
+2024/11/23 21:06:31 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:35766 [2606:4700:4400::ac40:9bd1]:https
+2024/11/23 21:06:31 error with tracer exit status 1
+2024/11/23 21:06:31 couldnt ps exit status 1
+2024/11/23 21:06:31 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:43368 [2606:4700:4400::6812:299e]:https
+2024/11/23 21:06:31 error with tracer exit status 1
+2024/11/23 21:06:31 couldnt ps exit status 1
+2024/11/23 21:06:31 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:53264 [2606:4700:4400::ac40:9bd1]:https
+2024/11/23 21:06:31 error with tracer exit status 1
+2024/11/23 21:06:31 couldnt ps exit status 1
+2024/11/23 21:06:31 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:40786 [2600:1901:0:47fc::]:https
+2024/11/23 21:06:31 error with tracer exit status 1
+2024/11/23 21:06:31 couldnt ps exit status 1
+2024/11/23 21:06:31 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:32784 [2a04:4e42:5::760]:https
+2024/11/23 21:06:31 error with tracer exit status 1
+2024/11/23 21:06:31 couldnt ps exit status 1
+2024/11/23 21:11:04 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:11:04 couldnt ps exit status 1
+2024/11/23 21:11:04 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:11:04 couldnt ps exit status 1
+2024/11/23 21:11:04 tcp ESTAB 0 0 10.0.0.189:59942 185.199.108.154:https
+2024/11/23 21:11:04 couldnt ps exit status 1
+2024/11/23 21:11:04 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:11:04 error with tracer exit status 1
+2024/11/23 21:11:04 couldnt ps exit status 1
+2024/11/23 21:11:04 tcp ESTAB 0 0 10.0.0.189:57210 162.247.241.14:https
+2024/11/23 21:11:04 error with tracer exit status 1
+2024/11/23 21:11:04 couldnt ps exit status 1
+2024/11/23 21:11:04 tcp ESTAB 0 0 10.0.0.189:48628 3.164.255.6:https
+2024/11/23 21:11:04 error with tracer exit status 1
+2024/11/23 21:11:05 couldnt ps exit status 1
+2024/11/23 21:11:05 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:11:05 error with tracer exit status 1
+2024/11/23 21:11:05 couldnt ps exit status 1
+2024/11/23 21:11:05 tcp ESTAB 0 0 10.0.0.189:39448 109.107.37.0:https
+2024/11/23 21:11:05 error with tracer exit status 1
+2024/11/23 21:11:05 couldnt ps exit status 1
+2024/11/23 21:11:05 tcp ESTAB 0 0 10.0.0.189:57194 162.247.241.14:https
+2024/11/23 21:11:05 error with tracer exit status 1
+2024/11/23 21:11:05 couldnt ps exit status 1
+2024/11/23 21:11:05 tcp ESTAB 0 0 10.0.0.189:40690 140.82.112.22:https
+2024/11/23 21:11:05 error with tracer exit status 1
+2024/11/23 21:11:05 couldnt ps exit status 1
+2024/11/23 21:11:05 tcp ESTAB 0 0 10.0.0.189:60000 185.199.108.154:https
+2024/11/23 21:11:06 error with tracer exit status 1
+2024/11/23 21:11:06 couldnt ps exit status 1
+2024/11/23 21:11:06 tcp ESTAB 0 0 10.0.0.189:53988 104.16.90.50:https
+2024/11/23 21:11:06 error with tracer exit status 1
+2024/11/23 21:11:06 couldnt ps exit status 1
+2024/11/23 21:11:06 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:11:06 error with tracer exit status 1
+2024/11/23 21:11:06 couldnt ps exit status 1
+2024/11/23 21:11:06 tcp ESTAB 0 0 10.0.0.189:60476 140.82.112.26:https
+2024/11/23 21:11:06 error with tracer exit status 1
+2024/11/23 21:11:06 couldnt ps exit status 1
+2024/11/23 21:11:06 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:46304 [2606:4700::6810:5049]:https
+2024/11/23 21:11:06 error with tracer exit status 1
+2024/11/23 21:11:06 couldnt ps exit status 1
+2024/11/23 21:11:06 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:35766 [2606:4700:4400::ac40:9bd1]:https
+2024/11/23 21:11:06 error with tracer exit status 1
+2024/11/23 21:11:06 couldnt ps exit status 1
+2024/11/23 21:11:06 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:60908 [2607:f8b0:400a:807::200e]:https
+2024/11/23 21:11:06 error with tracer exit status 1
+2024/11/23 21:11:06 couldnt ps exit status 1
+2024/11/23 21:11:06 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:57752 [2607:f8b0:400a:806::2008]:https
+2024/11/23 21:11:06 error with tracer exit status 1
+2024/11/23 21:11:07 couldnt ps exit status 1
+2024/11/23 21:11:07 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:60922 [2607:f8b0:400a:807::200e]:https
+2024/11/23 21:11:07 error with tracer exit status 1
+2024/11/23 21:11:07 couldnt ps exit status 1
+2024/11/23 21:11:07 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:38050 [2607:f8b0:400a:80a::200a]:https
+2024/11/23 21:11:07 error with tracer exit status 1
+2024/11/23 21:11:07 couldnt ps exit status 1
+2024/11/23 21:11:07 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:35700 [2607:f8b0:400a:803::200a]:https
+2024/11/23 21:11:07 error with tracer exit status 1
+2024/11/23 21:11:07 couldnt ps exit status 1
+2024/11/23 21:11:07 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:52890 [2607:f8b0:400a:80a::200a]:https
+2024/11/23 21:11:07 error with tracer exit status 1
+2024/11/23 21:11:07 couldnt ps exit status 1
+2024/11/23 21:11:07 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:60894 [2607:f8b0:400a:807::200e]:https
+2024/11/23 21:11:07 error with tracer exit status 1
+2024/11/23 21:11:07 couldnt ps exit status 1
+2024/11/23 21:11:07 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:42008 [2600:1f18:24e6:b900:2d16:a724:7ca3:5c63]:https
+2024/11/23 21:11:07 error with tracer exit status 1
+2024/11/23 21:11:07 couldnt ps exit status 1
+2024/11/23 21:11:07 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:35662 [2606:4700:7::a29f:9804]:https
+2024/11/23 21:11:07 error with tracer exit status 1
+2024/11/23 21:11:07 couldnt ps exit status 1
+2024/11/23 21:11:07 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:36494 [2607:f8b0:400a:807::2016]:https
+2024/11/23 21:11:07 error with tracer exit status 1
+2024/11/23 21:11:08 couldnt ps exit status 1
+2024/11/23 21:11:08 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:37268 [2600:1f18:24e6:b900:2d16:a724:7ca3:5c63]:https
+2024/11/23 21:11:08 error with tracer exit status 1
+2024/11/23 21:11:08 couldnt ps exit status 1
+2024/11/23 21:11:08 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:59914 [2600:9000:26ec:8200:19:9934:6a80:93a1]:https
+2024/11/23 21:11:08 error with tracer exit status 1
+2024/11/23 21:11:08 couldnt ps exit status 1
+2024/11/23 21:11:08 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:56360 [2607:f8b0:400a:80a::200e]:https
+2024/11/23 21:11:08 error with tracer exit status 1
+2024/11/23 21:11:13 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:11:13 couldnt ps exit status 1
+2024/11/23 21:11:13 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:11:13 couldnt ps exit status 1
+2024/11/23 21:11:13 tcp ESTAB 0 0 10.0.0.189:59942 185.199.108.154:https
+2024/11/23 21:11:13 couldnt ps exit status 1
+2024/11/23 21:11:13 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:11:13 error with tracer exit status 1
+2024/11/23 21:11:13 couldnt ps exit status 1
+2024/11/23 21:11:13 tcp ESTAB 0 0 10.0.0.189:57210 162.247.241.14:https
+2024/11/23 21:11:13 error with tracer exit status 1
+2024/11/23 21:11:13 couldnt ps exit status 1
+2024/11/23 21:11:13 tcp ESTAB 0 0 10.0.0.189:48628 3.164.255.6:https
+2024/11/23 21:11:13 error with tracer exit status 1
+2024/11/23 21:11:13 couldnt ps exit status 1
+2024/11/23 21:11:13 tcp ESTAB 0 0 10.0.0.189:50526 162.247.241.14:https
+2024/11/23 21:11:13 error with tracer exit status 1
+2024/11/23 21:11:14 couldnt ps exit status 1
+2024/11/23 21:11:14 tcp ESTAB 0 0 10.0.0.189:39448 109.107.37.0:https
+2024/11/23 21:11:14 error with tracer exit status 1
+2024/11/23 21:11:14 couldnt ps exit status 1
+2024/11/23 21:11:14 tcp ESTAB 0 0 10.0.0.189:57194 162.247.241.14:https
+2024/11/23 21:11:14 error with tracer exit status 1
+2024/11/23 21:11:14 couldnt ps exit status 1
+2024/11/23 21:11:14 tcp ESTAB 0 0 10.0.0.189:60000 185.199.108.154:https
+2024/11/23 21:11:14 error with tracer exit status 1
+2024/11/23 21:11:14 couldnt ps exit status 1
+2024/11/23 21:11:14 tcp ESTAB 0 0 10.0.0.189:53988 104.16.90.50:https
+2024/11/23 21:11:14 error with tracer exit status 1
+2024/11/23 21:11:14 couldnt ps exit status 1
+2024/11/23 21:11:14 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:11:14 error with tracer exit status 1
+2024/11/23 21:11:14 couldnt ps exit status 1
+2024/11/23 21:11:14 tcp ESTAB 0 0 10.0.0.189:60476 140.82.112.26:https
+2024/11/23 21:11:14 error with tracer exit status 1
+2024/11/23 21:11:14 couldnt ps exit status 1
+2024/11/23 21:11:14 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:46304 [2606:4700::6810:5049]:https
+2024/11/23 21:11:14 error with tracer exit status 1
+2024/11/23 21:11:14 couldnt ps exit status 1
+2024/11/23 21:11:14 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:35766 [2606:4700:4400::ac40:9bd1]:https
+2024/11/23 21:11:14 error with tracer exit status 1
+2024/11/23 21:14:05 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:14:06 couldnt ps exit status 1
+2024/11/23 21:14:06 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:14:06 couldnt ps exit status 1
+2024/11/23 21:14:06 tcp ESTAB 0 0 10.0.0.189:59942 185.199.108.154:https
+2024/11/23 21:14:06 couldnt ps exit status 1
+2024/11/23 21:14:06 tcp ESTAB 0 0 10.0.0.189:42514 172.64.146.223:https
+2024/11/23 21:14:06 error with tracer exit status 1
+2024/11/23 21:14:06 couldnt ps exit status 1
+2024/11/23 21:14:06 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:14:06 error with tracer exit status 1
+2024/11/23 21:14:06 couldnt ps exit status 1
+2024/11/23 21:14:06 tcp ESTAB 0 0 10.0.0.189:57210 162.247.241.14:https
+2024/11/23 21:14:06 error with tracer exit status 1
+2024/11/23 21:14:06 couldnt ps exit status 1
+2024/11/23 21:14:06 tcp ESTAB 0 0 10.0.0.189:43400 172.64.155.249:https
+2024/11/23 21:14:06 error with tracer exit status 1
+2024/11/23 21:14:06 couldnt ps exit status 1
+2024/11/23 21:14:06 tcp ESTAB 0 0 10.0.0.189:57194 162.247.241.14:https
+2024/11/23 21:14:06 error with tracer exit status 1
+2024/11/23 21:14:06 couldnt ps exit status 1
+2024/11/23 21:14:06 tcp ESTAB 0 0 10.0.0.189:56958 104.18.40.222:https
+2024/11/23 21:14:06 error with tracer exit status 1
+2024/11/23 21:14:07 couldnt ps exit status 1
+2024/11/23 21:14:07 tcp ESTAB 0 0 10.0.0.189:60000 185.199.108.154:https
+2024/11/23 21:14:07 error with tracer exit status 1
+2024/11/23 21:14:07 couldnt ps exit status 1
+2024/11/23 21:14:07 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:14:07 error with tracer exit status 1
+2024/11/23 21:14:07 couldnt ps exit status 1
+2024/11/23 21:14:07 tcp ESTAB 0 0 10.0.0.189:60476 140.82.112.26:https
+2024/11/23 21:14:07 error with tracer exit status 1
+2024/11/23 21:14:07 couldnt ps exit status 1
+2024/11/23 21:14:07 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:55696 [2607:f8b0:400a:80a::200e]:https
+2024/11/23 21:14:07 error with tracer exit status 1
+2024/11/23 21:14:07 couldnt ps exit status 1
+2024/11/23 21:14:07 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:46304 [2606:4700::6810:5049]:https
+2024/11/23 21:14:07 error with tracer exit status 1
+2024/11/23 21:14:07 could not run lsofexit status 1
+2024/11/23 21:14:12 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:14:12 couldnt ps exit status 1
+2024/11/23 21:14:12 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:14:13 couldnt ps exit status 1
+2024/11/23 21:14:13 tcp ESTAB 0 0 10.0.0.189:59942 185.199.108.154:https
+2024/11/23 21:14:13 couldnt ps exit status 1
+2024/11/23 21:14:13 tcp ESTAB 0 0 10.0.0.189:42514 172.64.146.223:https
+2024/11/23 21:14:13 error with tracer exit status 1
+2024/11/23 21:14:13 couldnt ps exit status 1
+2024/11/23 21:14:13 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:14:13 error with tracer exit status 1
+2024/11/23 21:14:13 couldnt ps exit status 1
+2024/11/23 21:14:13 tcp ESTAB 0 0 10.0.0.189:57210 162.247.241.14:https
+2024/11/23 21:14:13 error with tracer exit status 1
+2024/11/23 21:14:13 couldnt ps exit status 1
+2024/11/23 21:14:13 tcp ESTAB 0 0 10.0.0.189:43400 172.64.155.249:https
+2024/11/23 21:14:13 error with tracer exit status 1
+2024/11/23 21:14:13 couldnt ps exit status 1
+2024/11/23 21:14:13 tcp ESTAB 0 0 10.0.0.189:57194 162.247.241.14:https
+2024/11/23 21:14:13 error with tracer exit status 1
+2024/11/23 21:14:13 couldnt ps exit status 1
+2024/11/23 21:14:13 tcp ESTAB 0 0 10.0.0.189:56958 104.18.40.222:https
+2024/11/23 21:14:13 error with tracer exit status 1
+2024/11/23 21:14:13 couldnt ps exit status 1
+2024/11/23 21:14:13 tcp ESTAB 0 0 10.0.0.189:60000 185.199.108.154:https
+2024/11/23 21:14:13 error with tracer exit status 1
+2024/11/23 21:14:14 couldnt ps exit status 1
+2024/11/23 21:14:14 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:14:14 error with tracer exit status 1
+2024/11/23 21:14:14 couldnt ps exit status 1
+2024/11/23 21:14:14 tcp ESTAB 0 0 10.0.0.189:60476 140.82.112.26:https
+2024/11/23 21:14:14 error with tracer exit status 1
+2024/11/23 21:14:14 couldnt ps exit status 1
+2024/11/23 21:14:14 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:55696 [2607:f8b0:400a:80a::200e]:https
+2024/11/23 21:14:14 error with tracer exit status 1
+2024/11/23 21:14:14 couldnt ps exit status 1
+2024/11/23 21:14:14 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:45794 [2607:f8b0:400a:800::200e]:https
+2024/11/23 21:14:14 error with tracer exit status 1
+2024/11/23 21:14:14 couldnt ps exit status 1
+2024/11/23 21:14:14 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:35766 [2606:4700:4400::ac40:9bd1]:https
+2024/11/23 21:14:14 error with tracer exit status 1
+2024/11/23 21:14:14 couldnt ps exit status 1
+2024/11/23 21:14:14 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:57322 [2607:f8b0:400a:801::200e]:https
+2024/11/23 21:14:14 error with tracer exit status 1
+2024/11/23 21:14:14 couldnt ps exit status 1
+2024/11/23 21:14:14 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:60894 [2607:f8b0:400a:807::200e]:https
+2024/11/23 21:14:14 error with tracer exit status 1
+2024/11/23 21:14:14 couldnt ps exit status 1
+2024/11/23 21:14:14 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:40114 [2607:f8b0:400a:805::200e]:https
+2024/11/23 21:14:14 error with tracer exit status 1
+2024/11/23 21:14:15 couldnt ps exit status 1
+2024/11/23 21:14:15 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:34518 [2607:f8b0:400a:803::2002]:https
+2024/11/23 21:14:15 error with tracer exit status 1
+2024/11/23 21:14:15 couldnt ps exit status 1
+2024/11/23 21:14:15 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:40718 [2607:f8b0:400a:807::2001]:https
+2024/11/23 21:14:15 error with tracer exit status 1
+2024/11/23 21:14:15 couldnt ps exit status 1
+2024/11/23 21:14:15 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:54154 [2607:f8b0:400e:c00::54]:https
+2024/11/23 21:14:15 error with tracer exit status 1
+2024/11/23 21:14:15 couldnt ps exit status 1
+2024/11/23 21:14:15 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:34166 [2607:f8b0:400a:806::2008]:https
+2024/11/23 21:14:15 error with tracer exit status 1
+2024/11/23 21:14:15 couldnt ps exit status 1
+2024/11/23 21:14:15 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:53264 [2606:4700:4400::ac40:9bd1]:https
+2024/11/23 21:14:15 error with tracer exit status 1
+2024/11/23 21:14:15 couldnt ps exit status 1
+2024/11/23 21:14:15 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:40786 [2600:1901:0:47fc::]:https
+2024/11/23 21:14:15 error with tracer exit status 1
+2024/11/23 21:14:16 couldnt ps exit status 1
+2024/11/23 21:14:16 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:56058 [2600:9000:26ec:7400:19:9934:6a80:93a1]:https
+2024/11/23 21:14:16 error with tracer exit status 1
+2024/11/23 21:14:16 couldnt ps exit status 1
+2024/11/23 21:14:16 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:58436 [2607:f8b0:400a:80b::2006]:https
+2024/11/23 21:14:16 error with tracer exit status 1
+2024/11/23 21:14:16 couldnt ps exit status 1
+2024/11/23 21:14:16 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:41916 [2606:4700:4400::ac40:9b77]:https
+2024/11/23 21:14:16 error with tracer exit status 1
+2024/11/23 21:14:17 couldnt ps exit status 1
+2024/11/23 21:14:17 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:54144 [2607:f8b0:400e:c00::54]:https
+2024/11/23 21:14:17 error with tracer exit status 1
+2024/11/23 21:14:17 couldnt ps exit status 1
+2024/11/23 21:14:17 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:54572 [2606:4700::6812:572a]:https
+2024/11/23 21:14:17 error with tracer exit status 1
+2024/11/23 21:14:17 couldnt ps exit status 1
+2024/11/23 21:14:17 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:44538 [2606:4700:4400::6812:2089]:https
+2024/11/23 21:14:17 error with tracer exit status 1
+2024/11/23 21:14:17 couldnt ps exit status 1
+2024/11/23 21:14:17 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:33136 [2607:f8b0:400a:80a::2001]:https
+2024/11/23 21:14:17 error with tracer exit status 1
+2024/11/23 21:14:17 couldnt ps exit status 1
+2024/11/23 21:14:17 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:48804 [2607:f8b0:400a:80b::200a]:https
+2024/11/23 21:14:17 error with tracer exit status 1
+2024/11/23 21:14:17 couldnt ps exit status 1
+2024/11/23 21:14:17 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:48798 [2607:f8b0:400a:80b::200a]:https
+2024/11/23 21:14:17 error with tracer exit status 1
+2024/11/23 21:14:17 couldnt ps exit status 1
+2024/11/23 21:14:17 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:43858 [2607:f8b0:400a:804::2001]:https
+2024/11/23 21:14:17 error with tracer exit status 1
+2024/11/23 21:14:18 couldnt ps exit status 1
+2024/11/23 21:14:18 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:37124 [2606:50c0:8000::154]:https
+2024/11/23 21:14:18 error with tracer exit status 1
+2024/11/23 21:14:18 couldnt ps exit status 1
+2024/11/23 21:14:18 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:54128 [2607:f8b0:400e:c00::54]:https
+2024/11/23 21:14:18 error with tracer exit status 1
+2024/11/23 21:14:18 couldnt ps exit status 1
+2024/11/23 21:14:18 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:43866 [2607:f8b0:400a:804::2001]:https
+2024/11/23 21:14:18 error with tracer exit status 1
+2024/11/23 21:14:18 couldnt ps exit status 1
+2024/11/23 21:14:18 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:54568 [2606:4700::6812:572a]:https
+2024/11/23 21:14:18 error with tracer exit status 1
+2024/11/23 21:14:18 couldnt ps exit status 1
+2024/11/23 21:14:18 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:49016 [2600:1f18:24e6:b901:72e3:1bfe:b271:96b2]:https
+2024/11/23 21:14:18 error with tracer exit status 1
+2024/11/23 21:14:18 couldnt ps exit status 1
+2024/11/23 21:14:18 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:40342 [2607:f8b0:400a:804::2003]:https
+2024/11/23 21:14:18 error with tracer exit status 1
+2024/11/23 21:14:18 couldnt ps exit status 1
+2024/11/23 21:16:26 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:16:27 couldnt ps exit status 1
+2024/11/23 21:16:27 error with tracer exit status 1
+2024/11/23 21:16:27 tcp LAST-ACK 1 1 10.0.0.189:56408 35.201.101.243:https
+2024/11/23 21:16:27 could not run lsofexit status 1
+2024/11/23 21:16:52 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:16:52 couldnt ps exit status 1
+2024/11/23 21:16:52 error with tracer exit status 1
+2024/11/23 21:16:52 tcp LAST-ACK 1 1 10.0.0.189:56408 35.201.101.243:https
+2024/11/23 21:16:52 could not run lsofexit status 1
+2024/11/23 21:17:16 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:17:16 couldnt ps exit status 1
+2024/11/23 21:17:16 error with tracer exit status 1
+2024/11/23 21:17:16 tcp LAST-ACK 1 1 10.0.0.189:56408 35.201.101.243:https
+2024/11/23 21:17:16 could not run lsofexit status 1
+2024/11/23 21:17:48 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:17:48 couldnt ps exit status 1
+2024/11/23 21:17:48 error with tracer exit status 1
+2024/11/23 21:17:48 tcp LAST-ACK 1 1 10.0.0.189:56408 35.201.101.243:https
+2024/11/23 21:17:48 could not run lsofexit status 1
+2024/11/23 21:18:58 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:18:58 couldnt ps exit status 1
+2024/11/23 21:19:22 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:19:22 couldnt ps exit status 1
+2024/11/23 21:19:22 tcp ESTAB 0 0 10.0.0.189:45718 162.159.130.234:https
+2024/11/23 21:19:22 couldnt ps exit status 1
+2024/11/23 21:19:22 tcp ESTAB 0 0 10.0.0.189:42514 172.64.146.223:https
+2024/11/23 21:19:22 couldnt ps exit status 1
+2024/11/23 21:19:22 tcp ESTAB 0 0 10.0.0.189:40414 162.247.241.14:https
+2024/11/23 21:19:22 error with tracer exit status 1
+2024/11/23 21:19:22 couldnt ps exit status 1
+2024/11/23 21:19:22 tcp ESTAB 0 0 10.0.0.189:56428 140.82.112.22:https
+2024/11/23 21:19:22 error with tracer exit status 1
+2024/11/23 21:19:23 couldnt ps exit status 1
+2024/11/23 21:19:23 tcp ESTAB 0 0 10.0.0.189:57210 162.247.241.14:https
+2024/11/23 21:19:23 error with tracer exit status 1
+2024/11/23 21:19:23 couldnt ps exit status 1
+2024/11/23 21:19:23 tcp ESTAB 0 0 10.0.0.189:43400 172.64.155.249:https
+2024/11/23 21:19:23 error with tracer exit status 1
+2024/11/23 21:19:23 couldnt ps exit status 1
+2024/11/23 21:19:23 tcp ESTAB 0 0 10.0.0.189:43230 69.192.88.64:https
+2024/11/23 21:19:23 error with tracer exit status 1
+2024/11/23 21:19:23 couldnt ps exit status 1
+2024/11/23 21:19:23 tcp ESTAB 0 0 10.0.0.189:47358 151.101.21.108:https
+2024/11/23 21:19:23 error with tracer exit status 1
+2024/11/23 21:19:23 couldnt ps exit status 1
+2024/11/23 21:19:23 tcp ESTAB 0 0 10.0.0.189:43246 69.192.88.64:https
+2024/11/23 21:19:23 error with tracer exit status 1
+2024/11/23 21:19:23 couldnt ps exit status 1
+2024/11/23 21:19:23 tcp ESTAB 0 0 10.0.0.189:57194 162.247.241.14:https
+2024/11/23 21:19:23 error with tracer exit status 1
+2024/11/23 21:19:23 couldnt ps exit status 1
+2024/11/23 21:19:23 tcp ESTAB 0 0 10.0.0.189:39574 162.247.241.14:https
+2024/11/23 21:19:23 error with tracer exit status 1
+2024/11/23 21:19:23 couldnt ps exit status 1
+2024/11/23 21:19:23 tcp ESTAB 0 0 10.0.0.189:60476 140.82.112.26:https
+2024/11/23 21:19:23 error with tracer exit status 1
+2024/11/23 21:19:23 couldnt ps exit status 1
+2024/11/23 21:19:23 tcp CLOSE-WAIT 1 0 10.0.0.189:33040 35.201.101.243:https
+2024/11/23 21:19:23 error with tracer exit status 1
+2024/11/23 21:19:24 couldnt ps exit status 1
+2024/11/23 21:19:24 tcp ESTAB 0 0 10.0.0.189:43220 69.192.88.64:https
+2024/11/23 21:19:24 error with tracer exit status 1
+2024/11/23 21:19:24 couldnt ps exit status 1
+2024/11/23 21:19:24 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:35766 [2606:4700:4400::ac40:9bd1]:https
+2024/11/23 21:19:24 error with tracer exit status 1
+2024/11/23 21:19:24 couldnt ps exit status 1
+2024/11/23 21:19:24 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:55262 [2606:4700:4400::ac40:9262]:https
+2024/11/23 21:19:24 error with tracer exit status 1
+2024/11/23 21:19:24 couldnt ps exit status 1
+2024/11/23 21:19:24 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:55248 [2606:4700:4400::ac40:9262]:https
+2024/11/23 21:19:24 error with tracer exit status 1
+2024/11/23 21:19:24 couldnt ps exit status 1
+2024/11/23 21:19:24 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:53264 [2606:4700:4400::ac40:9bd1]:https
+2024/11/23 21:19:24 error with tracer exit status 1
+2024/11/23 21:19:24 couldnt ps exit status 1
+2024/11/23 21:19:24 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:50916 [2001:4e8:0:b050::18f4:333a]:https
+2024/11/23 21:19:24 error with tracer exit status 1
+2024/11/23 21:19:24 couldnt ps exit status 1
+2024/11/23 21:19:24 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:40786 [2600:1901:0:47fc::]:https
+2024/11/23 21:19:24 error with tracer exit status 1
+2024/11/23 21:19:25 couldnt ps exit status 1
+2024/11/23 21:19:25 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:46994 [2606:4700:4400::ac40:9bd1]:https
+2024/11/23 21:19:25 error with tracer exit status 1
+2024/11/23 21:19:25 couldnt ps exit status 1
+2024/11/23 21:19:25 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:44538 [2606:4700:4400::6812:2089]:https
+2024/11/23 21:19:25 error with tracer exit status 1
+2024/11/23 21:19:25 couldnt ps exit status 1
+2024/11/23 21:19:25 tcp ESTAB 0 0 [::ffff:10.0.0.189]:56214 [::ffff:162.247.243.29]:https
+2024/11/23 21:19:26 error with tracer exit status 1
+2024/11/23 21:19:26 couldnt ps exit status 1
+2024/11/23 21:19:26 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:55206 [2600:9000:26ec:4800:15:85fe:56c0:93a1]:https
+2024/11/23 21:19:26 error with tracer exit status 1
+2024/11/23 21:19:26 couldnt ps exit status 1
+2024/11/23 21:19:26 tcp ESTAB 0 0 [2604:3d09:6b89:a600:2b3a:f4e9:157f:372e]:46984 [2606:4700:4400::ac40:9bd1]:https
+2024/11/23 21:19:26 error with tracer exit status 1
+2024/11/23 21:19:26 couldnt ps exit status 1
+2024/11/23 21:19:39 tcp ESTAB 0 0 10.0.0.189:50516 162.247.241.14:https
+2024/11/23 21:19:40 couldnt ps exit status 1
+2024/11/23 21:25:40 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:37914 [2607:f8b0:400a:801::2001]:https
+2024/11/23 21:25:40 couldnt ps exit status 1
+2024/11/23 21:27:29 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50220 [::ffff:162.247.243.29]:https
+2024/11/23 21:27:29 couldnt ps exit status 1
+2024/11/23 21:28:48 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50220 [::ffff:162.247.243.29]:https
+2024/11/23 21:28:48 couldnt ps exit status 1
+2024/11/23 21:28:54 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50220 [::ffff:162.247.243.29]:https
+2024/11/23 21:28:54 couldnt ps exit status 1
+2024/11/23 21:29:28 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:46180 [2607:f8b0:400a:800::200e]:https
+2024/11/23 21:29:28 couldnt ps exit status 1
+2024/11/23 21:31:32 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:46180 [2607:f8b0:400a:800::200e]:https
+2024/11/23 21:31:32 couldnt ps exit status 1
+2024/11/23 21:31:32 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:37764 [2607:f8b0:400a:803::200a]:https
+2024/11/23 21:31:32 couldnt ps exit status 1
+2024/11/23 21:31:32 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50220 [::ffff:162.247.243.29]:https
+2024/11/23 21:31:32 couldnt ps exit status 1
+2024/11/23 21:31:32 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:55524 [2607:f8b0:400a:800::2006]:https
+2024/11/23 21:31:32 couldnt ps exit status 1
+2024/11/23 21:31:32 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:36988 [2607:f8b0:400a:803::200e]:https
+2024/11/23 21:31:32 couldnt ps exit status 1
+2024/11/23 21:31:32 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50202 [::ffff:162.247.243.29]:https
+2024/11/23 21:31:32 couldnt ps exit status 1
+2024/11/23 21:31:32 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:55798 [2607:f8b0:400a:807::2003]:https
+2024/11/23 21:31:32 couldnt ps exit status 1
+2024/11/23 21:31:32 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:39002 [2607:f8b0:400a:80a::200a]:https
+2024/11/23 21:31:32 couldnt ps exit status 1
+2024/11/23 21:31:32 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:45510 [2607:f8b0:400a:805::200a]:https
+2024/11/23 21:31:33 couldnt ps exit status 1
+2024/11/23 21:31:33 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:35910 [2607:f8b0:400a:801::200e]:https
+2024/11/23 21:31:33 couldnt ps exit status 1
+2024/11/23 21:31:33 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:39222 [2607:f8b0:400a:804::2016]:https
+2024/11/23 21:31:33 couldnt ps exit status 1
+2024/11/23 21:31:33 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:43398 [2600:1f18:24e6:b901:72e3:1bfe:b271:96b2]:https
+2024/11/23 21:31:33 couldnt ps exit status 1
+2024/11/23 21:31:33 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:44584 [2606:4700:4400::6812:202f]:https
+2024/11/23 21:31:33 couldnt ps exit status 1
+2024/11/23 21:31:33 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50204 [::ffff:162.247.243.29]:https
+2024/11/23 21:31:33 couldnt ps exit status 1
+2024/11/23 21:31:33 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:44598 [2606:4700:4400::6812:202f]:https
+2024/11/23 21:31:33 couldnt ps exit status 1
+2024/11/23 21:31:33 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:37766 [2607:f8b0:400a:803::200a]:https
+2024/11/23 21:31:33 couldnt ps exit status 1
+2024/11/23 21:31:33 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:37000 [2607:f8b0:400a:803::200e]:https
+2024/11/23 21:31:33 couldnt ps exit status 1
+2024/11/23 21:31:33 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50198 [::ffff:162.247.243.29]:https
+2024/11/23 21:31:34 couldnt ps exit status 1
+2024/11/23 21:31:34 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:52164 [2a00:1450:4001:811::2003]:https
+2024/11/23 21:31:34 couldnt ps exit status 1
+2024/11/23 21:31:34 tcp ESTAB 0 0 [2604:3d09:6b89:a600:17d6:9140:e78c:e41e]:45570 [2606:4700:4400::ac40:9262]:https
+2024/11/23 21:31:34 couldnt ps exit status 1
+2024/11/23 21:33:06 tcp ESTAB 0 0 10.0.0.189:46030 104.18.32.7:https
+2024/11/23 21:33:06 couldnt ps exit status 1
