@@ -106,7 +106,7 @@ func ps_recon(pid string) string {
 }
 
 func tracer(pid string) {
-	cmd := exec.Command("/bin/sh", "-c", "sudo strace -p 3515")
+	cmd := exec.Command("/bin/sh", "-c", fmt.Sprintf("sudo strace -p %s", pid))
 	pipe, err := cmd.StdoutPipe()
 	if err != nil {
 		fmt.Println("Error getting StdoutPipe:", err)

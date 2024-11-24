@@ -3480,3 +3480,39 @@ soy       131937  0.0  0.4 1212251868 70520 ?    SNl  15:05   0:00 /opt/brave.co
 2024/11/23 21:31:34 couldnt ps exit status 1
 2024/11/23 21:33:06 tcp ESTAB 0 0 10.0.0.189:46030 104.18.32.7:https
 2024/11/23 21:33:06 couldnt ps exit status 1
+2024/11/23 21:35:14 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50220 [::ffff:162.247.243.29]:https
+2024/11/23 21:35:14 couldnt ps exit status 1
+2024/11/23 21:35:42 tcp ESTAB 0 0 10.0.0.189:33332 54.185.96.117:https
+2024/11/23 21:35:42 couldnt ps exit status 1
+2024/11/23 21:35:48 tcp ESTAB 0 0 10.0.0.189:33332 54.185.96.117:https
+2024/11/23 21:35:48 couldnt ps exit status 1
+2024/11/23 21:35:48 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50220 [::ffff:162.247.243.29]:https
+2024/11/23 21:35:48 couldnt ps exit status 1
+2024/11/23 21:35:48 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50202 [::ffff:162.247.243.29]:https
+2024/11/23 21:35:48 couldnt ps exit status 1
+2024/11/23 21:35:48 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50204 [::ffff:162.247.243.29]:https
+2024/11/23 21:35:49 couldnt ps exit status 1
+2024/11/23 21:35:49 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50198 [::ffff:162.247.243.29]:https
+2024/11/23 21:35:49 couldnt ps exit status 1
+2024/11/23 21:36:22 tcp ESTAB 0 0 10.0.0.189:33332 54.185.96.117:https
+2024/11/23 21:36:22 couldnt ps exit status 1
+2024/11/23 21:37:07 tcp ESTAB 0 0 10.0.0.189:33332 54.185.96.117:https
+2024/11/23 21:37:07 couldnt ps exit status 1
+2024/11/23 21:37:07 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50220 [::ffff:162.247.243.29]:https
+2024/11/23 21:37:07 couldnt ps exit status 1
+2024/11/23 21:37:07 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50202 [::ffff:162.247.243.29]:https
+2024/11/23 21:37:07 couldnt ps exit status 1
+2024/11/23 21:37:07 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50204 [::ffff:162.247.243.29]:https
+2024/11/23 21:37:08 couldnt ps exit status 1
+2024/11/23 21:37:08 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50198 [::ffff:162.247.243.29]:https
+2024/11/23 21:37:08 couldnt ps exit status 1
+2024/11/23 21:37:15 tcp ESTAB 0 0 10.0.0.189:33332 54.185.96.117:https
+2024/11/23 21:37:15 couldnt ps exit status 1
+2024/11/23 21:37:15 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50220 [::ffff:162.247.243.29]:https
+2024/11/23 21:37:15 couldnt ps exit status 1
+2024/11/23 21:37:15 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50202 [::ffff:162.247.243.29]:https
+2024/11/23 21:37:15 couldnt ps exit status 1
+2024/11/23 21:37:15 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50204 [::ffff:162.247.243.29]:https
+2024/11/23 21:37:15 couldnt ps exit status 1
+2024/11/23 21:37:15 tcp ESTAB 0 0 [::ffff:10.0.0.189]:50198 [::ffff:162.247.243.29]:https
+2024/11/23 21:37:16 couldnt ps exit status 1
