@@ -8,20 +8,14 @@ import (
 	"strings"
 )
 
-func socket_stats() []string {
-	ss_run := exec.Command("ss")
+func lsof_stats() []string {
+	cmd := exec.Command("lsof -i")
 
-	ss_output, err := ss_run.CombinedOutput()
+	output, err := cmd.CombinedOutput()
 
 	if err != nil {
 		log.Fatal("unable to run ss", err)
 	}
-
-	ss_run_filter_tcp := exec.Command("grep", "tcp")
-
-	ss_run_filter_tcp.Stdin = strings.NewReader(string(ss_output))
-
-	output, err := ss_run_filter_tcp.CombinedOutput()
 
 	conn_lines := strings.Split(string(output), "\n")
 
@@ -29,78 +23,19 @@ func socket_stats() []string {
 
 }
 
-func handle_conn(conn_string string) string {
+func sniff_connections(port string) {
+	//use the sniffer in the private repo you made to sniff connections from lsof -i
 
-	conn_string_fields := strings.Fields(conn_string)
-
-	conn_type := conn_string_fields[0]
-
-	conn_status := conn_string_fields[1]
-
-	receive_queue := conn_string_fields[2]
-	send_queue := conn_string_fields[3]
-
-	local_addr := conn_string_fields[4]
-
-	remote_addr := conn_string_fields[5]
-
-	log.Println(conn_type, conn_status, receive_queue, send_queue, local_addr, remote_addr)
-
-	local_addr_and_port := strings.Split(local_addr, ":")
-
-	fmt.Println(local_addr_and_port[len(local_addr_and_port)-1], "DEBUG")
-
-	return local_addr_and_port[len(local_addr_and_port)-1]
-
+	// maybe you can find some unique sliverC2 detections there
 }
 
-func find_and_handle_process(port string) string {
-	// execute lsof here lsof_cmd_args := fmt.Sprintf(":%s", port)
+func check_open_files() {
 
-	lsof_cmd_args := fmt.Sprintf(":%s", port)
+	// if user has inotify enabled read from the logs to see network connected processes created or deleted or did something anything with the files on the system
 
-	fmt.Println("this is port", port)
+	// how would you do this? listen for changes on the file with diff or something
 
-	cmd := exec.Command("lsof", "-i", lsof_cmd_args)
-
-	output, err := cmd.CombinedOutput()
-
-	if err != nil {
-		log.Fatal("could not run lsof", err)
-		fmt.Println("here", err)
-	}
-
-	string_out := string(output)
-	print("here", string_out)
-
-	if len(string_out) > 0 {
-		output_arr := strings.Split(string_out, "\n")
-
-		// titles := output_arr[0]
-		/* COMMAND   PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
-		 */
-
-		data := output_arr[1]
-
-		/* brave   36615  soy  106u  IPv4  61877      0t0  TCP pop-os:35774->151.101.21.140:https (ESTABLISHED) */
-		fmt.Println("this is pid", strings.Fields(data)[1])
-		return strings.Fields(data)[1]
-	}
-
-	return ""
-}
-
-func ps_recon(pid string) string {
-
-	ps_cmd := exec.Command("ps", "-fp", pid) // listen for children | the sliver implant may spawn another process for a shell
-
-	output, err := ps_cmd.CombinedOutput()
-
-	if err != nil {
-		log.Println("couldnt ps", err)
-	}
-
-	return string(output)
+	// if user does not have inotify enabled then just run file check on the pid
 
 }
 
