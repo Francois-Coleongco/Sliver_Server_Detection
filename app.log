@@ -3622,3 +3622,94 @@ soy       131937  0.0  0.4 1212251868 70520 ?    SNl  15:05   0:00 /opt/brave.co
 2024/11/24 20:07:28 tcp ESTAB 0 0 [2604:3d09:6b89:a600:3d77:9f3d:5c1e:3bc0]:50580 [2a04:4e42:5::396]:https
 2024/11/24 20:07:28 tcp ESTAB 0 0 [2604:3d09:6b89:a600:3d77:9f3d:5c1e:3bc0]:52284 [2606:4700:4400::6812:202f]:https
 2024/11/24 20:07:28 tcp ESTAB 0 0 [2604:3d09:6b89:a600:3d77:9f3d:5c1e:3bc0]:59954 [2607:f8b0:400e:c00::54]:https
+2024/11/27 09:20:25 unable to run ssexec: "lsof -i": executable file not found in $PATH
+2024/11/27 09:21:01 unable to run ssexec: "lsof -i": executable file not found in $PATH
+2024/11/27 09:21:19 unable to run `lsof -i`exec: "lsof -i": executable file not found in $PATH
+2024/11/27 09:22:25 unable to run `lsof -i`exec: "lsof -i": executable file not found in $PATH
+2024/11/27 09:22:33 unable to run `lsof -i`exec: "lsof -i": executable file not found in $PATH
+2024/11/27 09:31:56 chrome  7395  soy  118u  IPv4  71928      0t0  UDP mdns.mcast.net:mdns 
+2024/11/27 09:31:56 chrome  7439  soy   20u  IPv4  67266      0t0  UDP bean:38169->sea09s28-in-f3.1e100.net:https 
+2024/11/27 09:31:56 chrome  7439  soy   24u  IPv4  60787      0t0  UDP bean:53308->sea09s28-in-f3.1e100.net:https 
+2024/11/27 09:31:56 chrome  7439  soy   25u  IPv4  44038      0t0  TCP bean:46514->123.35.104.34.bc.googleusercontent.com:http (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   28u  IPv4  39204      0t0  UDP bean:39098->sea09s28-in-f14.1e100.net:https 
+2024/11/27 09:31:56 chrome  7439  soy   44u  IPv4  60476      0t0  TCP bean:41018->104.18.37.100:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   45u  IPv4  62935      0t0  UDP bean:58255->sea30s01-in-f10.1e100.net:https 
+2024/11/27 09:31:56 chrome  7439  soy   46u  IPv4  53536      0t0  TCP bean:40568->a23-217-130-105.deploy.static.akamaitechnologies.com:http (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   50u  IPv4  34118      0t0  UDP bean:58322->sea30s13-in-f10.1e100.net:https 
+2024/11/27 09:31:56 chrome  7439  soy   51u  IPv4  39277      0t0  TCP bean:34496->sea30s10-in-f10.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   52u  IPv4  20114      0t0  TCP bean:53712->sea09s30-in-f5.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   54u  IPv4  39278      0t0  UDP bean:51245->sea30s10-in-f10.1e100.net:https 
+2024/11/27 09:31:56 chrome  7439  soy   59u  IPv4  35761      0t0  UDP bean:43306->sea09s28-in-f14.1e100.net:https 
+2024/11/27 09:31:56 chrome  7439  soy   61u  IPv4  35763      0t0  UDP bean:49402->sea30s13-in-f10.1e100.net:https 
+2024/11/27 09:31:56 chrome  7439  soy   63u  IPv4  38502      0t0  UDP bean:43670->sea09s28-in-f14.1e100.net:https 
+2024/11/27 09:31:56 chrome  7439  soy   64u  IPv4   6098      0t0  UDP bean:49353->sea30s10-in-f10.1e100.net:https 
+2024/11/27 09:31:56 chrome  7439  soy   67u  IPv4  56606      0t0  TCP bean:53612->sea30s13-in-f2.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   70u  IPv4  60800      0t0  TCP bean:53516->104.18.32.7:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   71u  IPv4  38717      0t0  UDP bean:53834->sea09s28-in-f14.1e100.net:https 
+2024/11/27 09:31:56 chrome  7439  soy   74u  IPv4  38855      0t0  TCP bean:34918->sea30s10-in-f14.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   76u  IPv4  52044      0t0  TCP bean:45334->104.18.87.42:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   78u  IPv4  38861      0t0  TCP bean:56264->172.64.146.223:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   79u  IPv4  52046      0t0  TCP bean:48342->172.64.147.34:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   83u  IPv4  53775      0t0  TCP bean:45348->104.18.87.42:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   86u  IPv4  53787      0t0  TCP bean:44492->104.18.32.137:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   87u  IPv4  60213      0t0  TCP bean:39786->sea09s29-in-f3.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   94u  IPv4  60484      0t0  TCP bean:37662->172.64.152.233:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy   98u  IPv4  60972      0t0  UDP bean:55865->sea30s01-in-f10.1e100.net:https 
+2024/11/27 09:31:56 chrome  7439  soy  113u  IPv4  69690      0t0  TCP bean:41382->sea30s13-in-f10.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  124u  IPv4  60802      0t0  TCP bean:49228->104.18.41.33:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  130u  IPv4  66903      0t0  TCP bean:43490->sea09s30-in-f2.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  131u  IPv4  57051      0t0  TCP bean:43220->172.64.147.34:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  133u  IPv4  60815      0t0  TCP bean:58702->104.18.86.42:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  135u  IPv4  60813      0t0  TCP bean:42858->sea30s08-in-f8.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  137u  IPv4  62857      0t0  TCP bean:55776->pj-in-f84.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  138u  IPv4  57057      0t0  TCP bean:58700->104.18.86.42:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  139u  IPv4  53871      0t0  TCP bean:60208->172.64.155.119:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  140u  IPv4  62860      0t0  TCP bean:41394->sea30s13-in-f10.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  142u  IPv4  69695      0t0  TCP bean:47702->172.64.155.119:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  145u  IPv4  69698      0t0  TCP bean:47032->sea09s29-in-f14.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  146u  IPv4  69701      0t0  TCP bean:35974->sea09s29-in-f2.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  148u  IPv4  57059      0t0  TCP bean:37028->sea30s08-in-f1.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  150u  IPv4  67716      0t0  TCP bean:43246->sea30s10-in-f1.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  151u  IPv4  64094      0t0  TCP bean:38084->sea09s35-in-f2.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  153u  IPv4  67717      0t0  TCP bean:43502->sea09s30-in-f2.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  154u  IPv4  67718      0t0  TCP bean:39946->sea09s28-in-f6.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  155u  IPv4  21329      0t0  TCP bean:60272->sea30s13-in-f6.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  157u  IPv4  58168      0t0  TCP bean:46162->sea30s13-in-f1.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  158u  IPv4  20280      0t0  TCP bean:46178->sea30s13-in-f1.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  159u  IPv4  66904      0t0  TCP bean:56690->a23-203-134-237.deploy.static.akamaitechnologies.com:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  160u  IPv4  58169      0t0  TCP bean:43572->sea09s29-in-f4.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  162u  IPv4  60819      0t0  TCP bean:35986->sea09s29-in-f2.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  163u  IPv4  21336      0t0  TCP bean:47722->sea09s28-in-f2.1e100.net:https (ESTABLISHED)
+2024/11/27 09:31:56 chrome  7439  soy  175u  IPv4  19070      0t0  TCP bean:47714->172.64.155.119:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7395  soy  117u  IPv4 113998      0t0  UDP mdns.mcast.net:mdns 
+2024/11/27 09:47:59 chrome  7439  soy   20u  IPv4 110131      0t0  UDP bean:46563->sea09s30-in-f10.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   24u  IPv4 108529      0t0  UDP bean:59760->sea30s13-in-f3.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   28u  IPv4  39204      0t0  UDP bean:39098->sea09s28-in-f14.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   32u  IPv4 108482      0t0  UDP bean:54170->sea30s13-in-f10.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   34u  IPv4 108515      0t0  UDP bean:58354->sea09s30-in-f14.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   43u  IPv4  95056      0t0  TCP bean:40252->104.18.32.47:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy   44u  IPv4  95058      0t0  TCP bean:44028->104.18.41.158:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy   50u  IPv4  34118      0t0  UDP bean:58322->sea30s13-in-f10.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   52u  IPv4  20114      0t0  TCP bean:53712->sea09s30-in-f5.1e100.net:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy   54u  IPv4  39278      0t0  UDP bean:51245->sea30s10-in-f10.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   59u  IPv4  35761      0t0  UDP bean:43306->sea09s28-in-f14.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   61u  IPv4  35763      0t0  UDP bean:49402->sea30s13-in-f10.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   63u  IPv4  38502      0t0  UDP bean:43670->sea09s28-in-f14.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   64u  IPv4   6098      0t0  UDP bean:49353->sea30s10-in-f10.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   68u  IPv4  21484      0t0  UDP bean:52849->sea30s13-in-f10.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   71u  IPv4  38717      0t0  UDP bean:53834->sea09s28-in-f14.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   74u  IPv4  81202      0t0  UDP bean:39280->sea30s13-in-f10.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   77u  IPv4  95128      0t0  TCP bean:47530->216.198.53.3:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy   80u  IPv4 120843      0t0  TCP bean:59712->ghs-vip-any-c46.ghs-ssl.googlehosted.com:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy   81u  IPv4  97293      0t0  UDP bean:49962->sea09s28-in-f14.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy   85u  IPv4 103049      0t0  TCP bean:50662->104.18.32.47:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy  106u  IPv4 105363      0t0  UDP bean:41829->sea30s10-in-f10.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy  127u  IPv4  85998      0t0  TCP bean:53836->111.229.117.34.bc.googleusercontent.com:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy  133u  IPv4 103153      0t0  TCP bean:47076->104.16.242.118:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy  135u  IPv4  97128      0t0  TCP bean:43944->104.18.168.110:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy  136u  IPv4  97134      0t0  TCP bean:46448->216.198.54.3:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy  137u  IPv4  86015      0t0  TCP bean:46454->216.198.54.3:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy  140u  IPv4 103171      0t0  TCP bean:33052->1.80.190.35.bc.googleusercontent.com:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy  142u  IPv4 109578      0t0  TCP bean:41900->249.195.120.34.bc.googleusercontent.com:https (ESTABLISHED)
+2024/11/27 09:47:59 chrome  7439  soy  148u  IPv4  95169      0t0  UDP bean:37168->sea30s13-in-f10.1e100.net:https 
+2024/11/27 09:47:59 chrome  7439  soy  149u  IPv4  95170      0t0  UDP bean:47294->sea30s10-in-f10.1e100.net:https 
