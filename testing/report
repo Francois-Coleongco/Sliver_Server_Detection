@@ -1,5 +1,17 @@
+# General
+
 it seems sliver really likes 66 byte packet sizes
 
 a lot of tcp keepalives
 
-8888
+default port 8888
+
+
+# Issuing C2 Commands
+
+when issuing commands such as `ls`, `whoami`, the packet length increases to between 136 and 141 bytes
+
+output from strace during command issuing results in write and read syscalls in strace
+
+
+
