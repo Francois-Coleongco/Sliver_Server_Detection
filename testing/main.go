@@ -29,7 +29,7 @@ func main() {
 	fmt.Println(filter)
 
 	// Create a packet, but don't actually decode anything yet
-	if handle, err := pcap.OpenLive("wlo1", 1600, false, pcap.BlockForever); err != nil {
+	if handle, err := pcap.OpenLive("enp0s3", 1600, false, pcap.BlockForever); err != nil {
 		panic(err)
 	} else if err := handle.SetBPFFilter(filter); err != nil { // optional
 
@@ -38,6 +38,8 @@ func main() {
 		packetSource := gopacket.NewPacketSource(handle, handle.LinkType())
 		for packet := range packetSource.Packets() {
 			fmt.Println(packet)
+
+      log.Println(packet)
 
 		}
 	}

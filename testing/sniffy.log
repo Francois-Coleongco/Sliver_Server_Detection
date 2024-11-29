@@ -1,0 +1,509 @@
+2024/11/29 02:24:42 PACKET: 74 bytes, wire length 74 cap length 74 @ 2024-11-29 02:24:42.531121 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..60..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..40..] Version=4 IHL=5 TOS=0 Length=60 Id=39786 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34623 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (40 bytes) = TCP	{Contents=[..40..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257506424 Ack=0 DataOffset=10 FIN=false SYN=true RST=false PSH=false ACK=false URG=false ECE=false CWR=false NS=false Window=64240 Checksum=6209 Urgent=0 Options=[..5..] Padding=[] Multipath=false}
+
+2024/11/29 02:24:42 PACKET: 74 bytes, wire length 74 cap length 74 @ 2024-11-29 02:24:42.533231 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..60..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..40..] Version=4 IHL=5 TOS=0 Length=60 Id=0 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=8874 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (40 bytes) = TCP	{Contents=[..40..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205002947 Ack=257506425 DataOffset=10 FIN=false SYN=true RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=31856 Checksum=31385 Urgent=0 Options=[..5..] Padding=[] Multipath=false}
+
+2024/11/29 02:24:42 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:24:42.533353 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39787 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34630 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257506425 Ack=4205002948 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=502 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949412303/897758318 0x7431abcf3582b46e)] Padding=[] Multipath=false}
+
+2024/11/29 02:24:42 PACKET: 305 bytes, wire length 305 cap length 305 @ 2024-11-29 02:24:42.535377 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..291..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..271..] Version=4 IHL=5 TOS=0 Length=291 Id=39788 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34390 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[..239..] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257506425 Ack=4205002948 DataOffset=8 FIN=false SYN=false RST=false PSH=true ACK=true URG=false ECE=false CWR=false NS=false Window=502 Checksum=6440 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949412305/897758318 0x7431abd13582b46e)] Padding=[] Multipath=false}
+- Layer 4 (239 bytes) = Payload	239 byte(s)
+
+2024/11/29 02:24:42 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:24:42.537029 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36920 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37497 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205002948 Ack=257506664 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=9190 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897758322/1949412305 0x3582b4727431abd1)] Padding=[] Multipath=false}
+
+2024/11/29 02:24:42 PACKET: 979 bytes, wire length 979 cap length 979 @ 2024-11-29 02:24:42.54254 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..965..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..945..] Version=4 IHL=5 TOS=0 Length=965 Id=36921 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=36583 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[..913..] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205002948 Ack=257506664 DataOffset=8 FIN=false SYN=false RST=false PSH=true ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=50500 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897758327/1949412305 0x3582b4777431abd1)] Padding=[] Multipath=false}
+- Layer 4 (913 bytes) = Payload	913 byte(s)
+
+2024/11/29 02:24:42 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:24:42.542659 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39789 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34628 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257506664 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949412312/897758327 0x7431abd83582b477)] Padding=[] Multipath=false}
+
+2024/11/29 02:24:42 PACKET: 786 bytes, wire length 786 cap length 786 @ 2024-11-29 02:24:42.575797 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..772..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..752..] Version=4 IHL=5 TOS=0 Length=772 Id=39790 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=33907 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[..720..] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257506664 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=true ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6921 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949412345/897758327 0x7431abf93582b477)] Padding=[] Multipath=false}
+- Layer 4 (720 bytes) = Payload	720 byte(s)
+
+2024/11/29 02:24:42 PACKET: 92 bytes, wire length 92 cap length 92 @ 2024-11-29 02:24:42.579513 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..78..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..58..] Version=4 IHL=5 TOS=0 Length=78 Id=39791 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34600 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[..26..] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507384 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=true ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6227 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949412349/897758327 0x7431abfd3582b477)] Padding=[] Multipath=false}
+- Layer 4 (26 bytes) = Payload	26 byte(s)
+
+2024/11/29 02:24:42 PACKET: 330 bytes, wire length 330 cap length 330 @ 2024-11-29 02:24:42.57958 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..316..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..296..] Version=4 IHL=5 TOS=0 Length=316 Id=39792 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34361 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[..264..] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507410 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=true ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6465 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949412349/897758327 0x7431abfd3582b477)] Padding=[] Multipath=false}
+- Layer 4 (264 bytes) = Payload	264 byte(s)
+
+2024/11/29 02:24:42 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:24:42.581361 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36922 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37495 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507410 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=7447 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897758366/1949412345 0x3582b49e7431abf9)] Padding=[] Multipath=false}
+
+2024/11/29 02:24:42 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:24:42.627565 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36923 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37494 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=7133 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897758412/1949412349 0x3582b4cc7431abfd)] Padding=[] Multipath=false}
+
+2024/11/29 02:24:57 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:24:57.582574 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36924 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37493 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=57714 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897773367/1949412349 0x3582ef377431abfd)] Padding=[] Multipath=false}
+
+2024/11/29 02:24:57 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:24:57.582617 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39793 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34624 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507674 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949427352/897758412 0x7431e6983582b4cc)] Padding=[] Multipath=false}
+
+2024/11/29 02:24:58 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:24:58.096123 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39794 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34623 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507673 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949427866/897758412 0x7431e89a3582b4cc)] Padding=[] Multipath=false}
+
+2024/11/29 02:24:58 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:24:58.098 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36925 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37492 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=42194 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897773883/1949427352 0x3582f13b7431e698)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:12 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:12.674336 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36926 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37491 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=27619 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897788459/1949427352 0x35832a2b7431e698)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:12 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:12.674394 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39795 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34622 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507674 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949442444/897773883 0x7432218c3582f13b)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:13 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:13.405664 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39796 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34621 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507673 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949443175/897773883 0x743224673582f13b)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:13 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:13.407297 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36927 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37490 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=11793 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897789192/1949442444 0x35832d087432218c)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:27 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:27.791411 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36928 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37489 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=62945 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897803576/1949442444 0x358365387432218c)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:27 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:27.791462 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39797 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34620 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507674 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949457561/897789192 0x74325c9935832d08)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:28 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:28.759174 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39798 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34619 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507673 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949458529/897789192 0x7432606135832d08)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:28 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:28.76126 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36929 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37488 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=46857 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897804546/1949457561 0x3583690274325c99)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:42 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:42.908665 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36930 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37487 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=32711 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897818693/1949457561 0x3583a04574325c99)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:42 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:42.908724 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39799 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34618 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507674 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949472678/897804546 0x743297a635836902)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:44 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:44.119357 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39800 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34617 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507673 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949473889/897804546 0x74329c6135836902)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:44 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:44.120931 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36931 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37486 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=16380 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897819906/1949472678 0x3583a502743297a6)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:58 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:57.98312 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36932 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37485 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=2519 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897833768/1949472678 0x3583db28743297a6)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:58 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:57.983215 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39801 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34616 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507674 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949487753/897819906 0x7432d2893583a502)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:59 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:59.505314 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39802 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34615 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507673 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949489275/897819906 0x7432d87b3583a502)] Padding=[] Multipath=false}
+
+2024/11/29 02:25:59 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:25:59.50639 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36933 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37484 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=51455 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897835291/1949487753 0x3583e11b7432d289)] Padding=[] Multipath=false}
+
+2024/11/29 02:26:13 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:26:13.085625 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36934 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37483 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=37877 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897848870/1949487753 0x358416267432d289)] Padding=[] Multipath=false}
+
+2024/11/29 02:26:13 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:26:13.085667 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39803 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34614 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507674 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949502855/897835291 0x74330d873583e11b)] Padding=[] Multipath=false}
+
+2024/11/29 02:26:15 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:26:14.839684 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39804 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34613 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507673 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949504609/897835291 0x743314613583e11b)] Padding=[] Multipath=false}
+
+2024/11/29 02:26:15 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:26:14.841132 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36935 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37482 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=21018 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897850626/1949502855 0x35841d0274330d87)] Padding=[] Multipath=false}
+
+2024/11/29 02:26:28 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:26:28.200616 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36936 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37481 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=7660 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897863985/1949502855 0x3584513174330d87)] Padding=[] Multipath=false}
+
+2024/11/29 02:26:28 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:26:28.200675 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39805 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34612 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507674 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949517970/897850626 0x7433489235841d02)] Padding=[] Multipath=false}
+
+2024/11/29 02:26:30 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:26:30.199136 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39806 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34611 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507673 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949519969/897850626 0x7433506135841d02)] Padding=[] Multipath=false}
+
+2024/11/29 02:26:30 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:26:30.200304 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36937 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37480 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507674 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=56079 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897865985/1949517970 0x3584590174334892)] Padding=[] Multipath=false}
+
+2024/11/29 02:28:28 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:28:28.254845 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36952 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37465 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507730 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=29617 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897984039/1949622928 0x358626277434e290)] Padding=[] Multipath=false}
+
+2024/11/29 02:28:28 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:28:28.254899 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39821 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34596 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507730 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949638024/897970434 0x74351d883585f102)] Padding=[] Multipath=false}
+
+2024/11/29 02:28:30 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:28:30.008085 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39822 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34595 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507729 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949639778/897970434 0x743524623585f102)] Padding=[] Multipath=false}
+
+2024/11/29 02:28:30 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:28:30.009664 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36953 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37464 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507730 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=12764 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897985795/1949638024 0x35862d0374351d88)] Padding=[] Multipath=false}
+
+2024/11/29 02:28:42 PACKET: 92 bytes, wire length 92 cap length 92 @ 2024-11-29 02:28:42.631856 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..78..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..58..] Version=4 IHL=5 TOS=0 Length=78 Id=39823 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34568 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[..26..] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507730 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=true ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6227 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949652401/897985795 0x743555b135862d03)] Padding=[] Multipath=false}
+- Layer 4 (26 bytes) = Payload	26 byte(s)
+
+2024/11/29 02:28:42 PACKET: 96 bytes, wire length 96 cap length 96 @ 2024-11-29 02:28:42.631986 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..82..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..62..] Version=4 IHL=5 TOS=0 Length=82 Id=39824 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34563 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[..30..] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507756 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=true ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6231 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949652402/897985795 0x743555b235862d03)] Padding=[] Multipath=false}
+- Layer 4 (30 bytes) = Payload	30 byte(s)
+
+2024/11/29 02:28:42 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:28:42.633479 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36954 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37463 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507756 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=51273 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897998418/1949652401 0x35865e52743555b1)] Padding=[] Multipath=false}
+
+2024/11/29 02:28:42 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:28:42.633481 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36955 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37462 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=51242 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:897998418/1949652402 0x35865e52743555b2)] Padding=[] Multipath=false}
+
+2024/11/29 02:28:57 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:28:57.65518 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39825 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34592 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507785 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949667425/897998418 0x7435906135865e52)] Padding=[] Multipath=false}
+
+2024/11/29 02:28:57 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:28:57.656734 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36956 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37461 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=36218 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898013442/1949652402 0x35869902743555b2)] Padding=[] Multipath=false}
+
+2024/11/29 02:28:57 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:28:57.702096 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36957 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37460 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=36174 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898013487/1949652402 0x3586992f743555b2)] Padding=[] Multipath=false}
+
+2024/11/29 02:28:57 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:28:57.702149 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39826 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34591 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507786 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949667472/898013442 0x7435909035869902)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:12 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:12.806066 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36958 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37459 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=6000 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898028591/1949667472 0x3586d42f74359090)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:12 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:12.806077 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39827 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34590 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507786 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949682576/898013442 0x7435cb9035869902)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:13 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:13.015313 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39828 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34589 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507785 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949682785/898013442 0x7435cc6135869902)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:13 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:13.016303 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36959 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37458 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=56220 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898028801/1949682576 0x3586d5017435cb90)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:27 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:27.898557 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36960 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37457 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=41338 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898043684/1949682576 0x35870f247435cb90)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:27 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:27.898578 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39829 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34588 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507786 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949697668/898028801 0x743606843586d501)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:28 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:28.375561 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39830 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34587 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507785 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949698145/898028801 0x743608613586d501)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:28 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:28.376563 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36961 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37456 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=25767 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898044162/1949697668 0x3587110274360684)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:43 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:43.003248 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36962 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37455 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=11142 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898058788/1949697668 0x35874a2474360684)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:43 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:43.003283 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39831 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34586 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507786 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949712773/898044162 0x7436418535871102)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:43 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:43.734999 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39832 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34585 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507785 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949713505/898044162 0x7436446135871102)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:43 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:43.736019 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36963 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37454 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=60838 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898059521/1949712773 0x35874d0174364185)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:58 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:58.117189 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36964 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37453 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=46458 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898073902/1949712773 0x3587852e74364185)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:58 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:58.117232 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39833 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34584 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507786 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949727887/898059521 0x74367c8f35874d01)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:59 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:59.095014 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39834 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34583 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507785 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949728865/898059521 0x7436806135874d01)] Padding=[] Multipath=false}
+
+2024/11/29 02:29:59 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:29:59.096358 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36965 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37452 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=30364 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898074881/1949727887 0x3587890174367c8f)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:13 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:13.210998 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36966 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37451 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=16250 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898088996/1949727887 0x3587c02474367c8f)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:13 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:13.21103 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39835 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34582 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507786 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949742981/898074881 0x7436b78535878901)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:14 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:14.455185 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39836 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34581 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507785 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949744225/898074881 0x7436bc6135878901)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:14 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:14.456856 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36967 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37450 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=65445 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898090241/1949742981 0x3587c5017436b785)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:28 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:28.324031 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36968 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37449 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=51578 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898104109/1949742981 0x3587fb2d7436b785)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:28 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:28.324067 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39837 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34580 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507786 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949758094/898090241 0x7436f28e3587c501)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:29 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:29.815104 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39838 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34579 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507785 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949759585/898090241 0x7436f8613587c501)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:29 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:29.816672 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36969 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37448 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507786 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=34971 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898105602/1949758094 0x358801027436f28e)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:42 PACKET: 92 bytes, wire length 92 cap length 92 @ 2024-11-29 02:30:42.657608 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..78..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..58..] Version=4 IHL=5 TOS=0 Length=78 Id=39839 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34552 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[..26..] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507786 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=true ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6227 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949772427/898105602 0x74372a8b35880102)] Padding=[] Multipath=false}
+- Layer 4 (26 bytes) = Payload	26 byte(s)
+
+2024/11/29 02:30:42 PACKET: 96 bytes, wire length 96 cap length 96 @ 2024-11-29 02:30:42.657712 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..82..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..62..] Version=4 IHL=5 TOS=0 Length=82 Id=39840 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34547 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[..30..] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507812 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=true ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6231 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949772427/898105602 0x74372a8b35880102)] Padding=[] Multipath=false}
+- Layer 4 (30 bytes) = Payload	30 byte(s)
+
+2024/11/29 02:30:42 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:42.658518 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36970 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37447 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507812 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=7770 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898118444/1949772427 0x3588332c74372a8b)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:42 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:42.658519 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36971 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37446 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507842 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=7740 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898118444/1949772427 0x3588332c74372a8b)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:57 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:57.756839 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36972 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37445 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507842 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=58178 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898133542/1949772427 0x35886e2674372a8b)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:57 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:57.756893 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39841 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34576 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507842 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949787526/898118444 0x743765863588332c)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:57 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:57.975138 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39842 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34575 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507841 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949787745/898118444 0x743766613588332c)] Padding=[] Multipath=false}
+
+2024/11/29 02:30:57 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:30:57.976791 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36973 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37444 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507842 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=42858 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898133762/1949787526 0x35886f0274376586)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:12 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:12.879595 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36974 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37443 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507842 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=27957 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898148664/1949787526 0x3588a93874376586)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:12 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:12.879659 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39843 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34574 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507842 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949802649/898133762 0x7437a09935886f02)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:13 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:13.335102 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39844 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34573 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507841 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949803105/898133762 0x7437a26135886f02)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:13 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:13.336725 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36975 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37442 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507842 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=12376 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898149121/1949802649 0x3588ab017437a099)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:27 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:27.966341 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36976 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37441 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507842 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=63282 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898163751/1949802649 0x3588e4277437a099)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:27 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:27.966498 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39845 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34572 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507842 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949817736/898149121 0x7437db883588ab01)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:28 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:28.695281 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39846 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34571 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507841 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949818465/898149121 0x7437de613588ab01)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:28 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:28.696665 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36977 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37440 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507842 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=47464 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898164481/1949817736 0x3588e7017437db88)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:43 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:43.06858 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36978 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37439 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507842 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=33093 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898178853/1949817736 0x35891f257437db88)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:43 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:43.06872 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39847 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34570 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507842 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949832838/898164481 0x743816863588e701)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:44 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:44.064462 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39848 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34569 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507841 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949833834/898164481 0x74381a6a3588e701)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:44 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:44.066144 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36979 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37438 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507842 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=16992 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898179851/1949832838 0x3589230b74381686)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:58 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:58.179198 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36980 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37437 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003860 Ack=257507842 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=2880 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898193964/1949832838 0x35895a2c74381686)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:58 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:58.179272 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39849 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34568 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507842 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949847949/898179851 0x7438518d3589230b)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:59 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:59.415236 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:05:ee:c7 DstMAC=08:00:27:43:7f:60 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=39850 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=34567 SrcIP=10.0.2.15 DstIP=10.0.2.4 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=34034 DstPort=8888(ddi-tcp-1) Seq=257507841 Ack=4205003861 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=495 Checksum=6201 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:1949849185/898179851 0x743856613589230b)] Padding=[] Multipath=false}
+
+2024/11/29 02:31:59 PACKET: 66 bytes, wire length 66 cap length 66 @ 2024-11-29 02:31:59.416838 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..52..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0}
+- Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..32..] Version=4 IHL=5 TOS=0 Length=52 Id=36981 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37436 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+- Layer 3 (32 bytes) = TCP	{Contents=[..32..] Payload=[] SrcPort=8888(ddi-tcp-1) DstPort=34034 Seq=4205003861 Ack=257507842 DataOffset=8 FIN=false SYN=false RST=false PSH=false ACK=true URG=false ECE=false CWR=false NS=false Window=249 Checksum=52065 Urgent=0 Options=[TCPOption(NOP:), TCPOption(NOP:), TCPOption(Timestamps:898195202/1949847949 0x35895f027438518d)] Padding=[] Multipath=false}
+
