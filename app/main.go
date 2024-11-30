@@ -42,6 +42,10 @@ func locate_process(pid string) string {
 
 	executable_path := string(output)
 
+	// CHECK ALSO FOR THE NAMES. check if in your / path NOT THE USER PATH the sudo perm path, for a similar or exact name. sometimes they will attempt to hide themselves via using the name of a legit process such as bash
+	// CHECK ALSO FOR THE NAMES. check if in your / path NOT THE USER PATH the sudo perm path, for a similar or exact name. sometimes they will attempt to hide themselves via using the name of a legit process such as bash
+	// CHECK ALSO FOR THE NAMES. check if in your / path NOT THE USER PATH the sudo perm path, for a similar or exact name. sometimes they will attempt to hide themselves via using the name of a legit process such as bash
+
 	return executable_path
 
 }

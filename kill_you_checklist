@@ -3,5 +3,14 @@ weird port
 encrypted traffic
 
 lots of keep alive 66 byte size packets
+    
+    example of sliver keep alive packet. NOTE there is  ACK=true
 
+    and a FUCK ton of it
 
+    
+    example of sliver command packet. NOTE there is no 
+    
+    2024/11/29 02:42:26 PACKET: 136 bytes, wire length 136 cap length 136 @ 2024-11-29 02:42:26.944027 +0000 UTC
+- Layer 1 (14 bytes) = Ethernet	{Contents=[..14..] Payload=[..122..] SrcMAC=08:00:27:43:7f:60 DstMAC=08:00:27:05:ee:c7 EthernetType=IPv4 Length=0} Layer 2 (20 bytes) = IPv4	{Contents=[..20..] Payload=[..102..] Version=4 IHL=5 TOS=0 Length=122 Id=37069 Flags=DF FragOffset=0 TTL=64 Protocol=TCP Checksum=37278 SrcIP=10.0.2.4 DstIP=10.0.2.15 Options=[] Padding=[]}
+    
