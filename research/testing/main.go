@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/gopacket/gopacket"
-	"github.com/gopacket/gopacket/pcap"
 	"log"
 	"os"
+
+	"github.com/gopacket/gopacket"
+	"github.com/gopacket/gopacket/layers"
+	"github.com/gopacket/gopacket/pcap"
 )
 
 func create_and_setup_logs() {
@@ -24,12 +26,13 @@ func main() {
 
 	// dest_IP := retrieve_my_ip()
 
-	filter := fmt.Sprintf("tcp port 8888") // sliver listens on port 8888 by default. just hardcoding this here for now just for testing myself. it is possible to change the port i am aware, just rn for testing i wanna make it hardcoded
+	filter := fmt.Sprintf("tcp") // port 8888") // sliver listens on port 8888 by default. just hardcoding this here for now just for testing myself. it is possible to change the port i am aware, just rn for testing i wanna make it hardcoded
 
 	fmt.Println(filter)
 
 	// Create a packet, but don't actually decode anything yet
-	if handle, err := pcap.OpenLive("enp0s3", 1600, false, pcap.BlockForever); err != nil {
+	// when testing in vm use enp0s3 as the interface. otherwise use wlo1 because you're on laptop
+	if handle, err := pcap.OpenLive("wlo1", 1600, false, pcap.BlockForever); err != nil {
 		panic(err)
 	} else if err := handle.SetBPFFilter(filter); err != nil { // optional
 
@@ -38,6 +41,13 @@ func main() {
 		packetSource := gopacket.NewPacketSource(handle, handle.LinkType())
 		for packet := range packetSource.Packets() {
 			fmt.Println(packet.String())
+			application_layer := packet.ApplicationLayer()
+
+			if application_layer != nil {
+
+				// needa figure out how to see if it is tls traffic in which case it is encrypted
+
+			}
 
 			log.Println(packet)
 

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"app/gatekeeper"
 	"app/sniff"
 	"fmt"
 	"log"
@@ -57,7 +58,7 @@ func sniff_connections(port string) {
 
 	// maybe you can find some unique sliverC2 detections there
 
-	sniffer(port)
+	sniff.Sniffer() // when im done tetsting, i will pass port into the sniff.Sniffer() function
 
 }
 
@@ -80,6 +81,8 @@ func check_open_files(pid string) {
 	}
 
 	files_opened_by_pid := strings.Split(string(output), "\n")
+
+	gatekeeper.Uses_Shell(files_opened_by_pid)
 
 }
 
