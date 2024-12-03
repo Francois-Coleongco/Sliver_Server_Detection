@@ -58,6 +58,13 @@ func strings_analysis(path_to_exec string) ([]byte, []string) {
 
 }
 
+
+func obfuscation_check(strings_buf string) {
+
+    // check the strings for gibberish looking obfuscation. you could use the oh so shiny and cool nlp model wooooooo
+
+}
+
 func main() {
 	fmt.Println(strings_analysis("/home/hitori/kodoku/Sliver_Server_Detection/research/testing_sniff/main"))
 }
