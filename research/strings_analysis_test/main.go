@@ -7,9 +7,11 @@ import (
 	"unicode"
 )
 
-func strings_analysis(path_to_exec string) {
+func strings_analysis(path_to_exec string) ([]byte, []string) {
 
 	// open file and read all printable strings. check if the executable uses crypto libs
+
+	var status []byte
 
 	file, err := os.Open(path_to_exec)
 
@@ -20,36 +22,42 @@ func strings_analysis(path_to_exec string) {
 
 	reader := bufio.NewReader(file)
 
-	var strings_buf [][]byte
-
+	var strings_buf []string
 	var current_string []byte
 
 	for {
-		fmt.Println("checking")
 		char, err := reader.ReadByte()
 
 		if err != nil {
-			// If EOF reached, break the loop
 			if err.Error() != "EOF" {
-				fmt.Println("end of file!")
+				fmt.Println("Error reading file:", err)
 			}
 			break
 		}
 
 		if unicode.IsPrint(rune(char)) {
-			// Accumulate printable characters
 			current_string = append(current_string, char)
 		} else {
-			//if it isnt printable then you need to push the current_string onto the strings_buf
-
-			strings_buf = append(strings_buf, current_string)
+			if len(current_string) > 0 {
+				current_string = append(current_string, '\n')
+				strings_buf = append(strings_buf, string(current_string))
+				current_string = nil
+			}
 		}
 	}
 
-	fmt.Println(strings_buf)
+	if len(current_string) > 0 {
+		strings_buf = append(strings_buf, string(current_string))
+	}
+
+    if uses crypto stuff then {
+        status = append(status, 1)
+    }
+
+	return strings_buf
 
 }
 
 func main() {
-	strings_analysis("/home/hitori/kodoku/Sliver_Server_Detection/research/testing_sniff/main")
+	fmt.Println(strings_analysis("/home/hitori/kodoku/Sliver_Server_Detection/research/testing_sniff/main"))
 }
