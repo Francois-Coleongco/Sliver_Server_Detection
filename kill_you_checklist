@@ -2,7 +2,9 @@ weird port
 
 encrypted traffic
 
-lots of keep alive 66 byte size packets
+interacts with the /dev/ptmx to spawn a /dev/pts/* shell
+
+lots of keep alive 66 byte size packets (NOTE JUST CUZ THERE ARE LOTS OF KEEPALIVES DOES NOT MEAN THAT IT IS MALICIOUS. IT JUST MEANS THAT THE PROGRAM IS TRYING TO KEEP A NETWORK CONNECTION ALIVE. USE ONLY IN COMBINATION WITH OTHER KILL_ATTRIBUTES)
     
     example of sliver keep alive packet. NOTE there is  ACK=true
 

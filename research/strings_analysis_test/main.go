@@ -7,7 +7,7 @@ import (
 	"unicode"
 )
 
-func strings_analysis(path_to_exec string) ([]byte, []string) {
+func get_strings(path_to_exec string) ([]byte, []string) {
 
 	// open file and read all printable strings. check if the executable uses crypto libs
 
@@ -61,10 +61,16 @@ func strings_analysis(path_to_exec string) ([]byte, []string) {
 
 func obfuscation_check(strings_buf string) {
 
+    // SHOULD BE INVOKED BEFORE strings_analysis BUT AFTER get_strings
+
     // check the strings for gibberish looking obfuscation. you could use the oh so shiny and cool nlp model wooooooo
 
 }
 
+func strings_analysis(strings_buf []string) {
+    // look for things related to encryption in the libraries output
+}
+
 func main() {
-	fmt.Println(strings_analysis("/home/hitori/kodoku/Sliver_Server_Detection/research/testing_sniff/main"))
+	fmt.Println(get_strings("/home/hitori/kodoku/Sliver_Server_Detection/research/testing_sniff/main"))
 }

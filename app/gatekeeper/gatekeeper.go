@@ -64,12 +64,12 @@ func Interacts_With_Shell(opened_files []string) bool {
 
 func Is_Encrypted(packet string) { // note this function takes in one packet, the for loop should not be in here as it will get really fuckin messy
 
-	strings_analysis()
-
 }
 
-func Static_Analysis() {
+func Static_Analysis(path_to_exec string) {
 	// strings command parsing for encryption libraries used by sliver (i believe they used crypto/tls)
+
+	strings_analysis(path_to_exec)
 }
 
 func analyze_packet_fmt() { // analyze the packets printed into the sniffy.log
