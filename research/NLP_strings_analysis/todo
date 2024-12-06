@@ -1,0 +1,3 @@
+do this in python because ecosystem is more tuned for NLP models
+
+also, you need to pipe this to golang by executing it in the golang exec.Command() function and pass in the strings input to it somehow... not too sure how this will be done, but I'm sure there's a way I just needa go racoon mode in all kindsa dumpsters

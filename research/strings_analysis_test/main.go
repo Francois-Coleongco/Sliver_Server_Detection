@@ -4,14 +4,13 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strings"
 	"unicode"
 )
 
-func get_strings(path_to_exec string) ([]byte, []string) {
+func get_strings(path_to_exec string) []string {
 
 	// open file and read all printable strings. check if the executable uses crypto libs
-
-	var status []byte
 
 	file, err := os.Open(path_to_exec)
 
@@ -49,28 +48,36 @@ func get_strings(path_to_exec string) ([]byte, []string) {
 	if len(current_string) > 0 {
 		strings_buf = append(strings_buf, string(current_string))
 	}
-
-    if uses crypto stuff then {
-        status = append(status, 1)
-    }
+	/*
+	   if uses crypto stuff then {
+	       status = append(status, 1)
+	   }
+	*/
 
 	return strings_buf
 
 }
 
-
 func obfuscation_check(strings_buf string) {
 
-    // SHOULD BE INVOKED BEFORE strings_analysis BUT AFTER get_strings
+	// SHOULD BE INVOKED BEFORE strings_analysis BUT AFTER get_strings
 
-    // check the strings for gibberish looking obfuscation. you could use the oh so shiny and cool nlp model wooooooo
+	for i := range strings_buf {
+		str := strings_buf[i]
+
+	}
+
+	// check the strings for gibberish looking obfuscation. you could use the oh so shiny and cool nlp model wooooooo
 
 }
 
 func strings_analysis(strings_buf []string) {
-    // look for things related to encryption in the libraries output
+	// look for things related to encryption in the libraries output
 }
 
 func main() {
-	fmt.Println(get_strings("/home/hitori/kodoku/Sliver_Server_Detection/research/testing_sniff/main"))
+	strs := get_strings("/home/hitori/kodoku/Sliver_Server_Detection/research/testing_sniff/main")
+	fmt.Println(strs)
+
+	// strs
 }
