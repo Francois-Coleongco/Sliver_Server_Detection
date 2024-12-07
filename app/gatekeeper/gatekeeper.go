@@ -62,7 +62,13 @@ func Interacts_With_Shell(opened_files []string) bool {
 
 }
 
-func Is_Encrypted(packet string) { // note this function takes in one packet, the for loop should not be in here as it will get really fuckin messy
+func packet_is_encrypted(packet string) { // note this function takes in one packet, the for loop should not be in here as it will get really fuckin messy
+
+	// okay so in order to make sure that the data is encrypted using TLS, we need to know if there was a key exchange that went on. to do that we would need to sniff the packets just when the implant begins communication.
+
+	// so we need to look at some application data packet on our logs, and see if there was a key exchange that occurred before it to see if there was an actual TLS encryption that occurred.
+
+	// step 1: check if packet contains
 
 }
 
@@ -72,8 +78,7 @@ func Static_Analysis(path_to_exec string) {
 	strings_analysis(path_to_exec)
 }
 
-func analyze_packet_fmt() { // analyze the packets printed into the sniffy.log
-
+func analyze_packet_fmt() {
 	// check source port
 
 	// check ip
@@ -83,5 +88,3 @@ func analyze_packet_fmt() { // analyze the packets printed into the sniffy.log
 	//
 
 }
-
-func striker() // function to tally a score on whether process should be killed

@@ -1,0 +1,515 @@
+2024/12/07 11:18:06 COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r  768 systemd-resolve   13u  IPv4  17817      0t0  UDP localhost:domain 
+systemd-r  768 systemd-resolve   14u  IPv4  17818      0t0  TCP localhost:domain (LISTEN)
+NetworkMa  817            root   22u  IPv6  39173      0t0  UDP pop-os:dhcpv6-client 
+NetworkMa  817            root   28u  IPv4  21048      0t0  UDP pop-os:bootpc->_gateway:bootps 
+avahi-dae  821           avahi   12u  IPv4  21683      0t0  UDP *:mdns 
+avahi-dae  821           avahi   13u  IPv6  21684      0t0  UDP *:mdns 
+avahi-dae  821           avahi   14u  IPv4  21685      0t0  UDP *:46146 
+avahi-dae  821           avahi   15u  IPv6  21686      0t0  UDP *:50686 
+cupsd      905            root    6u  IPv6  15481      0t0  TCP localhost:ipp (LISTEN)
+cupsd      905            root    7u  IPv4  15482      0t0  TCP localhost:ipp (LISTEN)
+chronyd    935         _chrony    5u  IPv4   1327      0t0  UDP localhost:323 
+chronyd    935         _chrony    6u  IPv6   1328      0t0  UDP localhost:323 
+ollama    1409          ollama    3u  IPv4  24673      0t0  TCP localhost:11434 (LISTEN)
+io.elemen 3690          hitori   22u  IPv6  90566      0t0  TCP pop-os:42382->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   30u  IPv6  16045      0t0  TCP pop-os:42904->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   37u  IPv6  24472      0t0  TCP pop-os:42918->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   50u  IPv6  90572      0t0  TCP pop-os:42390->[2a04:4e42:5::347]:https (ESTABLISHED)
+chrome    4722          hitori  392u  IPv4  43612      0t0  UDP mdns.mcast.net:mdns 
+chrome    4767          hitori   23u  IPv6 172232      0t0  UDP pop-os:49045->sea09s28-in-x03.1e100.net:https 
+chrome    4767          hitori   25u  IPv6 159427      0t0  UDP pop-os:41856->sea09s35-in-x0a.1e100.net:https 
+chrome    4767          hitori   30u  IPv6  39377      0t0  TCP pop-os:33232->pi-in-f188.1e100.net:5228 (ESTABLISHED)
+chrome    4767          hitori   34u  IPv6 140369      0t0  UDP pop-os:39277->sea30s13-in-x0e.1e100.net:https 
+chrome    4767          hitori   36u  IPv6 140367      0t0  UDP pop-os:49346->sea30s08-in-x0a.1e100.net:https 
+chrome    4767          hitori   38u  IPv6 166731      0t0  UDP pop-os:40474->sea09s28-in-x03.1e100.net:https 
+chrome    4767          hitori   70u  IPv6 133899      0t0  TCP pop-os:50966->162.247.243.29:https (ESTABLISHED)
+vivaldi-b 7784          hitori  205u  IPv4  22421      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   43u  IPv4  76183      0t0  TCP pop-os:39832->104.18.35.23:https (ESTABLISHED)
+vivaldi-b 7830          hitori   46u  IPv4 117014      0t0  UDP mdns.mcast.net:mdns 
+
+2024/12/07 11:19:57 COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r  768 systemd-resolve   13u  IPv4  17817      0t0  UDP localhost:domain 
+systemd-r  768 systemd-resolve   14u  IPv4  17818      0t0  TCP localhost:domain (LISTEN)
+NetworkMa  817            root   22u  IPv6  39173      0t0  UDP pop-os:dhcpv6-client 
+NetworkMa  817            root   28u  IPv4  21048      0t0  UDP pop-os:bootpc->_gateway:bootps 
+avahi-dae  821           avahi   12u  IPv4  21683      0t0  UDP *:mdns 
+avahi-dae  821           avahi   13u  IPv6  21684      0t0  UDP *:mdns 
+avahi-dae  821           avahi   14u  IPv4  21685      0t0  UDP *:46146 
+avahi-dae  821           avahi   15u  IPv6  21686      0t0  UDP *:50686 
+cupsd      905            root    6u  IPv6  15481      0t0  TCP localhost:ipp (LISTEN)
+cupsd      905            root    7u  IPv4  15482      0t0  TCP localhost:ipp (LISTEN)
+chronyd    935         _chrony    5u  IPv4   1327      0t0  UDP localhost:323 
+chronyd    935         _chrony    6u  IPv6   1328      0t0  UDP localhost:323 
+ollama    1409          ollama    3u  IPv4  24673      0t0  TCP localhost:11434 (LISTEN)
+io.elemen 3690          hitori   22u  IPv6  90566      0t0  TCP pop-os:42382->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   30u  IPv6  16045      0t0  TCP pop-os:42904->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   37u  IPv6  24472      0t0  TCP pop-os:42918->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   50u  IPv6  90572      0t0  TCP pop-os:42390->[2a04:4e42:5::347]:https (ESTABLISHED)
+chrome    4722          hitori  392u  IPv4  43612      0t0  UDP mdns.mcast.net:mdns 
+chrome    4767          hitori   23u  IPv6 172407      0t0  UDP pop-os:50994->sea09s35-in-x03.1e100.net:https 
+chrome    4767          hitori   25u  IPv6 174666      0t0  UDP pop-os:44363->sea15s07-in-x0a.1e100.net:https 
+chrome    4767          hitori   30u  IPv6  39377      0t0  TCP pop-os:33232->pi-in-f188.1e100.net:5228 (ESTABLISHED)
+chrome    4767          hitori   34u  IPv6 140369      0t0  UDP pop-os:39277->sea30s13-in-x0e.1e100.net:https 
+chrome    4767          hitori   36u  IPv6 140367      0t0  UDP pop-os:49346->sea30s08-in-x0a.1e100.net:https 
+chrome    4767          hitori   70u  IPv6 133899      0t0  TCP pop-os:50966->162.247.243.29:https (ESTABLISHED)
+vivaldi-b 7784          hitori  205u  IPv4  22421      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   43u  IPv4  76183      0t0  TCP pop-os:39832->104.18.35.23:https (ESTABLISHED)
+vivaldi-b 7830          hitori   46u  IPv4 117014      0t0  UDP mdns.mcast.net:mdns 
+
+2024/12/07 11:21:20 COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r  768 systemd-resolve   13u  IPv4  17817      0t0  UDP localhost:domain 
+systemd-r  768 systemd-resolve   14u  IPv4  17818      0t0  TCP localhost:domain (LISTEN)
+NetworkMa  817            root   22u  IPv6  39173      0t0  UDP pop-os:dhcpv6-client 
+NetworkMa  817            root   28u  IPv4  21048      0t0  UDP pop-os:bootpc->_gateway:bootps 
+avahi-dae  821           avahi   12u  IPv4  21683      0t0  UDP *:mdns 
+avahi-dae  821           avahi   13u  IPv6  21684      0t0  UDP *:mdns 
+avahi-dae  821           avahi   14u  IPv4  21685      0t0  UDP *:46146 
+avahi-dae  821           avahi   15u  IPv6  21686      0t0  UDP *:50686 
+cupsd      905            root    6u  IPv6  15481      0t0  TCP localhost:ipp (LISTEN)
+cupsd      905            root    7u  IPv4  15482      0t0  TCP localhost:ipp (LISTEN)
+chronyd    935         _chrony    5u  IPv4   1327      0t0  UDP localhost:323 
+chronyd    935         _chrony    6u  IPv6   1328      0t0  UDP localhost:323 
+ollama    1409          ollama    3u  IPv4  24673      0t0  TCP localhost:11434 (LISTEN)
+io.elemen 3690          hitori   22u  IPv6  90566      0t0  TCP pop-os:42382->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   30u  IPv6  16045      0t0  TCP pop-os:42904->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   37u  IPv6  24472      0t0  TCP pop-os:42918->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   50u  IPv6  90572      0t0  TCP pop-os:42390->[2a04:4e42:5::347]:https (ESTABLISHED)
+chrome    4722          hitori  392u  IPv4  43612      0t0  UDP mdns.mcast.net:mdns 
+chrome    4767          hitori   23u  IPv6 175881      0t0  UDP pop-os:39584->sea09s35-in-x0a.1e100.net:https 
+chrome    4767          hitori   25u  IPv6 177405      0t0  UDP pop-os:57154->sea30s10-in-x0a.1e100.net:https 
+chrome    4767          hitori   29u  IPv6 175892      0t0  UDP pop-os:52834->sea09s35-in-x03.1e100.net:https 
+chrome    4767          hitori   30u  IPv6  39377      0t0  TCP pop-os:33232->pi-in-f188.1e100.net:5228 (ESTABLISHED)
+chrome    4767          hitori   34u  IPv6 140369      0t0  UDP pop-os:39277->sea09s17-in-x0e.1e100.net:https 
+chrome    4767          hitori   36u  IPv6 140367      0t0  UDP pop-os:49346->sea30s08-in-x0a.1e100.net:https 
+chrome    4767          hitori   37u  IPv6 175879      0t0  UDP pop-os:40264->pf-in-x54.1e100.net:https 
+chrome    4767          hitori   38u  IPv6 167880      0t0  UDP pop-os:42907->sea09s29-in-x0a.1e100.net:https 
+chrome    4767          hitori   70u  IPv6 133899      0t0  TCP pop-os:50966->162.247.243.29:https (ESTABLISHED)
+vivaldi-b 7784          hitori  205u  IPv4  22421      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   43u  IPv4  76183      0t0  TCP pop-os:39832->104.18.35.23:https (ESTABLISHED)
+vivaldi-b 7830          hitori   46u  IPv4 117014      0t0  UDP mdns.mcast.net:mdns 
+
+2024/12/07 11:21:25 COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r  768 systemd-resolve   13u  IPv4  17817      0t0  UDP localhost:domain 
+systemd-r  768 systemd-resolve   14u  IPv4  17818      0t0  TCP localhost:domain (LISTEN)
+NetworkMa  817            root   22u  IPv6  39173      0t0  UDP pop-os:dhcpv6-client 
+NetworkMa  817            root   28u  IPv4  21048      0t0  UDP pop-os:bootpc->_gateway:bootps 
+avahi-dae  821           avahi   12u  IPv4  21683      0t0  UDP *:mdns 
+avahi-dae  821           avahi   13u  IPv6  21684      0t0  UDP *:mdns 
+avahi-dae  821           avahi   14u  IPv4  21685      0t0  UDP *:46146 
+avahi-dae  821           avahi   15u  IPv6  21686      0t0  UDP *:50686 
+cupsd      905            root    6u  IPv6  15481      0t0  TCP localhost:ipp (LISTEN)
+cupsd      905            root    7u  IPv4  15482      0t0  TCP localhost:ipp (LISTEN)
+chronyd    935         _chrony    5u  IPv4   1327      0t0  UDP localhost:323 
+chronyd    935         _chrony    6u  IPv6   1328      0t0  UDP localhost:323 
+ollama    1409          ollama    3u  IPv4  24673      0t0  TCP localhost:11434 (LISTEN)
+io.elemen 3690          hitori   22u  IPv6  90566      0t0  TCP pop-os:42382->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   30u  IPv6  16045      0t0  TCP pop-os:42904->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   37u  IPv6  24472      0t0  TCP pop-os:42918->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   50u  IPv6  90572      0t0  TCP pop-os:42390->[2a04:4e42:5::347]:https (ESTABLISHED)
+chrome    4722          hitori  392u  IPv4  43612      0t0  UDP mdns.mcast.net:mdns 
+chrome    4767          hitori   25u  IPv6 177405      0t0  UDP pop-os:57154->sea30s10-in-x0a.1e100.net:https 
+chrome    4767          hitori   29u  IPv6 175892      0t0  UDP pop-os:52834->sea09s35-in-x03.1e100.net:https 
+chrome    4767          hitori   30u  IPv6  39377      0t0  TCP pop-os:33232->pi-in-f188.1e100.net:5228 (ESTABLISHED)
+chrome    4767          hitori   34u  IPv6 140369      0t0  UDP pop-os:39277->sea15s08-in-x0e.1e100.net:https 
+chrome    4767          hitori   36u  IPv6 140367      0t0  UDP pop-os:49346->sea30s08-in-x0a.1e100.net:https 
+chrome    4767          hitori   38u  IPv6 167880      0t0  UDP pop-os:42907->sea09s29-in-x0a.1e100.net:https 
+chrome    4767          hitori   70u  IPv6 133899      0t0  TCP pop-os:50966->162.247.243.29:https (ESTABLISHED)
+vivaldi-b 7784          hitori  190u  IPv4 159741      0t0  UDP pop-os:35384 
+vivaldi-b 7784          hitori  205u  IPv4  22421      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   43u  IPv4  76183      0t0  TCP pop-os:39832->104.18.35.23:https (ESTABLISHED)
+vivaldi-b 7830          hitori   46u  IPv4 117014      0t0  UDP mdns.mcast.net:mdns 
+
+2024/12/07 13:05:46 COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r  768 systemd-resolve   13u  IPv4  17817      0t0  UDP localhost:domain 
+systemd-r  768 systemd-resolve   14u  IPv4  17818      0t0  TCP localhost:domain (LISTEN)
+NetworkMa  817            root   26u  IPv4 252562      0t0  UDP pop-os:bootpc->_gateway:bootps 
+NetworkMa  817            root   28u  IPv6 259331      0t0  UDP pop-os:dhcpv6-client 
+avahi-dae  821           avahi   12u  IPv4  21683      0t0  UDP *:mdns 
+avahi-dae  821           avahi   13u  IPv6  21684      0t0  UDP *:mdns 
+avahi-dae  821           avahi   14u  IPv4  21685      0t0  UDP *:46146 
+avahi-dae  821           avahi   15u  IPv6  21686      0t0  UDP *:50686 
+cupsd      905            root    6u  IPv6  15481      0t0  TCP localhost:ipp (LISTEN)
+cupsd      905            root    7u  IPv4  15482      0t0  TCP localhost:ipp (LISTEN)
+chronyd    935         _chrony    5u  IPv4   1327      0t0  UDP localhost:323 
+chronyd    935         _chrony    6u  IPv6   1328      0t0  UDP localhost:323 
+ollama    1409          ollama    3u  IPv4  24673      0t0  TCP localhost:11434 (LISTEN)
+io.elemen 3690          hitori   22u  IPv6  90566      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42382->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   30u  IPv6  16045      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42904->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   37u  IPv6  24472      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42918->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   50u  IPv6  90572      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42390->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   61u  IPv6 262375      0t0  TCP pop-os:40542->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   68u  IPv6 262376      0t0  TCP pop-os:40552->[2a04:4e42:5::347]:https (ESTABLISHED)
+chrome    4722          hitori  269u  IPv4 261601      0t0  UDP mdns.mcast.net:mdns 
+chrome    4767          hitori   16u  IPv6 259390      0t0  TCP pop-os:52920->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   25u  IPv6 262473      0t0  TCP pop-os:50068->[2606:4700::6812:377]:https (ESTABLISHED)
+chrome    4767          hitori   30u  IPv6 214341      0t0  UDP pop-os:55867->sea09s35-in-x03.1e100.net:https 
+chrome    4767          hitori   31u  IPv4 275676      0t0  TCP pop-os:50210->172.175.38.6:https (CLOSE_WAIT)
+chrome    4767          hitori   32u  IPv4 275626      0t0  TCP pop-os:40252->ec2-54-185-96-117.us-west-2.compute.amazonaws.com:https (ESTABLISHED)
+chrome    4767          hitori   34u  IPv4 235573      0t0  UDP pop-os:36144->sea09s30-in-f10.1e100.net:https 
+chrome    4767          hitori   36u  IPv6 270342      0t0  TCP pop-os:38280->ts-in-f188.1e100.net:https (ESTABLISHED)
+chrome    4767          hitori   37u  IPv6 268864      0t0  TCP pop-os:55762->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   39u  IPv6 252587      0t0  UDP pop-os:35866->sea30s10-in-x0a.1e100.net:https 
+chrome    4767          hitori   41u  IPv6 268865      0t0  TCP pop-os:55764->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   50u  IPv6 252598      0t0  TCP pop-os:42106->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   52u  IPv6 252599      0t0  TCP pop-os:42122->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   58u  IPv6 268866      0t0  TCP pop-os:55768->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   70u  IPv6 268867      0t0  TCP pop-os:55772->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   83u  IPv6 259489      0t0  TCP pop-os:35990->[2606:4700::6810:4f49]:https (ESTABLISHED)
+chrome    4767          hitori   91u  IPv6 262358      0t0  UDP pop-os:53450->sea30s13-in-x0e.1e100.net:https 
+chrome    4767          hitori  102u  IPv6 260880      0t0  TCP pop-os:60346->[2600:1901:0:b25d::]:https (ESTABLISHED)
+chrome    4767          hitori  107u  IPv6 262479      0t0  TCP pop-os:35738->[2606:4700::6812:572a]:https (ESTABLISHED)
+chrome    4767          hitori  109u  IPv6 262480      0t0  TCP pop-os:44018->[2606:4700::6810:8cd1]:https (ESTABLISHED)
+chrome    4767          hitori  112u  IPv4 262487      0t0  TCP pop-os:49606->156.247.186.35.bc.googleusercontent.com:https (ESTABLISHED)
+chrome    4767          hitori  114u  IPv4 252855      0t0  TCP pop-os:59714->151.101.21.91:https (ESTABLISHED)
+chrome    4767          hitori  115u  IPv6 260904      0t0  TCP pop-os:35750->[2606:4700::6812:572a]:https (ESTABLISHED)
+chrome    4767          hitori  127u  IPv6 266360      0t0  TCP pop-os:55778->[2606:4700::6811:afc9]:https (ESTABLISHED)
+chrome    4767          hitori  129u  IPv6 266371      0t0  TCP pop-os:51980->[2606:4700:4400::ac40:9310]:https (ESTABLISHED)
+chrome    4767          hitori  131u  IPv6 266372      0t0  TCP pop-os:52538->[2606:4700::6812:8c11]:https (ESTABLISHED)
+chrome    4767          hitori  135u  IPv4 266373      0t0  TCP pop-os:41652->248.147.102.34.bc.googleusercontent.com:https (ESTABLISHED)
+chrome    4767          hitori  137u  IPv6 266378      0t0  TCP pop-os:46740->[2606:4700::6811:df98]:https (ESTABLISHED)
+chrome    4767          hitori  139u  IPv6 266389      0t0  TCP pop-os:37522->[2606:4700::6810:4f8e]:https (ESTABLISHED)
+chrome    4767          hitori  143u  IPv6 266394      0t0  TCP pop-os:58840->[2606:4700:4400::ac40:9b77]:https (ESTABLISHED)
+chrome    4767          hitori  146u  IPv6 147268      0t0  TCP pop-os:58842->[2606:4700:4400::ac40:9b77]:https (ESTABLISHED)
+chrome    4767          hitori  149u  IPv6 147273      0t0  TCP pop-os:59628->[2606:4700::6810:7574]:https (ESTABLISHED)
+chrome    4767          hitori  150u  IPv6 147287      0t0  TCP pop-os:42338->[2606:4700::6812:f06c]:https (ESTABLISHED)
+chrome    4767          hitori  159u  IPv6 259545      0t0  TCP pop-os:35030->[2606:4700::6810:5049]:https (ESTABLISHED)
+chrome    4767          hitori  165u  IPv6 265425      0t0  TCP pop-os:59644->[2606:4700::6810:7574]:https (ESTABLISHED)
+vivaldi-b 7784          hitori  192u  IPv4 235578      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   16u  IPv4 259574      0t0  TCP pop-os:40076->172.64.152.233:https (ESTABLISHED)
+vivaldi-b 7830          hitori   17u  IPv6 271521      0t0  TCP pop-os:34972->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   32u  IPv6 147355      0t0  TCP pop-os:34980->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   43u  IPv4 262993      0t0  TCP pop-os:41326->46-137-209-31.business.hringdu.is:https (ESTABLISHED)
+vivaldi-b 7830          hitori   44u  IPv6 273445      0t0  TCP pop-os:37468->[2600:1f18:24e6:b902:a46c:a4a6:87fe:c14c]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   46u  IPv4 117014      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   47u  IPv4 270666      0t0  TCP pop-os:41340->46-137-209-31.business.hringdu.is:https (CLOSE_WAIT)
+
+2024/12/07 13:06:16 COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r  768 systemd-resolve   13u  IPv4  17817      0t0  UDP localhost:domain 
+systemd-r  768 systemd-resolve   14u  IPv4  17818      0t0  TCP localhost:domain (LISTEN)
+NetworkMa  817            root   26u  IPv4 252562      0t0  UDP pop-os:bootpc->_gateway:bootps 
+NetworkMa  817            root   28u  IPv6 259331      0t0  UDP pop-os:dhcpv6-client 
+avahi-dae  821           avahi   12u  IPv4  21683      0t0  UDP *:mdns 
+avahi-dae  821           avahi   13u  IPv6  21684      0t0  UDP *:mdns 
+avahi-dae  821           avahi   14u  IPv4  21685      0t0  UDP *:46146 
+avahi-dae  821           avahi   15u  IPv6  21686      0t0  UDP *:50686 
+cupsd      905            root    6u  IPv6  15481      0t0  TCP localhost:ipp (LISTEN)
+cupsd      905            root    7u  IPv4  15482      0t0  TCP localhost:ipp (LISTEN)
+chronyd    935         _chrony    5u  IPv4   1327      0t0  UDP localhost:323 
+chronyd    935         _chrony    6u  IPv6   1328      0t0  UDP localhost:323 
+ollama    1409          ollama    3u  IPv4  24673      0t0  TCP localhost:11434 (LISTEN)
+io.elemen 3690          hitori   22u  IPv6  90566      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42382->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   30u  IPv6  16045      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42904->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   37u  IPv6  24472      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42918->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   50u  IPv6  90572      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42390->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   61u  IPv6 262375      0t0  TCP pop-os:40542->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   68u  IPv6 262376      0t0  TCP pop-os:40552->[2a04:4e42:5::347]:https (ESTABLISHED)
+chrome    4722          hitori  269u  IPv4 261601      0t0  UDP mdns.mcast.net:mdns 
+chrome    4767          hitori   16u  IPv6 259390      0t0  TCP pop-os:52920->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   25u  IPv6 262473      0t0  TCP pop-os:50068->[2606:4700::6812:377]:https (ESTABLISHED)
+chrome    4767          hitori   30u  IPv6 280774      0t0  UDP pop-os:38689->sea09s35-in-x03.1e100.net:https 
+chrome    4767          hitori   31u  IPv4 280783      0t0  TCP pop-os:47002->172.175.38.6:https (ESTABLISHED)
+chrome    4767          hitori   34u  IPv4 235573      0t0  UDP pop-os:36144->sea09s30-in-f10.1e100.net:https 
+chrome    4767          hitori   35u  IPv6 280739      0t0  UDP pop-os:54634->sea30s08-in-x0a.1e100.net:https 
+chrome    4767          hitori   36u  IPv6 270342      0t0  TCP pop-os:38280->ts-in-f188.1e100.net:https (ESTABLISHED)
+chrome    4767          hitori   37u  IPv6 268864      0t0  TCP pop-os:55762->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   39u  IPv6 252587      0t0  UDP pop-os:35866->sea30s10-in-x0a.1e100.net:https 
+chrome    4767          hitori   41u  IPv6 268865      0t0  TCP pop-os:55764->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   42u  IPv6 268131      0t0  UDP pop-os:38863->sea09s30-in-x0a.1e100.net:https 
+chrome    4767          hitori   50u  IPv6 252598      0t0  TCP pop-os:42106->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   52u  IPv6 252599      0t0  TCP pop-os:42122->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   58u  IPv6 268866      0t0  TCP pop-os:55768->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   70u  IPv6 268867      0t0  TCP pop-os:55772->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   83u  IPv6 259489      0t0  TCP pop-os:35990->[2606:4700::6810:4f49]:https (ESTABLISHED)
+chrome    4767          hitori   91u  IPv6 262358      0t0  UDP pop-os:53450->sea30s13-in-x0e.1e100.net:https 
+chrome    4767          hitori  102u  IPv6 260880      0t0  TCP pop-os:60346->[2600:1901:0:b25d::]:https (ESTABLISHED)
+chrome    4767          hitori  107u  IPv6 262479      0t0  TCP pop-os:35738->[2606:4700::6812:572a]:https (ESTABLISHED)
+chrome    4767          hitori  109u  IPv6 262480      0t0  TCP pop-os:44018->[2606:4700::6810:8cd1]:https (ESTABLISHED)
+chrome    4767          hitori  112u  IPv4 262487      0t0  TCP pop-os:49606->156.247.186.35.bc.googleusercontent.com:https (ESTABLISHED)
+chrome    4767          hitori  114u  IPv4 252855      0t0  TCP pop-os:59714->151.101.21.91:https (ESTABLISHED)
+chrome    4767          hitori  115u  IPv6 260904      0t0  TCP pop-os:35750->[2606:4700::6812:572a]:https (ESTABLISHED)
+chrome    4767          hitori  127u  IPv6 266360      0t0  TCP pop-os:55778->[2606:4700::6811:afc9]:https (ESTABLISHED)
+chrome    4767          hitori  129u  IPv6 266371      0t0  TCP pop-os:51980->[2606:4700:4400::ac40:9310]:https (ESTABLISHED)
+chrome    4767          hitori  131u  IPv6 266372      0t0  TCP pop-os:52538->[2606:4700::6812:8c11]:https (ESTABLISHED)
+chrome    4767          hitori  135u  IPv4 266373      0t0  TCP pop-os:41652->248.147.102.34.bc.googleusercontent.com:https (ESTABLISHED)
+chrome    4767          hitori  137u  IPv6 266378      0t0  TCP pop-os:46740->[2606:4700::6811:df98]:https (ESTABLISHED)
+chrome    4767          hitori  139u  IPv6 266389      0t0  TCP pop-os:37522->[2606:4700::6810:4f8e]:https (ESTABLISHED)
+chrome    4767          hitori  143u  IPv6 266394      0t0  TCP pop-os:58840->[2606:4700:4400::ac40:9b77]:https (ESTABLISHED)
+chrome    4767          hitori  146u  IPv6 147268      0t0  TCP pop-os:58842->[2606:4700:4400::ac40:9b77]:https (ESTABLISHED)
+chrome    4767          hitori  149u  IPv6 147273      0t0  TCP pop-os:59628->[2606:4700::6810:7574]:https (ESTABLISHED)
+chrome    4767          hitori  150u  IPv6 147287      0t0  TCP pop-os:42338->[2606:4700::6812:f06c]:https (ESTABLISHED)
+chrome    4767          hitori  159u  IPv6 259545      0t0  TCP pop-os:35030->[2606:4700::6810:5049]:https (ESTABLISHED)
+chrome    4767          hitori  165u  IPv6 265425      0t0  TCP pop-os:59644->[2606:4700::6810:7574]:https (ESTABLISHED)
+vivaldi-b 7784          hitori  192u  IPv4 235578      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   16u  IPv4 259574      0t0  TCP pop-os:40076->172.64.152.233:https (ESTABLISHED)
+vivaldi-b 7830          hitori   17u  IPv6 271521      0t0  TCP pop-os:34972->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   32u  IPv6 147355      0t0  TCP pop-os:34980->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   43u  IPv4 262993      0t0  TCP pop-os:41326->46-137-209-31.business.hringdu.is:https (CLOSE_WAIT)
+vivaldi-b 7830          hitori   46u  IPv4 117014      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   47u  IPv4 270666      0t0  TCP pop-os:41340->46-137-209-31.business.hringdu.is:https (CLOSE_WAIT)
+
+2024/12/07 13:06:19 COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r  768 systemd-resolve   13u  IPv4  17817      0t0  UDP localhost:domain 
+systemd-r  768 systemd-resolve   14u  IPv4  17818      0t0  TCP localhost:domain (LISTEN)
+NetworkMa  817            root   26u  IPv4 252562      0t0  UDP pop-os:bootpc->_gateway:bootps 
+NetworkMa  817            root   28u  IPv6 259331      0t0  UDP pop-os:dhcpv6-client 
+avahi-dae  821           avahi   12u  IPv4  21683      0t0  UDP *:mdns 
+avahi-dae  821           avahi   13u  IPv6  21684      0t0  UDP *:mdns 
+avahi-dae  821           avahi   14u  IPv4  21685      0t0  UDP *:46146 
+avahi-dae  821           avahi   15u  IPv6  21686      0t0  UDP *:50686 
+cupsd      905            root    6u  IPv6  15481      0t0  TCP localhost:ipp (LISTEN)
+cupsd      905            root    7u  IPv4  15482      0t0  TCP localhost:ipp (LISTEN)
+chronyd    935         _chrony    5u  IPv4   1327      0t0  UDP localhost:323 
+chronyd    935         _chrony    6u  IPv6   1328      0t0  UDP localhost:323 
+ollama    1409          ollama    3u  IPv4  24673      0t0  TCP localhost:11434 (LISTEN)
+io.elemen 3690          hitori   22u  IPv6  90566      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42382->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   30u  IPv6  16045      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42904->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   37u  IPv6  24472      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42918->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   50u  IPv6  90572      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42390->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   61u  IPv6 262375      0t0  TCP pop-os:40542->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   68u  IPv6 262376      0t0  TCP pop-os:40552->[2a04:4e42:5::347]:https (ESTABLISHED)
+chrome    4722          hitori  269u  IPv4 261601      0t0  UDP mdns.mcast.net:mdns 
+chrome    4767          hitori   16u  IPv6 259390      0t0  TCP pop-os:52920->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   25u  IPv6 262473      0t0  TCP pop-os:50068->[2606:4700::6812:377]:https (ESTABLISHED)
+chrome    4767          hitori   30u  IPv6 280774      0t0  UDP pop-os:38689->sea15s07-in-x03.1e100.net:https 
+chrome    4767          hitori   31u  IPv4 280783      0t0  TCP pop-os:47002->172.175.38.6:https (ESTABLISHED)
+chrome    4767          hitori   34u  IPv4 235573      0t0  UDP pop-os:36144->sea09s30-in-f10.1e100.net:https 
+chrome    4767          hitori   35u  IPv6 280739      0t0  UDP pop-os:54634->sea30s08-in-x0a.1e100.net:https 
+chrome    4767          hitori   36u  IPv6 270342      0t0  TCP pop-os:38280->ts-in-f188.1e100.net:https (ESTABLISHED)
+chrome    4767          hitori   37u  IPv6 268864      0t0  TCP pop-os:55762->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   39u  IPv6 252587      0t0  UDP pop-os:35866->sea30s10-in-x0a.1e100.net:https 
+chrome    4767          hitori   41u  IPv6 268865      0t0  TCP pop-os:55764->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   42u  IPv6 268131      0t0  UDP pop-os:38863->sea09s30-in-x0a.1e100.net:https 
+chrome    4767          hitori   50u  IPv6 252598      0t0  TCP pop-os:42106->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   52u  IPv6 252599      0t0  TCP pop-os:42122->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   58u  IPv6 268866      0t0  TCP pop-os:55768->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   70u  IPv6 268867      0t0  TCP pop-os:55772->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   83u  IPv6 259489      0t0  TCP pop-os:35990->[2606:4700::6810:4f49]:https (ESTABLISHED)
+chrome    4767          hitori   91u  IPv6 262358      0t0  UDP pop-os:53450->sea09s17-in-x0e.1e100.net:https 
+chrome    4767          hitori  102u  IPv6 260880      0t0  TCP pop-os:60346->[2600:1901:0:b25d::]:https (ESTABLISHED)
+chrome    4767          hitori  107u  IPv6 262479      0t0  TCP pop-os:35738->[2606:4700::6812:572a]:https (ESTABLISHED)
+chrome    4767          hitori  109u  IPv6 262480      0t0  TCP pop-os:44018->[2606:4700::6810:8cd1]:https (ESTABLISHED)
+chrome    4767          hitori  112u  IPv4 262487      0t0  TCP pop-os:49606->156.247.186.35.bc.googleusercontent.com:https (ESTABLISHED)
+chrome    4767          hitori  114u  IPv4 252855      0t0  TCP pop-os:59714->151.101.21.91:https (ESTABLISHED)
+chrome    4767          hitori  115u  IPv6 260904      0t0  TCP pop-os:35750->[2606:4700::6812:572a]:https (ESTABLISHED)
+chrome    4767          hitori  127u  IPv6 266360      0t0  TCP pop-os:55778->[2606:4700::6811:afc9]:https (ESTABLISHED)
+chrome    4767          hitori  129u  IPv6 266371      0t0  TCP pop-os:51980->[2606:4700:4400::ac40:9310]:https (ESTABLISHED)
+chrome    4767          hitori  131u  IPv6 266372      0t0  TCP pop-os:52538->[2606:4700::6812:8c11]:https (ESTABLISHED)
+chrome    4767          hitori  135u  IPv4 266373      0t0  TCP pop-os:41652->248.147.102.34.bc.googleusercontent.com:https (ESTABLISHED)
+chrome    4767          hitori  137u  IPv6 266378      0t0  TCP pop-os:46740->[2606:4700::6811:df98]:https (ESTABLISHED)
+chrome    4767          hitori  139u  IPv6 266389      0t0  TCP pop-os:37522->[2606:4700::6810:4f8e]:https (ESTABLISHED)
+chrome    4767          hitori  143u  IPv6 266394      0t0  TCP pop-os:58840->[2606:4700:4400::ac40:9b77]:https (ESTABLISHED)
+chrome    4767          hitori  146u  IPv6 147268      0t0  TCP pop-os:58842->[2606:4700:4400::ac40:9b77]:https (ESTABLISHED)
+chrome    4767          hitori  149u  IPv6 147273      0t0  TCP pop-os:59628->[2606:4700::6810:7574]:https (ESTABLISHED)
+chrome    4767          hitori  150u  IPv6 147287      0t0  TCP pop-os:42338->[2606:4700::6812:f06c]:https (ESTABLISHED)
+chrome    4767          hitori  159u  IPv6 259545      0t0  TCP pop-os:35030->[2606:4700::6810:5049]:https (ESTABLISHED)
+chrome    4767          hitori  165u  IPv6 265425      0t0  TCP pop-os:59644->[2606:4700::6810:7574]:https (ESTABLISHED)
+vivaldi-b 7784          hitori  192u  IPv4 235578      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   16u  IPv4 259574      0t0  TCP pop-os:40076->172.64.152.233:https (ESTABLISHED)
+vivaldi-b 7830          hitori   17u  IPv6 271521      0t0  TCP pop-os:34972->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   32u  IPv6 147355      0t0  TCP pop-os:34980->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   43u  IPv4 262993      0t0  TCP pop-os:41326->46-137-209-31.business.hringdu.is:https (CLOSE_WAIT)
+vivaldi-b 7830          hitori   46u  IPv4 117014      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   47u  IPv4 270666      0t0  TCP pop-os:41340->46-137-209-31.business.hringdu.is:https (CLOSE_WAIT)
+
+2024/12/07 13:07:03 COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r  768 systemd-resolve   13u  IPv4  17817      0t0  UDP localhost:domain 
+systemd-r  768 systemd-resolve   14u  IPv4  17818      0t0  TCP localhost:domain (LISTEN)
+NetworkMa  817            root   26u  IPv4 252562      0t0  UDP pop-os:bootpc->_gateway:bootps 
+NetworkMa  817            root   28u  IPv6 259331      0t0  UDP pop-os:dhcpv6-client 
+avahi-dae  821           avahi   12u  IPv4  21683      0t0  UDP *:mdns 
+avahi-dae  821           avahi   13u  IPv6  21684      0t0  UDP *:mdns 
+avahi-dae  821           avahi   14u  IPv4  21685      0t0  UDP *:46146 
+avahi-dae  821           avahi   15u  IPv6  21686      0t0  UDP *:50686 
+cupsd      905            root    6u  IPv6  15481      0t0  TCP localhost:ipp (LISTEN)
+cupsd      905            root    7u  IPv4  15482      0t0  TCP localhost:ipp (LISTEN)
+chronyd    935         _chrony    5u  IPv4   1327      0t0  UDP localhost:323 
+chronyd    935         _chrony    6u  IPv6   1328      0t0  UDP localhost:323 
+ollama    1409          ollama    3u  IPv4  24673      0t0  TCP localhost:11434 (LISTEN)
+io.elemen 3690          hitori   22u  IPv6  90566      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42382->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   30u  IPv6  16045      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42904->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   37u  IPv6  24472      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42918->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   50u  IPv6  90572      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42390->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   61u  IPv6 262375      0t0  TCP pop-os:40542->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   68u  IPv6 262376      0t0  TCP pop-os:40552->[2a04:4e42:5::347]:https (ESTABLISHED)
+chrome    4722          hitori  269u  IPv4 261601      0t0  UDP mdns.mcast.net:mdns 
+chrome    4767          hitori   16u  IPv6 259390      0t0  TCP pop-os:52920->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   25u  IPv4 281039      0t0  TCP pop-os:33328->ec2-54-185-96-117.us-west-2.compute.amazonaws.com:https (ESTABLISHED)
+chrome    4767          hitori   30u  IPv6 281053      0t0  UDP pop-os:39007->sea09s35-in-x03.1e100.net:https 
+chrome    4767          hitori   31u  IPv4 280783      0t0  TCP pop-os:47002->172.175.38.6:https (CLOSE_WAIT)
+chrome    4767          hitori   34u  IPv4 235573      0t0  UDP pop-os:36144->sea09s30-in-f10.1e100.net:https 
+chrome    4767          hitori   35u  IPv6 275974      0t0  UDP pop-os:60129->sea09s35-in-x03.1e100.net:https 
+chrome    4767          hitori   36u  IPv6 270342      0t0  TCP pop-os:38280->ts-in-f188.1e100.net:https (ESTABLISHED)
+chrome    4767          hitori   37u  IPv6 268864      0t0  TCP pop-os:55762->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   39u  IPv6 252587      0t0  UDP pop-os:35866->sea30s10-in-x0a.1e100.net:https 
+chrome    4767          hitori   41u  IPv6 268865      0t0  TCP pop-os:55764->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   42u  IPv6 267084      0t0  UDP pop-os:42752->sea30s08-in-x0a.1e100.net:https 
+chrome    4767          hitori   50u  IPv6 252598      0t0  TCP pop-os:42106->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   52u  IPv6 252599      0t0  TCP pop-os:42122->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   58u  IPv6 268866      0t0  TCP pop-os:55768->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   70u  IPv6 268867      0t0  TCP pop-os:55772->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   91u  IPv6 262358      0t0  UDP pop-os:53450->sea09s17-in-x0e.1e100.net:https 
+chrome    4767          hitori  102u  IPv6 260880      0t0  TCP pop-os:60346->[2600:1901:0:b25d::]:https (ESTABLISHED)
+chrome    4767          hitori  112u  IPv4 262487      0t0  TCP pop-os:49606->156.247.186.35.bc.googleusercontent.com:https (ESTABLISHED)
+chrome    4767          hitori  114u  IPv4 252855      0t0  TCP pop-os:59714->151.101.21.91:https (ESTABLISHED)
+chrome    4767          hitori  135u  IPv4 266373      0t0  TCP pop-os:41652->248.147.102.34.bc.googleusercontent.com:https (ESTABLISHED)
+vivaldi-b 7784          hitori  192u  IPv4 235578      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   16u  IPv4 259574      0t0  TCP pop-os:40076->172.64.152.233:https (ESTABLISHED)
+vivaldi-b 7830          hitori   17u  IPv6 271521      0t0  TCP pop-os:34972->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   32u  IPv6 147355      0t0  TCP pop-os:34980->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   43u  IPv4 262993      0t0  TCP pop-os:41326->46-137-209-31.business.hringdu.is:https (CLOSE_WAIT)
+vivaldi-b 7830          hitori   44u  IPv6 281073      0t0  TCP pop-os:35410->sea30s08-in-x03.1e100.net:http (ESTABLISHED)
+vivaldi-b 7830          hitori   45u  IPv6 281067      0t0  UDP pop-os:47792->sea15s08-in-x0a.1e100.net:https 
+vivaldi-b 7830          hitori   46u  IPv4 117014      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   47u  IPv4 270666      0t0  TCP pop-os:41340->46-137-209-31.business.hringdu.is:https (CLOSE_WAIT)
+vivaldi-b 7830          hitori   49u  IPv6 281074      0t0  TCP pop-os:40846->sea15s08-in-x0a.1e100.net:https (ESTABLISHED)
+
+2024/12/07 13:07:06 COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r  768 systemd-resolve   13u  IPv4  17817      0t0  UDP localhost:domain 
+systemd-r  768 systemd-resolve   14u  IPv4  17818      0t0  TCP localhost:domain (LISTEN)
+NetworkMa  817            root   26u  IPv4 252562      0t0  UDP pop-os:bootpc->_gateway:bootps 
+NetworkMa  817            root   28u  IPv6 259331      0t0  UDP pop-os:dhcpv6-client 
+avahi-dae  821           avahi   12u  IPv4  21683      0t0  UDP *:mdns 
+avahi-dae  821           avahi   13u  IPv6  21684      0t0  UDP *:mdns 
+avahi-dae  821           avahi   14u  IPv4  21685      0t0  UDP *:46146 
+avahi-dae  821           avahi   15u  IPv6  21686      0t0  UDP *:50686 
+cupsd      905            root    6u  IPv6  15481      0t0  TCP localhost:ipp (LISTEN)
+cupsd      905            root    7u  IPv4  15482      0t0  TCP localhost:ipp (LISTEN)
+chronyd    935         _chrony    5u  IPv4   1327      0t0  UDP localhost:323 
+chronyd    935         _chrony    6u  IPv6   1328      0t0  UDP localhost:323 
+ollama    1409          ollama    3u  IPv4  24673      0t0  TCP localhost:11434 (LISTEN)
+io.elemen 3690          hitori   22u  IPv6  90566      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42382->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   30u  IPv6  16045      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42904->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   37u  IPv6  24472      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42918->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   50u  IPv6  90572      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42390->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   61u  IPv6 262375      0t0  TCP pop-os:40542->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   68u  IPv6 262376      0t0  TCP pop-os:40552->[2a04:4e42:5::347]:https (ESTABLISHED)
+chrome    4722          hitori  269u  IPv4 261601      0t0  UDP mdns.mcast.net:mdns 
+chrome    4767          hitori   16u  IPv6 259390      0t0  TCP pop-os:52920->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   25u  IPv4 281039      0t0  TCP pop-os:33328->ec2-54-185-96-117.us-west-2.compute.amazonaws.com:https (ESTABLISHED)
+chrome    4767          hitori   30u  IPv6 281053      0t0  UDP pop-os:39007->sea15s07-in-x03.1e100.net:https 
+chrome    4767          hitori   31u  IPv4 280783      0t0  TCP pop-os:47002->172.175.38.6:https (CLOSE_WAIT)
+chrome    4767          hitori   34u  IPv4 235573      0t0  UDP pop-os:36144->sea09s30-in-f10.1e100.net:https 
+chrome    4767          hitori   36u  IPv6 270342      0t0  TCP pop-os:38280->ts-in-f188.1e100.net:https (ESTABLISHED)
+chrome    4767          hitori   37u  IPv6 268864      0t0  TCP pop-os:55762->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   39u  IPv6 252587      0t0  UDP pop-os:35866->sea30s10-in-x0a.1e100.net:https 
+chrome    4767          hitori   41u  IPv6 268865      0t0  TCP pop-os:55764->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   42u  IPv6 267084      0t0  UDP pop-os:42752->sea30s08-in-x0a.1e100.net:https 
+chrome    4767          hitori   50u  IPv6 252598      0t0  TCP pop-os:42106->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   52u  IPv6 252599      0t0  TCP pop-os:42122->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   58u  IPv6 268866      0t0  TCP pop-os:55768->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   70u  IPv6 268867      0t0  TCP pop-os:55772->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   91u  IPv6 262358      0t0  UDP pop-os:53450->sea09s17-in-x0e.1e100.net:https 
+chrome    4767          hitori  102u  IPv6 260880      0t0  TCP pop-os:60346->[2600:1901:0:b25d::]:https (ESTABLISHED)
+chrome    4767          hitori  112u  IPv4 262487      0t0  TCP pop-os:49606->156.247.186.35.bc.googleusercontent.com:https (ESTABLISHED)
+chrome    4767          hitori  114u  IPv4 252855      0t0  TCP pop-os:59714->151.101.21.91:https (ESTABLISHED)
+chrome    4767          hitori  135u  IPv4 266373      0t0  TCP pop-os:41652->248.147.102.34.bc.googleusercontent.com:https (ESTABLISHED)
+vivaldi-b 7784          hitori  192u  IPv4 235578      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   16u  IPv4 259574      0t0  TCP pop-os:40076->172.64.152.233:https (ESTABLISHED)
+vivaldi-b 7830          hitori   17u  IPv6 271521      0t0  TCP pop-os:34972->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   32u  IPv6 147355      0t0  TCP pop-os:34980->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   43u  IPv4 262993      0t0  TCP pop-os:41326->46-137-209-31.business.hringdu.is:https (CLOSE_WAIT)
+vivaldi-b 7830          hitori   44u  IPv6 281073      0t0  TCP pop-os:35410->sea30s08-in-x03.1e100.net:http (ESTABLISHED)
+vivaldi-b 7830          hitori   45u  IPv6 281067      0t0  UDP pop-os:47792->sea30s13-in-x0a.1e100.net:https 
+vivaldi-b 7830          hitori   46u  IPv4 117014      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   47u  IPv4 270666      0t0  TCP pop-os:41340->46-137-209-31.business.hringdu.is:https (CLOSE_WAIT)
+vivaldi-b 7830          hitori   49u  IPv6 281074      0t0  TCP pop-os:40846->sea30s13-in-x0a.1e100.net:https (ESTABLISHED)
+
+2024/12/07 13:07:52 COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r  768 systemd-resolve   13u  IPv4  17817      0t0  UDP localhost:domain 
+systemd-r  768 systemd-resolve   14u  IPv4  17818      0t0  TCP localhost:domain (LISTEN)
+NetworkMa  817            root   26u  IPv4 252562      0t0  UDP pop-os:bootpc->_gateway:bootps 
+NetworkMa  817            root   28u  IPv6 259331      0t0  UDP pop-os:dhcpv6-client 
+avahi-dae  821           avahi   12u  IPv4  21683      0t0  UDP *:mdns 
+avahi-dae  821           avahi   13u  IPv6  21684      0t0  UDP *:mdns 
+avahi-dae  821           avahi   14u  IPv4  21685      0t0  UDP *:46146 
+avahi-dae  821           avahi   15u  IPv6  21686      0t0  UDP *:50686 
+cupsd      905            root    6u  IPv6  15481      0t0  TCP localhost:ipp (LISTEN)
+cupsd      905            root    7u  IPv4  15482      0t0  TCP localhost:ipp (LISTEN)
+chronyd    935         _chrony    5u  IPv4   1327      0t0  UDP localhost:323 
+chronyd    935         _chrony    6u  IPv6   1328      0t0  UDP localhost:323 
+ollama    1409          ollama    3u  IPv4  24673      0t0  TCP localhost:11434 (LISTEN)
+io.elemen 3690          hitori   22u  IPv6  90566      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42382->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   30u  IPv6  16045      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42904->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   37u  IPv6  24472      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42918->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   50u  IPv6  90572      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42390->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   61u  IPv6 262375      0t0  TCP pop-os:40542->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   68u  IPv6 262376      0t0  TCP pop-os:40552->[2a04:4e42:5::347]:https (ESTABLISHED)
+chrome    4722          hitori  269u  IPv4 261601      0t0  UDP mdns.mcast.net:mdns 
+chrome    4767          hitori   16u  IPv6 259390      0t0  TCP pop-os:52920->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   25u  IPv6 271261      0t0  TCP pop-os:44616->sea30s08-in-x05.1e100.net:https (ESTABLISHED)
+chrome    4767          hitori   30u  IPv6 281227      0t0  UDP pop-os:54108->sea15s07-in-x03.1e100.net:https 
+chrome    4767          hitori   31u  IPv4 283654      0t0  TCP pop-os:56656->172.175.38.6:https (CLOSE_WAIT)
+chrome    4767          hitori   34u  IPv4 235573      0t0  UDP pop-os:36144->sea09s30-in-f10.1e100.net:https 
+chrome    4767          hitori   36u  IPv6 270342      0t0  TCP pop-os:38280->ts-in-f188.1e100.net:https (ESTABLISHED)
+chrome    4767          hitori   37u  IPv6 268864      0t0  TCP pop-os:55762->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   39u  IPv6 252587      0t0  UDP pop-os:35866->sea30s10-in-x0a.1e100.net:https 
+chrome    4767          hitori   41u  IPv6 268865      0t0  TCP pop-os:55764->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   42u  IPv6 281220      0t0  TCP pop-os:37258->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   50u  IPv6 252598      0t0  TCP pop-os:42106->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   52u  IPv6 252599      0t0  TCP pop-os:42122->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   58u  IPv6 268866      0t0  TCP pop-os:55768->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   70u  IPv6 268867      0t0  TCP pop-os:55772->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   91u  IPv6 262358      0t0  UDP pop-os:53450->sea15s08-in-x0e.1e100.net:https 
+chrome    4767          hitori  102u  IPv6 260880      0t0  TCP pop-os:60346->[2600:1901:0:b25d::]:https (ESTABLISHED)
+chrome    4767          hitori  112u  IPv4 262487      0t0  TCP pop-os:49606->156.247.186.35.bc.googleusercontent.com:https (ESTABLISHED)
+chrome    4767          hitori  114u  IPv4 252855      0t0  TCP pop-os:59714->151.101.21.91:https (ESTABLISHED)
+chrome    4767          hitori  135u  IPv4 266373      0t0  TCP pop-os:41652->248.147.102.34.bc.googleusercontent.com:https (ESTABLISHED)
+vivaldi-b 7784          hitori  192u  IPv4 235578      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   16u  IPv4 259574      0t0  TCP pop-os:40076->172.64.152.233:https (ESTABLISHED)
+vivaldi-b 7830          hitori   17u  IPv6 271521      0t0  TCP pop-os:34972->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   32u  IPv6 147355      0t0  TCP pop-os:34980->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   44u  IPv6 281073      0t0  TCP pop-os:35410->sea30s08-in-x03.1e100.net:http (ESTABLISHED)
+vivaldi-b 7830          hitori   46u  IPv4 117014      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   49u  IPv6 281074      0t0  TCP pop-os:40846->sea15s08-in-x0a.1e100.net:https (ESTABLISHED)
+
+2024/12/07 13:08:13 COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r  768 systemd-resolve   13u  IPv4  17817      0t0  UDP localhost:domain 
+systemd-r  768 systemd-resolve   14u  IPv4  17818      0t0  TCP localhost:domain (LISTEN)
+NetworkMa  817            root   26u  IPv4 252562      0t0  UDP pop-os:bootpc->_gateway:bootps 
+NetworkMa  817            root   28u  IPv6 259331      0t0  UDP pop-os:dhcpv6-client 
+avahi-dae  821           avahi   12u  IPv4  21683      0t0  UDP *:mdns 
+avahi-dae  821           avahi   13u  IPv6  21684      0t0  UDP *:mdns 
+avahi-dae  821           avahi   14u  IPv4  21685      0t0  UDP *:46146 
+avahi-dae  821           avahi   15u  IPv6  21686      0t0  UDP *:50686 
+cupsd      905            root    6u  IPv6  15481      0t0  TCP localhost:ipp (LISTEN)
+cupsd      905            root    7u  IPv4  15482      0t0  TCP localhost:ipp (LISTEN)
+chronyd    935         _chrony    5u  IPv4   1327      0t0  UDP localhost:323 
+chronyd    935         _chrony    6u  IPv6   1328      0t0  UDP localhost:323 
+ollama    1409          ollama    3u  IPv4  24673      0t0  TCP localhost:11434 (LISTEN)
+io.elemen 3690          hitori   22u  IPv6  90566      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42382->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   30u  IPv6  16045      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42904->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   37u  IPv6  24472      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42918->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   50u  IPv6  90572      0t0  TCP [2604:3d09:6b89:a600:be51:e5ad:ff3b:46de]:42390->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   61u  IPv6 262375      0t0  TCP pop-os:40542->[2a04:4e42:5::347]:https (ESTABLISHED)
+io.elemen 3690          hitori   68u  IPv6 262376      0t0  TCP pop-os:40552->[2a04:4e42:5::347]:https (ESTABLISHED)
+chrome    4722          hitori  269u  IPv4 261601      0t0  UDP mdns.mcast.net:mdns 
+chrome    4767          hitori   16u  IPv6 259390      0t0  TCP pop-os:52920->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   25u  IPv6 271261      0t0  TCP pop-os:44616->sea30s08-in-x05.1e100.net:https (ESTABLISHED)
+chrome    4767          hitori   30u  IPv6 281828      0t0  UDP pop-os:48056->sea15s07-in-x03.1e100.net:https 
+chrome    4767          hitori   31u  IPv4 283654      0t0  TCP pop-os:56656->172.175.38.6:https (CLOSE_WAIT)
+chrome    4767          hitori   32u  IPv6 273561      0t0  UDP pop-os:39617->sea30s10-in-x0a.1e100.net:https 
+chrome    4767          hitori   34u  IPv4 235573      0t0  UDP pop-os:36144->sea09s30-in-f10.1e100.net:https 
+chrome    4767          hitori   35u  IPv6 281836      0t0  UDP pop-os:45396->sea09s30-in-x0a.1e100.net:https 
+chrome    4767          hitori   36u  IPv6 270342      0t0  TCP pop-os:38280->ts-in-f188.1e100.net:https (ESTABLISHED)
+chrome    4767          hitori   37u  IPv6 268864      0t0  TCP pop-os:55762->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   39u  IPv6 252587      0t0  UDP pop-os:35866->sea30s10-in-x0a.1e100.net:https 
+chrome    4767          hitori   41u  IPv6 268865      0t0  TCP pop-os:55764->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   42u  IPv6 281220      0t0  TCP pop-os:37258->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   50u  IPv6 252598      0t0  TCP pop-os:42106->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   52u  IPv6 252599      0t0  TCP pop-os:42122->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   58u  IPv6 268866      0t0  TCP pop-os:55768->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   70u  IPv6 268867      0t0  TCP pop-os:55772->162.247.243.29:https (ESTABLISHED)
+chrome    4767          hitori   91u  IPv6 262358      0t0  UDP pop-os:53450->sea30s13-in-x0e.1e100.net:https 
+chrome    4767          hitori  102u  IPv6 260880      0t0  TCP pop-os:60346->[2600:1901:0:b25d::]:https (ESTABLISHED)
+chrome    4767          hitori  112u  IPv4 262487      0t0  TCP pop-os:49606->156.247.186.35.bc.googleusercontent.com:https (ESTABLISHED)
+chrome    4767          hitori  114u  IPv4 252855      0t0  TCP pop-os:59714->151.101.21.91:https (ESTABLISHED)
+chrome    4767          hitori  135u  IPv4 266373      0t0  TCP pop-os:41652->248.147.102.34.bc.googleusercontent.com:https (ESTABLISHED)
+vivaldi-b 7784          hitori  192u  IPv4 235578      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   16u  IPv4 259574      0t0  TCP pop-os:40076->172.64.152.233:https (ESTABLISHED)
+vivaldi-b 7830          hitori   17u  IPv6 271521      0t0  TCP pop-os:34972->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   32u  IPv6 147355      0t0  TCP pop-os:34980->[2606:4700:4400::ac40:9bd1]:https (ESTABLISHED)
+vivaldi-b 7830          hitori   44u  IPv6 281073      0t0  TCP pop-os:35410->sea30s08-in-x03.1e100.net:http (ESTABLISHED)
+vivaldi-b 7830          hitori   46u  IPv4 117014      0t0  UDP mdns.mcast.net:mdns 
+vivaldi-b 7830          hitori   49u  IPv6 281074      0t0  TCP pop-os:40846->sea15s08-in-x0a.1e100.net:https (ESTABLISHED)
+

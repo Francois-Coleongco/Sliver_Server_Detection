@@ -1,12 +1,13 @@
 package main
 
 import (
-	"app/gatekeeper"
+	//	"app/gatekeeper"
 	"app/sniff"
 	"fmt"
 	"log"
 	"os"
 	"os/exec"
+	"strconv"
 	"strings"
 )
 
@@ -51,14 +52,15 @@ func locate_process(pid string) string {
 
 }
 
-func sniff_connections(port string) {
+func sniff_connections(my_port string) {
+
 	//use the sniffer in the private repo you made to sniff connections from lsof -i
 
 	// plan: use the port to filter packets
 
 	// maybe you can find some unique sliverC2 detections there
 
-	sniff.Sniffer() // when im done tetsting, i will pass port into the sniff.Sniffer() function
+	sniff.Sniffer(my_port) // when im done tetsting, i will pass port into the sniff.Sniffer() function
 
 }
 
@@ -81,8 +83,8 @@ func check_open_files(pid string) {
 	}
 
 	files_opened_by_pid := strings.Split(string(output), "\n")
-
-	gatekeeper.Uses_Shell(files_opened_by_pid)
+	fmt.Println(files_opened_by_pid)
+	//gatekeeper.Uses_Shell(files_opened_by_pid)
 
 }
 
@@ -140,9 +142,28 @@ func main() {
 
 			// CONN_TYPE_Field := fields[7]
 
-			// NAME := strings.Split(fields[8], ":")
+			NAME_Field := fields[8] // NAME is an array containing: user, port, address,protocol
+			host_name, err := os.Hostname()
 
-			// NAME is an array containing: user, port, address,protocol
+			if err != nil {
+				log.Println("could not get host_name", err)
+			}
+
+			host_name_filter := fmt.Sprintf("%s:", host_name)
+
+			if strings.Contains(NAME_Field, host_name) == false {
+				fmt.Println("does not contain host")
+				continue
+			}
+			parsed_name_field := strings.Split(NAME_Field, host_name_filter)
+			my_port := strings.Split(parsed_name_field[1], "->")
+
+			fmt.Println("PORT", my_port[0])
+
+			if _, err := strconv.Atoi(my_port[0]); err == nil {
+				// is a number and can be chucked into the sniffer
+				go sniff_connections(my_port[0])
+			}
 
 			fmt.Println(PID_Field)
 

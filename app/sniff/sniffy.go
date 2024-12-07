@@ -1,6 +1,7 @@
 package sniff
 
 import (
+	"bytes"
 	"fmt"
 	"github.com/gopacket/gopacket"
 	"github.com/gopacket/gopacket/pcap"
@@ -17,33 +18,52 @@ func create_and_setup_logs() {
 	log.SetOutput(file)
 }
 
-func Sniffer() {
+func Sniffer(my_port string) int {
+
+	threshold := 50
+
+	num_app_data_count := 0
 	// Open the pcap file or live capture
 
 	create_and_setup_logs()
 
 	// dest_IP := retrieve_my_ip()
 
-	filter := fmt.Sprintf("tcp port 8888") // sliver listens on port 8888 by default. just hardcoding this here for now just for testing myself. it is possible to change the port i am aware, just rn for testing i wanna make it hardcoded
+	filter := fmt.Sprintf("tcp dst port %s", my_port) // sliver listens on port 8888 by default. just hardcoding this here for now just for testing myself. it is possible to change the port i am aware, just rn for testing i wanna make it hardcoded
 
 	fmt.Println(filter)
 
 	// Create a packet, but don't actually decode anything yet
-	if handle, err := pcap.OpenLive("enp0s3", 1500, false, pcap.BlockForever); err != nil {
+	if handle, err := pcap.OpenLive("wlo1", 1500, false, pcap.BlockForever); err != nil {
 		panic(err)
 	} else if err := handle.SetBPFFilter(filter); err != nil { // optional
 
 		panic(err)
 	} else {
+
+		app_data_bytes := []byte{23, 3, 3} // remember this is base 10 now
 		packetSource := gopacket.NewPacketSource(handle, handle.LinkType())
 		for packet := range packetSource.Packets() {
-			fmt.Println(packet)
 
-      log.Println(packet)
+			data := packet.TransportLayer().LayerPayload()
+			log.Println(packet, data)
+
+			if bytes.Contains(data, app_data_bytes) {
+				// contains application data
+
+				fmt.Println("FOUND APP_DATA")
+
+				num_app_data_count++
+
+				if num_app_data_count > threshold {
+					return 1 // threshold reached
+				}
+			}
 
 		}
 	}
 	// Now, decode the packet up to the first IPv4 layer found but no further.
 	// If no IPv4 layer was found, the whole packet will be decoded looking for
 	// it.
+	return 0 // only way for this to happen would be it couldn't communicate with the interface or something. we want to keep the sniffer running on the processes until we know they communicate under encryption
 }
