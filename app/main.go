@@ -176,9 +176,9 @@ func main() {
 		}
 	}
 
-	for i := range pid_chan {
-		fmt.Println("testicle", i)
-	}
+	test := <-pid_chan
+
+	fmt.Println("testicle", test) // so i can see which process is one that has app data and therefore tls stuff.
 
 	wg.Wait() // some might wait for a ridiculously long time, that's just expected i dont think there's a safer way around this since i need to be able to monitor all network connected processes
 
