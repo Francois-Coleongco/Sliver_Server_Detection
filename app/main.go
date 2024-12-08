@@ -1,7 +1,7 @@
 package main
 
 import (
-	//	"app/gatekeeper"
+	// "app/gatekeeper"
 	"app/sniff"
 	"fmt"
 	"log"
@@ -9,6 +9,7 @@ import (
 	"os/exec"
 	"strconv"
 	"strings"
+	"sync"
 )
 
 func lsof_stats() []string {
@@ -52,18 +53,6 @@ func locate_process(pid string) string {
 
 }
 
-func sniff_connections(my_port string) {
-
-	//use the sniffer in the private repo you made to sniff connections from lsof -i
-
-	// plan: use the port to filter packets
-
-	// maybe you can find some unique sliverC2 detections there
-
-	sniff.Sniffer(my_port) // when im done tetsting, i will pass port into the sniff.Sniffer() function
-
-}
-
 func check_open_files(pid string) {
 
 	// if user has inotify enabled read from the logs to see network connected processes created or deleted or did something anything with the files on the system
@@ -97,12 +86,16 @@ func static_analysis(url_to_executable string) {
 }
 
 func main() {
+
+	// killscore --> uses shell, is obfuscated, uses crypto libs in strings, is tls,
+
+	// 1 means yes | 0 means no
+
+	// kill_score := []byte{0, 0, 0, 0}
+
 	fmt.Println("Current PID:", os.Getpid())
 
-	// find network connections (ss)
 	// find processes making those network connections (lsof)
-	// use the pid found in previous step to strace the process
-	// in strace output, see if it makes encrypted communications (tls)
 
 	file, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 
@@ -116,6 +109,9 @@ func main() {
 	log.SetOutput(file)
 
 	conn_lines := lsof_stats()[1:] // start from second line cuz first just gives the column names
+
+	var wg sync.WaitGroup
+	pid_chan := make(chan string)
 
 	for i := 0; i < len(conn_lines); i++ {
 		if len(conn_lines[i]) > 0 {
@@ -155,15 +151,11 @@ func main() {
 				fmt.Println("does not contain host")
 				continue
 			}
+
 			parsed_name_field := strings.Split(NAME_Field, host_name_filter)
 			my_port := strings.Split(parsed_name_field[1], "->")
 
 			fmt.Println("PORT", my_port[0])
-
-			if _, err := strconv.Atoi(my_port[0]); err == nil {
-				// is a number and can be chucked into the sniffer
-				go sniff_connections(my_port[0])
-			}
 
 			fmt.Println(PID_Field)
 
@@ -171,7 +163,23 @@ func main() {
 
 			fmt.Println("executable_location:", executable_path)
 
+			if _, err := strconv.Atoi(my_port[0]); err == nil {
+				wg.Add(1)
+				// is a number and can be chucked into the sniffer
+				go func() {
+					defer wg.Done() // Mark the goroutine as done when it finishes
+					sniff.Sniffer(my_port[0], PID_Field, pid_chan)
+				}()
+
+			}
+
 		}
 	}
+
+	for i := range pid_chan {
+		fmt.Println("testicle", i)
+	}
+
+	wg.Wait() // some might wait for a ridiculously long time, that's just expected i dont think there's a safer way around this since i need to be able to monitor all network connected processes
 
 }

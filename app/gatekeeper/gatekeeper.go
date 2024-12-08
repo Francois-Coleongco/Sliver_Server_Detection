@@ -50,7 +50,7 @@ func strings_analysis(path_to_exec string) {
 
 }
 
-func Interacts_With_Shell(opened_files []string) bool {
+func Interacts_With_Shell(opened_files []string) bool { // if it interacts with the shell, attempt to see the strace of the /dev/pts/*
 
 	for line := range opened_files {
 		if strings.Contains("ptmx", opened_files[line]) {

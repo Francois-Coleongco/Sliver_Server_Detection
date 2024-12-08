@@ -18,15 +18,11 @@ func create_and_setup_logs() {
 	log.SetOutput(file)
 }
 
-func Sniffer(my_port string) int {
+func Sniffer(my_port string, pid string, pid_chan chan string) {
 
-	threshold := 50
-
-	num_app_data_count := 0
-	// Open the pcap file or live capture
+	fmt.Println("EYYY WE GOT HERE")
 
 	create_and_setup_logs()
-
 	// dest_IP := retrieve_my_ip()
 
 	filter := fmt.Sprintf("tcp dst port %s", my_port) // sliver listens on port 8888 by default. just hardcoding this here for now just for testing myself. it is possible to change the port i am aware, just rn for testing i wanna make it hardcoded
@@ -53,11 +49,7 @@ func Sniffer(my_port string) int {
 
 				fmt.Println("FOUND APP_DATA")
 
-				num_app_data_count++
-
-				if num_app_data_count > threshold {
-					return 1 // threshold reached
-				}
+				pid_chan <- pid // threshold reached
 			}
 
 		}
@@ -65,5 +57,5 @@ func Sniffer(my_port string) int {
 	// Now, decode the packet up to the first IPv4 layer found but no further.
 	// If no IPv4 layer was found, the whole packet will be decoded looking for
 	// it.
-	return 0 // only way for this to happen would be it couldn't communicate with the interface or something. we want to keep the sniffer running on the processes until we know they communicate under encryption
+	pid_chan <- "" // only way for this to happen would be it couldn't communicate with the interface or something. we want to keep the sniffer running on the processes until we know they communicate under encryption
 }
