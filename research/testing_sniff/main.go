@@ -2,11 +2,10 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"os"
-
 	"github.com/gopacket/gopacket"
 	"github.com/gopacket/gopacket/pcap"
+	"log"
+	"os"
 )
 
 func create_and_setup_logs() {
@@ -39,16 +38,10 @@ func main() {
 	} else {
 		packetSource := gopacket.NewPacketSource(handle, handle.LinkType())
 		for packet := range packetSource.Packets() {
-			fmt.Println(packet.String())
-			application_layer := packet.ApplicationLayer()
+			// Here, you can later check for TLS within the TCP payload
 
-			fmt.Println("metadata:", packet.Metadata())
-
-			if application_layer != nil {
-
-				// needa figure out how to see if it is tls traffic in which case it is encrypted
-
-			}
+			fmt.Println(packet.TransportLayer())
+			fmt.Println("\n\n", packet.TransportLayer().LayerPayload())
 
 			log.Println(packet)
 
