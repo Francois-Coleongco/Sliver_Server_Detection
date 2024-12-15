@@ -1490,3 +1490,36 @@ vivaldi-b 200317          hitori   37u  IPv6 447233      0t0  TCP pop-os:54264->
 vivaldi-b 200317          hitori   42u  IPv6 498030      0t0  UDP pop-os:52001->sea30s08-in-x0a.1e100.net:https 
 vivaldi-b 200317          hitori   43u  IPv6 498031      0t0  TCP pop-os:50882->sea30s08-in-x0a.1e100.net:https (ESTABLISHED)
 
+2024/12/14 17:40:51 COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r  764 systemd-resolve   13u  IPv4  15479      0t0  UDP localhost:domain 
+systemd-r  764 systemd-resolve   14u  IPv4  15480      0t0  TCP localhost:domain (LISTEN)
+NetworkMa  809            root   26u  IPv4  20755      0t0  UDP pop-os:bootpc->_gateway:bootps 
+NetworkMa  809            root   28u  IPv6  26770      0t0  UDP pop-os:dhcpv6-client 
+avahi-dae  813           avahi   12u  IPv4  17591      0t0  UDP *:mdns 
+avahi-dae  813           avahi   13u  IPv6  17592      0t0  UDP *:mdns 
+avahi-dae  813           avahi   14u  IPv4  17593      0t0  UDP *:41797 
+avahi-dae  813           avahi   15u  IPv6  17594      0t0  UDP *:53281 
+cupsd      945            root    6u  IPv6  18971      0t0  TCP localhost:ipp (LISTEN)
+cupsd      945            root    7u  IPv4  18972      0t0  TCP localhost:ipp (LISTEN)
+chronyd    974         _chrony    5u  IPv4  20698      0t0  UDP localhost:323 
+chronyd    974         _chrony    6u  IPv6  20699      0t0  UDP localhost:323 
+ollama    1406          ollama    3u  IPv4  16601      0t0  TCP localhost:11434 (LISTEN)
+brave     4935          hitori   19u  IPv4  31477      0t0  TCP pop-os:35812->ec2-44-242-143-147.us-west-2.compute.amazonaws.com:https (ESTABLISHED)
+brave     4935          hitori   20u  IPv6  31480      0t0  TCP pop-os:38056->[2a04:4e42:5::288]:https (ESTABLISHED)
+brave     4935          hitori   21u  IPv6  36029      0t0  TCP pop-os:50458->sea30s01-in-x0e.1e100.net:https (ESTABLISHED)
+brave     4935          hitori   23u  IPv6  27438      0t0  TCP pop-os:51402->sea09s29-in-x0e.1e100.net:https (ESTABLISHED)
+brave     4935          hitori   25u  IPv6  27446      0t0  TCP pop-os:58174->pv-in-f84.1e100.net:https (ESTABLISHED)
+brave     4935          hitori   28u  IPv6  20922      0t0  TCP pop-os:49120->sea09s29-in-x03.1e100.net:https (ESTABLISHED)
+brave     4935          hitori   29u  IPv6  34064      0t0  UDP pop-os:37987->sea09s29-in-x0e.1e100.net:https 
+brave     4935          hitori   31u  IPv6  34077      0t0  TCP pop-os:56942->sea09s29-in-x16.1e100.net:https (ESTABLISHED)
+brave     4935          hitori   32u  IPv6  20923      0t0  TCP pop-os:49136->sea09s29-in-x03.1e100.net:https (ESTABLISHED)
+brave     4935          hitori   33u  IPv6  27441      0t0  TCP pop-os:45844->sea09s28-in-x0a.1e100.net:https (ESTABLISHED)
+brave     4935          hitori   34u  IPv6  27447      0t0  UDP pop-os:60678->pv-in-f84.1e100.net:https 
+brave     4935          hitori   35u  IPv6  20924      0t0  UDP pop-os:34062->sea09s29-in-x16.1e100.net:https 
+brave     4935          hitori   36u  IPv6  36064      0t0  TCP pop-os:59638->sea30s08-in-x04.1e100.net:https (ESTABLISHED)
+brave     4935          hitori   38u  IPv6  31489      0t0  UDP pop-os:56156->sea30s10-in-x03.1e100.net:https 
+brave     4935          hitori   39u  IPv6  20920      0t0  TCP pop-os:49102->sea09s29-in-x03.1e100.net:https (ESTABLISHED)
+brave     4935          hitori   40u  IPv6  32035      0t0  UDP pop-os:54529->dfw25s55-in-f8.1e100.net:https 
+brave     4935          hitori   41u  IPv6  20921      0t0  TCP pop-os:49116->sea09s29-in-x03.1e100.net:https (ESTABLISHED)
+brave     4935          hitori   45u  IPv6  36061      0t0  UDP pop-os:37818->mrs08s09-in-f6.1e100.net:https 
+

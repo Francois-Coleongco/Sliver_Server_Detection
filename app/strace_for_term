@@ -1,0 +1,50 @@
+ude@dude:~$ ps -aux | grep pts
+dude        3578  0.0  0.1  19692  5248 pts/0    Ss   21:36   0:00 bash
+dude        4250  0.0  0.3 723124 14336 pts/0    Sl+  22:03   0:00 ./test
+dude        4264  0.0  0.1  19660  5248 pts/1    Ss+  22:03   0:00 /bin/bash
+dude        4270  0.0  0.1  19692  5120 pts/2    Ss   22:03   0:00 bash
+root        4353  0.0  0.1  28312  7296 pts/2    S+   22:09   0:00 sudo strace -f -p 4250
+root        4354  0.0  0.0  28312  2548 pts/3    Ss   22:09   0:00 sudo strace -f -p 4250
+root        4355  0.0  0.0  19564  3968 pts/3    S+   22:09   0:00 strace -f -p 4250
+dude        4789  0.0  0.1  19692  5120 pts/4    Ss   22:10   0:00 bash
+dude        5108  100  0.1  23772  5504 pts/4    R+   22:16   0:00 ps -aux
+dude        5109  0.0  0.0  17812  2176 pts/4    S+   22:16   0:00 grep --color=auto pts
+dude@dude:~$ tty
+/dev/pts/4
+dude@dude:~$ ps --ppid 4250
+    PID TTY          TIME CMD
+   4264 pts/1    00:00:00 bash
+
+
+IT WORKS
+
+so you need to find the child processes of the sliver implant "test" by doing ppid on it, then run strace on that pid, and you will find write calls that look like:
+
+write(2, "\33]0;dude@dude: ~\7\33[01;32mdude@du"..., 56) = 56
+pselect6(1, [0], NULL, NULL, NULL, {sigmask=[], sigsetsize=8}) = 1 (in [0])
+read(0, "w", 1)                         = 1
+pselect6(1, [0], NULL, [0], {tv_sec=0, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+write(2, "w", 1)                        = 1
+pselect6(1, [0], NULL, NULL, NULL, {sigmask=[], sigsetsize=8}) = 1 (in [0])
+read(0, "h", 1)                         = 1
+pselect6(1, [0], NULL, [0], {tv_sec=0, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+write(2, "h", 1)                        = 1
+pselect6(1, [0], NULL, NULL, NULL, {sigmask=[], sigsetsize=8}) = 1 (in [0])
+read(0, "o", 1)                         = 1
+pselect6(1, [0], NULL, [0], {tv_sec=0, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+write(2, "o", 1)                        = 1
+pselect6(1, [0], NULL, NULL, NULL, {sigmask=[], sigsetsize=8}) = 1 (in [0])
+read(0, "a", 1)                         = 1
+pselect6(1, [0], NULL, [0], {tv_sec=0, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+write(2, "a", 1)                        = 1
+pselect6(1, [0], NULL, NULL, NULL, {sigmask=[], sigsetsize=8}) = 1 (in [0])
+read(0, "m", 1)                         = 1
+pselect6(1, [0], NULL, [0], {tv_sec=0, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+write(2, "m", 1)                        = 1
+pselect6(1, [0], NULL, NULL, NULL, {sigmask=[], sigsetsize=8}) = 1 (in [0])
+read(0, "i", 1)                         = 1
+pselect6(1, [0], NULL, [0], {tv_sec=0, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+write(2, "i", 1)                        = 1
+pselect6(1, [0], NULL, NULL, NULL, {sigmask=[], sigsetsize=8}
+
+GREAT!!!! NOW I CAN JUST do this in the ../../app/ hehehhee i know what to look forawrgijwr and i just gotta reconstruct from these calls to find what the c2 server is doing :)

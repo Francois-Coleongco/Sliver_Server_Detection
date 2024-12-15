@@ -1,8 +1,8 @@
 package main
 
 import (
-	// "app/gatekeeper"
-	"app/sniff"
+	"app/gatekeeper"
+	"app/utils"
 	"fmt"
 	"log"
 	"os"
@@ -53,7 +53,7 @@ func locate_process(pid string) string {
 
 }
 
-func check_open_files(pid string) {
+func check_open_files(pid string) []string {
 
 	// if user has inotify enabled read from the logs to see network connected processes created or deleted or did something anything with the files on the system
 
@@ -74,6 +74,8 @@ func check_open_files(pid string) {
 	files_opened_by_pid := strings.Split(string(output), "\n")
 	fmt.Println(files_opened_by_pid)
 	//gatekeeper.Uses_Shell(files_opened_by_pid)
+
+	return files_opened_by_pid
 
 }
 
@@ -168,9 +170,21 @@ func main() {
 				// is a number and can be chucked into the sniffer
 				go func() {
 					defer wg.Done() // Mark the goroutine as done when it finishes
-					sniff.Sniffer(my_port[0], PID_Field, pid_chan)
-				}()
 
+					utils.Sniffer(my_port[0], PID_Field, pid_chan)
+				}()
+				go func() {
+
+					open_files := check_open_files(<-pid_chan)
+
+					uses_shell := gatekeeper.Interacts_With_Shell(open_files)
+
+					if uses_shell == true {
+						//execute strace on that
+
+						fmt.Println("strace on the shell")
+					}
+				}()
 			}
 
 		}
