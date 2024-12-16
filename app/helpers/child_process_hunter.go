@@ -25,8 +25,11 @@ func Get_Children(pid string) []string {
 	for i := range children {
 
 		fields := strings.Split(children[i], " ")
-		child_pids = append(child_pids, fields[0])
+
+		fmt.Println("tnhis is fields", fields)
+		child_pids = append(child_pids, fields[1])// starts at 1 because splits on the space between
 	}
+
 
 	return child_pids
 }
