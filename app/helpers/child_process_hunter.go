@@ -16,9 +16,10 @@ func Get_Children(pid string) []string {
 
 	// this should be logged womehwere: strings.Split(string(output), "\n") // third and split on space
 
-	// for now just get the pids
+	// for now just get the child_pids
 
-	children := strings.Split(string(output), "\n")[1:]
+	str_split_out := strings.Split(string(output), "\n")
+	children := str_split_out[1:len(str_split_out)-1]
 
 	var child_pids []string
 
