@@ -3,6 +3,7 @@ package main
 import (
 	"app/gatekeeper"
 	"app/utils"
+	"app/helpers"
 	"fmt"
 	"log"
 	"os"
@@ -11,6 +12,10 @@ import (
 	"strings"
 	"sync"
 )
+
+
+// URGENT need to make this constantly look at new connecitons. currently it just runs lsof -i once. i need to make it compare against previous. so a diff call on a file might be good i dunno
+
 
 func lsof_stats() []string {
 	cmd := exec.Command("lsof", "-i")
@@ -153,7 +158,7 @@ func main() {
 			fmt.Println("executable_location:", executable_path)
 
 			if _, err := strconv.Atoi(my_port[0]); err == nil {
-				wg.Add(1)
+				wg.Add(2)
 				// is a number and can be chucked into the sniffer
 				go func() {
 					defer wg.Done() // Mark the goroutine as done when it finishes
@@ -161,13 +166,20 @@ func main() {
 					utils.Sniffer(my_port[0], PID_Field, pid_chan)
 				}()
 				go func() {
+					defer wg.Done()
 					open_files := check_open_files(<-pid_chan)
 
 					uses_shell := gatekeeper.Interacts_With_Shell(open_files)
 
 					if uses_shell {
 						// execute strace on that
-						utils.Tracer(<-pid_chan)
+
+						children := helpers.Get_Children(<-pid_chan)
+
+						// children is []string so need to loop through it for tracer in case author tries to spawn a bunch of other seemingly legit child processes
+						for i := range children {
+							utils.Tracer(children[i]) // this pid is of the imiplant. i need the children. ps --ppid
+						}
 					}
 				}()
 			}
