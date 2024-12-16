@@ -17,7 +17,7 @@ import (
 // URGENT need to make this constantly look at new connecitons. currently it just runs lsof -i once. i need to make it compare against previous. so a diff call on a file migh be good i dunno
 
 
-func ksof_stats() []string {
+func lsof_stats() []string {
 	cmd := exec.Command("lsof", "-i")
 
 	output, err := cmd.CombinedOutput()
