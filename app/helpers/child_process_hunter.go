@@ -16,5 +16,5 @@ func Get_Children(pid string) []string {
 		fmt.Println("err occurred on getting children of", pid, err)
 	}
 
-	return strings.Split(string(output), "\n")
+	return strings.Split(string(output), "\n") // third and split on space
 }
