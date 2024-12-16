@@ -24,7 +24,7 @@ func Get_Children(pid string) []string {
 
 	for i := range children {
 
-		fields := strings.Split(children[i], " ")
+		fields := strings.Fields(children[i])
 
 		for e := range fields {
 			fmt.Println("field is:", e, fields[e])
