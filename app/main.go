@@ -174,11 +174,13 @@ func main() {
 					if uses_shell {
 						// execute strace on that
 
-						children := helpers.Get_Children(<-pid_chan)
+						child_pids := helpers.Get_Children(<-pid_chan)
 
 						// children is []string so need to loop through it for tracer in case author tries to spawn a bunch of other seemingly legit child processes
-						for i := range children {
-							utils.Tracer(children[i]) // this pid is of the imiplant. i need the children. ps --ppid
+						for i := range child_pids {
+							if child_pids[i] != "" {
+							utils.Tracer(child_pids[i]) // this pid is of the imiplant. i need the children. ps --ppid
+							}
 						}
 					}
 				}()
