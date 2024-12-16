@@ -174,6 +174,8 @@ func main() {
 					if uses_shell {
 						// execute strace on that
 
+						fmt.Println("this is pidchan", <-pid_chan)
+
 						child_pids := helpers.Get_Children(<-pid_chan)
 
 						fmt.Println("reached here")
