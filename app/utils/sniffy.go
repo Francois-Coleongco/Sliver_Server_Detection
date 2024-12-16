@@ -30,7 +30,7 @@ func Sniffer(my_port string, pid string, pid_chan chan string) {
 	fmt.Println(filter)
 
 	// Create a packet, but don't actually decode anything yet
-	if handle, err := pcap.OpenLive("wlo1", 1500, false, pcap.BlockForever); err != nil {
+	if handle, err := pcap.OpenLive("enp0s3", 1500, false, pcap.BlockForever); err != nil {
 		panic(err)
 	} else if err := handle.SetBPFFilter(filter); err != nil { // optional
 
