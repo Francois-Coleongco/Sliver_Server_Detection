@@ -16,7 +16,6 @@ func lsof_stats() []string {
 	cmd := exec.Command("lsof", "-i")
 
 	output, err := cmd.CombinedOutput()
-
 	if err != nil {
 		log.Fatal("unable to run `lsof -i`", err)
 	}
@@ -28,17 +27,14 @@ func lsof_stats() []string {
 	conn_lines := strings.Split(str_output, "\n")
 
 	return conn_lines
-
 }
 
 func locate_process(pid string) string {
-
 	readlink_args := fmt.Sprintf("/proc/%s/exe", pid)
 
 	cmd := exec.Command("readlink", readlink_args)
 
 	output, err := cmd.CombinedOutput()
-
 	if err != nil {
 		log.Println("unable to locate process", pid, "| ERROR", err)
 	}
@@ -50,11 +46,9 @@ func locate_process(pid string) string {
 	// CHECK ALSO FOR THE NAMES. check if in your / path NOT THE USER PATH the sudo perm path, for a similar or exact name. sometimes they will attempt to hide themselves via using the name of a legit process such as bash
 
 	return executable_path
-
 }
 
 func check_open_files(pid string) []string {
-
 	// if user has inotify enabled read from the logs to see network connected processes created or deleted or did something anything with the files on the system
 
 	// how would you do this? listen for changes on the file with diff or something
@@ -66,29 +60,24 @@ func check_open_files(pid string) []string {
 	cmd := exec.Command("lsof", "-p", pid)
 
 	output, err := cmd.CombinedOutput()
-
 	if err != nil {
 		log.Println("could not lsof -p", pid, "| ERROR", err)
 	}
 
 	files_opened_by_pid := strings.Split(string(output), "\n")
 	fmt.Println(files_opened_by_pid)
-	//gatekeeper.Uses_Shell(files_opened_by_pid)
+	// gatekeeper.Uses_Shell(files_opened_by_pid)
 
 	return files_opened_by_pid
-
 }
 
 func static_analysis(url_to_executable string) {
-
 	// need to upload the executable to an api of your own so virustotal can receive it
 
 	// OR i needa look more into this, but i think you can hash the executable and you can search for known malwares with that sort of signature
-
 }
 
 func main() {
-
 	// killscore --> uses shell, is obfuscated, uses crypto libs in strings, is tls,
 
 	// 1 means yes | 0 means no
@@ -100,7 +89,6 @@ func main() {
 	// find processes making those network connections (lsof)
 
 	file, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
-
 	if err != nil {
 		log.Fatal("unable to open log file", err)
 	}
@@ -142,14 +130,13 @@ func main() {
 
 			NAME_Field := fields[8] // NAME is an array containing: user, port, address,protocol
 			host_name, err := os.Hostname()
-
 			if err != nil {
 				log.Println("could not get host_name", err)
 			}
 
 			host_name_filter := fmt.Sprintf("%s:", host_name)
 
-			if strings.Contains(NAME_Field, host_name) == false {
+			if !strings.Contains(NAME_Field, host_name) {
 				fmt.Println("does not contain host")
 				continue
 			}
@@ -174,15 +161,13 @@ func main() {
 					utils.Sniffer(my_port[0], PID_Field, pid_chan)
 				}()
 				go func() {
-
 					open_files := check_open_files(<-pid_chan)
 
 					uses_shell := gatekeeper.Interacts_With_Shell(open_files)
 
-					if uses_shell == true {
-						//execute strace on that
-
-						fmt.Println("strace on the shell")
+					if uses_shell {
+						// execute strace on that
+						utils.Tracer(<-pid_chan)
 					}
 				}()
 			}
@@ -190,10 +175,5 @@ func main() {
 		}
 	}
 
-	test := <-pid_chan
-
-	fmt.Println("testicle", test) // so i can see which process is one that has app data and therefore tls stuff.
-
 	wg.Wait() // some might wait for a ridiculously long time, that's just expected i dont think there's a safer way around this since i need to be able to monitor all network connected processes
-
 }
