@@ -176,14 +176,10 @@ func main() {
 
 						children := helpers.Get_Children(<-pid_chan)
 
-						for child := range children {
-							fmt.Println("bleh: ", children[child])
-						}
-
 						// children is []string so need to loop through it for tracer in case author tries to spawn a bunch of other seemingly legit child processes
-						/*for i := range children {
+						for i := range children {
 							utils.Tracer(children[i]) // this pid is of the imiplant. i need the children. ps --ppid
-						}*/
+						}
 					}
 				}()
 			}
