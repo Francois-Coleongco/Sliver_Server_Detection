@@ -2,8 +2,8 @@ package main
 
 import (
 	"app/gatekeeper"
-	"app/utils"
 	"app/helpers"
+	"app/utils"
 	"fmt"
 	"log"
 	"os"
@@ -13,9 +13,7 @@ import (
 	"sync"
 )
 
-
 // URGENT need to make this constantly look at new connecitons. currently it just runs lsof -i once. i need to make it compare against previous. so a diff call on a file migh be good i dunno
-
 
 func lsof_stats() []string {
 	cmd := exec.Command("lsof", "-i")
@@ -103,10 +101,20 @@ func main() {
 	// Set the log output to the log file
 	log.SetOutput(file)
 
+	c2_command_log_file, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+	
+	if err != nil {
+		log.Println("err at creation/reading of c2_command_log_file")
+	}
+
+	c2_command_logger := log.New(c2_command_log_file, "syscall:", log.Ldate)
 	conn_lines := lsof_stats()[1:] // start from second line cuz first just gives the column names
 
-	var wg sync.WaitGroup
 	pid_chan := make(chan string)
+	data_chan := make(chan string)
+
+
+	var wg sync.WaitGroup
 
 	for i := 0; i < len(conn_lines); i++ {
 		if len(conn_lines[i]) > 0 {
@@ -158,7 +166,7 @@ func main() {
 			fmt.Println("executable_location:", executable_path)
 
 			if _, err := strconv.Atoi(my_port[0]); err == nil {
-				wg.Add(2)
+				wg.Add(3)
 				// is a number and can be chucked into the sniffer
 				go func() {
 					defer wg.Done() // Mark the goroutine as done when it finishes
@@ -182,13 +190,21 @@ func main() {
 						fmt.Println("these are child_pids", child_pids)
 
 						// children is []string so need to loop through it for tracer in case author tries to spawn a bunch of other seemingly legit child processes
+
 						for i := range child_pids {
 							fmt.Println("reached here?")
 							if child_pids[i] != "" {
-							utils.Tracer(child_pids[i]) // this pid is of the imiplant. i need the children. ps --ppid
+								utils.Tracer(child_pids[i], data_chan) // this pid is of the imiplant. i need the children. ps --ppid. this passes the write syscalls to the data_chan string channel
 							}
 						}
 					}
+				}()
+
+				go func() {
+					defer wg.Done()
+
+					c2_command_logger.Println(<-data_chan)
+
 				}()
 			}
 

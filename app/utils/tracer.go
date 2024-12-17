@@ -7,8 +7,7 @@ import (
 	"strings"
 )
 
-func Tracer(pid string) {
-	cmd := exec.Command("strace", "-e", "trace=all", "-p", pid)
+func Tracer(pid string, data_chan chan string) { cmd := exec.Command("strace", "-e", "trace=all", "-p", pid)
 
 	stdout, err := cmd.StdoutPipe()
 	if err != nil {
@@ -42,6 +41,8 @@ func Tracer(pid string) {
 
 		if strings.Contains(currentLine, "write") {
 			fmt.Println("Found  syscall:", currentLine)
+
+			data_chan <- currentLine
 		}
 
 		fmt.Println("Current line:", currentLine)
@@ -54,4 +55,5 @@ func Tracer(pid string) {
 	if err := cmd.Wait(); err != nil {
 		fmt.Println("Error waiting for strace to finish:", err)
 	}
+
 }
