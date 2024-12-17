@@ -1,6 +1,6 @@
 # Sliver_Server_Detection
 
-Detecting a SliverC2 Server Running on an Ubuntu Machine
+Detecting a SliverC2 Server Implant Running on an Ubuntu Machine
 
 In order to do this, I must be able to get information about processes connecting to the internet
 
