@@ -11,11 +11,12 @@ import (
 	"strconv"
 	"strings"
 	"sync"
+	"time"
 )
 
 // URGENT need to make this constantly look at new connecitons. currently it just runs lsof -i once. i need to make it compare against previous. so a diff call on a file migh be good i dunno
 
-func lsof_stats() []string {
+func lsof_stats(lsof_chan chan []string) { // need to make this run on a timer
 	cmd := exec.Command("lsof", "-i")
 
 	output, err := cmd.CombinedOutput()
@@ -29,7 +30,7 @@ func lsof_stats() []string {
 
 	conn_lines := strings.Split(str_output, "\n")
 
-	return conn_lines
+	lsof_chan <- conn_lines
 }
 
 func locate_process(pid string) string {
@@ -80,17 +81,7 @@ func static_analysis(url_to_executable string) {
 	// OR i needa look more into this, but i think you can hash the executable and you can search for known malwares with that sort of signature
 }
 
-func main() {
-	// killscore --> uses shell, is obfuscated, uses crypto libs in strings, is tls,
-
-	// 1 means yes | 0 means no
-
-	// kill_score := []byte{0, 0, 0, 0}
-
-	fmt.Println("Current PID:", os.Getpid())
-
-	// find processes making those network connections (lsof)
-
+func setup_logs() *log.Logger {
 	file, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
 		log.Fatal("unable to open log file", err)
@@ -102,19 +93,37 @@ func main() {
 	log.SetOutput(file)
 
 	c2_command_log_file, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
-	
 	if err != nil {
 		log.Println("err at creation/reading of c2_command_log_file")
 	}
 
 	c2_command_logger := log.New(c2_command_log_file, "syscall:", log.Ldate)
-	conn_lines := lsof_stats()[1:] // start from second line cuz first just gives the column names
+
+	return c2_command_logger
+}
+
+func main() {
+	var wg sync.WaitGroup
+
+	lsof_chan := make(chan []string)
 
 	pid_chan := make(chan string)
 	data_chan := make(chan string)
 
+	fmt.Println("Current PID:", os.Getpid())
 
-	var wg sync.WaitGroup
+	c2_command_logger := setup_logs()
+
+	conn_lines := (<-lsof_chan)[1:]
+	
+	go func() {
+		for {
+			lsof_stats(lsof_chan) // start from second line cuz first just gives the column NAMES
+			conn_lines = (<-lsof_chan)[1:]
+			time.Sleep(time.Second)
+		}
+	}()
+
 
 	for i := 0; i < len(conn_lines); i++ {
 		if len(conn_lines[i]) > 0 {
@@ -169,8 +178,7 @@ func main() {
 				wg.Add(3)
 				// is a number and can be chucked into the sniffer
 				go func() {
-					defer wg.Done() // Mark the goroutine as done when it finishes
-
+					defer wg.Done()
 					utils.Sniffer(my_port[0], PID_Field, pid_chan)
 				}()
 				go func() {
@@ -180,12 +188,8 @@ func main() {
 					uses_shell := gatekeeper.Interacts_With_Shell(open_files)
 
 					if uses_shell {
-						// execute strace on that
-
 						fmt.Println("this is pidchan", <-pid_chan)
-
 						child_pids := helpers.Get_Children(<-pid_chan)
-
 						fmt.Println("reached here")
 						fmt.Println("these are child_pids", child_pids)
 
@@ -194,7 +198,7 @@ func main() {
 						for i := range child_pids {
 							fmt.Println("reached here?")
 							if child_pids[i] != "" {
-								utils.Tracer(child_pids[i], data_chan) // this pid is of the imiplant. i need the children. ps --ppid. this passes the write syscalls to the data_chan string channel
+								utils.Tracer(child_pids[i], data_chan)
 							}
 						}
 					}
@@ -202,9 +206,7 @@ func main() {
 
 				go func() {
 					defer wg.Done()
-
 					c2_command_logger.Println(<-data_chan)
-
 				}()
 			}
 
