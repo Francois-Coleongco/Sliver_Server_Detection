@@ -8,6 +8,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	//	"reflect"
 	"strconv"
 	"strings"
 	"sync"
@@ -30,6 +31,9 @@ func lsof_stats(lsof_chan chan []string) { // need to make this run on a timer
 
 	conn_lines := strings.Split(str_output, "\n")
 
+	fmt.Println(conn_lines)
+
+	fmt.Println("does this happenaiwghiowajig")
 	lsof_chan <- conn_lines
 }
 
@@ -103,115 +107,128 @@ func setup_logs() *log.Logger {
 }
 
 func main() {
+	kill_score := make([]byte, 2)
+
+	// kill_score will have the following: uses shell, is encrypted
+
 	var wg sync.WaitGroup
 
 	lsof_chan := make(chan []string)
 
 	pid_chan := make(chan string)
-	data_chan := make(chan string)
 
 	fmt.Println("Current PID:", os.Getpid())
 
 	c2_command_logger := setup_logs()
 
-	conn_lines := (<-lsof_chan)[1:]
-	
+	fmt.Println("finished setting up logs")
+
+	var conn_lines []string
+
 	go func() {
-		for {
-			lsof_stats(lsof_chan) // start from second line cuz first just gives the column NAMES
-			conn_lines = (<-lsof_chan)[1:]
-			time.Sleep(time.Second)
-		}
+		conn_lines = <-lsof_chan
+
+		fmt.Println("GOD DAMN IT", conn_lines)
 	}()
 
+	lsof_stats(lsof_chan)
 
-	for i := 0; i < len(conn_lines); i++ {
-		if len(conn_lines[i]) > 0 {
+	for {
+		fmt.Println("execing here")
 
-			fmt.Println("new conn_line:", conn_lines[i])
+		fmt.Println(conn_lines)
 
-			fields := strings.Fields(conn_lines[i])
+		for i := 0; i < len(conn_lines); i++ {
+			if len(conn_lines[i]) > 0 {
 
-			// extract pid from second column
+				fmt.Println("new conn_line:", conn_lines[i])
 
-			// COMMAND_Field := fields[0]
+				fields := strings.Fields(conn_lines[i])
 
-			PID_Field := fields[1]
+				// extract pid from second column
 
-			// USER_Field := fields[2]
+				// COMMAND_Field := fields[0]
 
-			// FD_Field := fields[3]
+				PID_Field := fields[1]
 
-			// IP_Version := fields[4]
+				// USER_Field := fields[2]
 
-			// DEVICE_Field := fields[5]
+				// FD_Field := fields[3]
 
-			// SIZE_OFF_Field := fields[6]
+				// IP_Version := fields[4]
 
-			// CONN_TYPE_Field := fields[7]
+				// DEVICE_Field := fields[5]
 
-			NAME_Field := fields[8] // NAME is an array containing: user, port, address,protocol
-			host_name, err := os.Hostname()
-			if err != nil {
-				log.Println("could not get host_name", err)
-			}
+				// SIZE_OFF_Field := fields[6]
 
-			host_name_filter := fmt.Sprintf("%s:", host_name)
+				// CONN_TYPE_Field := fields[7]
 
-			if !strings.Contains(NAME_Field, host_name) {
-				fmt.Println("does not contain host")
-				continue
-			}
+				NAME_Field := fields[8] // NAME is an array containing: user, port, address,protocol
+				host_name, err := os.Hostname()
+				if err != nil {
+					log.Println("could not get host_name", err)
+				}
 
-			parsed_name_field := strings.Split(NAME_Field, host_name_filter)
-			my_port := strings.Split(parsed_name_field[1], "->")
+				host_name_filter := fmt.Sprintf("%s:", host_name)
 
-			fmt.Println("PORT", my_port[0])
+				if !strings.Contains(NAME_Field, host_name) {
+					fmt.Println("does not contain host")
+					continue
+				}
 
-			fmt.Println(PID_Field)
+				parsed_name_field := strings.Split(NAME_Field, host_name_filter)
+				my_port := strings.Split(parsed_name_field[1], "->")
 
-			executable_path := locate_process(PID_Field)
+				fmt.Println("PORT", my_port[0])
 
-			fmt.Println("executable_location:", executable_path)
+				fmt.Println(PID_Field)
 
-			if _, err := strconv.Atoi(my_port[0]); err == nil {
-				wg.Add(3)
-				// is a number and can be chucked into the sniffer
-				go func() {
-					defer wg.Done()
-					utils.Sniffer(my_port[0], PID_Field, pid_chan)
-				}()
-				go func() {
-					defer wg.Done()
-					open_files := check_open_files(<-pid_chan)
+				executable_path := locate_process(PID_Field)
 
-					uses_shell := gatekeeper.Interacts_With_Shell(open_files)
+				fmt.Println("executable_location:", executable_path)
 
-					if uses_shell {
-						fmt.Println("this is pidchan", <-pid_chan)
-						child_pids := helpers.Get_Children(<-pid_chan)
-						fmt.Println("reached here")
-						fmt.Println("these are child_pids", child_pids)
+				if _, err := strconv.Atoi(my_port[0]); err == nil {
+					wg.Add(2)
+					// is a number and can be chucked into the sniffer
+					go func() {
+						defer wg.Done()
+						utils.Sniffer(my_port[0], PID_Field, pid_chan)
+					}()
+					go func() {
+						defer wg.Done()
+						open_files := check_open_files(<-pid_chan)
 
-						// children is []string so need to loop through it for tracer in case author tries to spawn a bunch of other seemingly legit child processes
+						uses_shell := gatekeeper.Interacts_With_Shell(open_files)
 
-						for i := range child_pids {
-							fmt.Println("reached here?")
-							if child_pids[i] != "" {
-								utils.Tracer(child_pids[i], data_chan)
+						if uses_shell {
+
+							kill_score[0] = 1 // 1 means yes
+
+							// whatever things are being executed in the shell will be logged
+
+							fmt.Println("this is pidchan", <-pid_chan)
+							child_pids := helpers.Get_Children(<-pid_chan)
+							fmt.Println("reached here")
+							fmt.Println("these are child_pids", child_pids)
+
+							// children is []string so need to loop through it for tracer in case author tries to spawn a bunch of other seemingly legit child processes
+
+							for i := range child_pids {
+								fmt.Println("reached here?")
+								if child_pids[i] != "" {
+									utils.Tracer(child_pids[i], c2_command_logger)
+								}
 							}
 						}
-					}
-				}()
+					}()
 
-				go func() {
-					defer wg.Done()
-					c2_command_logger.Println(<-data_chan)
-				}()
+				}
+
 			}
-
 		}
-	}
 
-	wg.Wait() // some might wait for a ridiculously long time, that's just expected i dont think there's a safer way around this since i need to be able to monitor all network connected processes
+		wg.Wait() // some might wait for a ridiculously long time, that's just expected i dont think there's a safer way around this since i need to be able to monitor all network connected processes
+
+		time.Sleep(time.Second)
+	}
 }
