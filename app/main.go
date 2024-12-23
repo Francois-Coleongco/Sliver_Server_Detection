@@ -49,22 +49,10 @@ func locate_process(pid string) string {
 
 	executable_path := string(output)
 
-	// CHECK ALSO FOR THE NAMES. check if in your / path NOT THE USER PATH the sudo perm path, for a similar or exact name. sometimes they will attempt to hide themselves via using the name of a legit process such as bash
-	// CHECK ALSO FOR THE NAMES. check if in your / path NOT THE USER PATH the sudo perm path, for a similar or exact name. sometimes they will attempt to hide themselves via using the name of a legit process such as bash
-	// CHECK ALSO FOR THE NAMES. check if in your / path NOT THE USER PATH the sudo perm path, for a similar or exact name. sometimes they will attempt to hide themselves via using the name of a legit process such as bash
-
 	return executable_path
 }
 
 func check_open_files(pid string) []string {
-	// if user has inotify enabled read from the logs to see network connected processes created or deleted or did something anything with the files on the system
-
-	// how would you do this? listen for changes on the file with diff or something
-
-	// if user does not have inotify enabled then just run file check on the pid
-
-	// lsof -p <pid>
-
 	cmd := exec.Command("lsof", "-p", pid)
 
 	output, err := cmd.CombinedOutput()
@@ -74,7 +62,6 @@ func check_open_files(pid string) []string {
 
 	files_opened_by_pid := strings.Split(string(output), "\n")
 	fmt.Println(files_opened_by_pid)
-	// gatekeeper.Uses_Shell(files_opened_by_pid)
 
 	return files_opened_by_pid
 }
@@ -93,7 +80,6 @@ func setup_logs() *log.Logger {
 
 	defer file.Close()
 
-	// Set the log output to the log file
 	log.SetOutput(file)
 
 	c2_command_log_file, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
@@ -107,10 +93,6 @@ func setup_logs() *log.Logger {
 }
 
 func main() {
-	kill_score := make([]byte, 2)
-
-	// kill_score will have the following: uses shell, is encrypted
-
 	var wg sync.WaitGroup
 
 	lsof_chan := make(chan []string)
@@ -179,8 +161,6 @@ func main() {
 				parsed_name_field := strings.Split(NAME_Field, host_name_filter)
 				my_port := strings.Split(parsed_name_field[1], "->")
 
-				fmt.Println("PORT", my_port[0])
-
 				fmt.Println(PID_Field)
 
 				executable_path := locate_process(PID_Field)
@@ -192,6 +172,7 @@ func main() {
 					// is a number and can be chucked into the sniffer
 					go func() {
 						defer wg.Done()
+						gatekeeper.Strings_Analysis(executable_path)
 						utils.Sniffer(my_port[0], PID_Field, pid_chan)
 					}()
 					go func() {
@@ -202,21 +183,20 @@ func main() {
 
 						if uses_shell {
 
-							kill_score[0] = 1 // 1 means yes
-
 							// whatever things are being executed in the shell will be logged
-
-							fmt.Println("this is pidchan", <-pid_chan)
-							child_pids := helpers.Get_Children(<-pid_chan)
+							pid := <-pid_chan
+							fmt.Println("this is pidchan", pid)
+							child_pids := helpers.Get_Children(pid)
 							fmt.Println("reached here")
 							fmt.Println("these are child_pids", child_pids)
 
 							// children is []string so need to loop through it for tracer in case author tries to spawn a bunch of other seemingly legit child processes
-
-							for i := range child_pids {
-								fmt.Println("reached here?")
-								if child_pids[i] != "" {
-									utils.Tracer(child_pids[i], c2_command_logger)
+							if len(child_pids) > 0 {
+								for i := range child_pids {
+									fmt.Println("reached here?")
+									if child_pids[i] != "" {
+										utils.Tracer(child_pids[i], c2_command_logger)
+									}
 								}
 							}
 						}

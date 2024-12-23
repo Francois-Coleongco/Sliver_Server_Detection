@@ -40,9 +40,10 @@ func Tracer(pid string, tracer_log *log.Logger) {
 
 	for scanner.Scan() {
 		currentLine = scanner.Text()
+		tracer_log.Println(currentLine)
 
 		if strings.Contains(currentLine, "write") {
-			fmt.Println("Found  syscall:", currentLine)
+			fmt.Println("Found a `write` syscall:", currentLine)
 		}
 
 		fmt.Println("Current line:", currentLine)
