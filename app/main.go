@@ -72,27 +72,34 @@ func static_analysis(url_to_executable string) {
 	// OR i needa look more into this, but i think you can hash the executable and you can search for known malwares with that sort of signature
 }
 
-func setup_logs() *log.Logger {
-	file, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+func setup_c2_logs(c2_file_id string) *log.Logger {
+	err := os.MkdirAll("./c2_logs", 0666)
+	if err != nil {
+		fmt.Println("couldn't create c2_logs directory")
+	}
+
+	file_name := fmt.Sprintf("./c2_logs/c2_log_%s.log", c2_file_id)
+
+	file, err := os.OpenFile(file_name, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
 		log.Fatal("unable to open log file", err)
 	}
 
 	defer file.Close()
 
-	log.SetOutput(file)
-
-	c2_command_log_file, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
-	if err != nil {
-		log.Println("err at creation/reading of c2_command_log_file")
-	}
-
-	c2_command_logger := log.New(c2_command_log_file, "syscall:", log.Ldate)
+	c2_command_logger := log.New(file, "syscall:", log.Ldate)
 
 	return c2_command_logger
 }
 
 func main() {
+	main_log_file, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+	if err != nil {
+		fmt.Println("couldn't open log file app.log")
+	}
+
+	log.SetOutput(main_log_file)
+
 	var wg sync.WaitGroup
 
 	lsof_chan := make(chan []string)
@@ -100,8 +107,6 @@ func main() {
 	pid_chan := make(chan string)
 
 	fmt.Println("Current PID:", os.Getpid())
-
-	c2_command_logger := setup_logs()
 
 	fmt.Println("finished setting up logs")
 
@@ -146,6 +151,7 @@ func main() {
 				// CONN_TYPE_Field := fields[7]
 
 				NAME_Field := fields[8] // NAME is an array containing: user, port, address,protocol
+
 				host_name, err := os.Hostname()
 				if err != nil {
 					log.Println("could not get host_name", err)
@@ -195,6 +201,7 @@ func main() {
 								for i := range child_pids {
 									fmt.Println("reached here?")
 									if child_pids[i] != "" {
+										c2_command_logger := setup_c2_logs(pid)
 										utils.Tracer(child_pids[i], c2_command_logger)
 									}
 								}
