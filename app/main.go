@@ -8,7 +8,6 @@ import (
 	"log"
 	"os"
 	"os/exec"
-	//	"reflect"
 	"strconv"
 	"strings"
 	"sync"
@@ -91,8 +90,7 @@ func setup_c2_logs(c2_file_id string) *log.Logger {
 	return c2_command_logger
 }
 
-func entry(wg *sync.WaitGroup, pid_chan chan string, lsof_chan chan []string, pids_in_processing *map[string]struct{}, counter *int) {
-	fmt.Printf("CURRENTLY RUNNING ENTRY WITH COUNTER %v\n", (*counter))
+func entry(wg *sync.WaitGroup, pid_chan chan string, lsof_chan chan []string, pids_in_processing *map[string]struct{}) {
 	lines := <-lsof_chan
 
 
@@ -177,6 +175,7 @@ func entry(wg *sync.WaitGroup, pid_chan chan string, lsof_chan chan []string, pi
 								if child_pids[i] != "" {
 									c2_command_logger := setup_c2_logs(pid)
 									utils.Tracer(child_pids[i], c2_command_logger)
+									// using tracer to log commands, feed the syscalls through something maybe like ollama to tell whether or not it is attempting malicious commands
 								}
 							}
 						}
@@ -219,9 +218,6 @@ func main() {
 
 	fmt.Println("finished setting up logs")
 
-	counter := 0
-
-	var counter_pointer *int = &counter
 
 	for {
 		go func() {
@@ -238,8 +234,7 @@ func main() {
 			fmt.Println("new entry routine")
 			fmt.Println("new entry routine")
 			fmt.Println("new entry routine")
-			entry(&wg, pid_chan, lsof_chan, &pids_in_processing, &counter)
-			*counter_pointer += 1
+			entry(&wg, pid_chan, lsof_chan, &pids_in_processing)
 		}()
 
 		time.Sleep(time.Second * 5)

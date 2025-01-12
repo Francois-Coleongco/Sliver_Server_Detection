@@ -47,7 +47,7 @@ func Sniffer(my_port string, pid string, pid_chan chan string) {
 			if bytes.Contains(data, app_data_bytes) {
 				// contains application data
 
-				fmt.Println("FOUND APP_DATA")
+				fmt.Println("FOUND APP_DATA FOR PARENT PID:", pid)
 
 				pid_chan <- pid // threshold reached
 			}
