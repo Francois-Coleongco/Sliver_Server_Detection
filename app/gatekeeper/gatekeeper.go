@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"os/exec"
 	"strings"
 	"unicode"
 )
@@ -55,4 +56,14 @@ func Interacts_With_Shell(opened_files []string) bool { // if it interacts with 
 	}
 
 	return false
+}
+
+
+func Process_Killer(pid string) bool {
+
+	cmd := exec.Command("kill", pid)
+
+	exit_code := cmd.ProcessState.ExitCode()
+	
+	return exit_code == 0 // if it exited with a successful kill, return true. else return false
 }

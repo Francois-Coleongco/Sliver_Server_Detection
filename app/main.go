@@ -90,13 +90,24 @@ func setup_c2_logs(c2_file_id string) *log.Logger {
 	return c2_command_logger
 }
 
+func is_in_whitelist(executable_path string) bool {
+	var whitelist [32]string
+	whitelist[0] = "test" // get from a file only accessible by sudo
+ 
+	for _, executable := range whitelist {
+		if executable_path == executable {
+			return true
+		}
+	}
+
+	return false
+}
+
 func entry(wg *sync.WaitGroup, pid_chan chan string, lsof_chan chan []string, pids_in_processing *map[string]struct{}) {
 	lines := <-lsof_chan
 
-
 	for i := 0; i < len(lines); i++ {
 		if len(lines[i]) > 0 {
-
 
 			fields := strings.Fields(lines[i])
 
@@ -139,6 +150,10 @@ func entry(wg *sync.WaitGroup, pid_chan chan string, lsof_chan chan []string, pi
 
 			executable_path := locate_process(PID_Field, pids_in_processing)
 
+			if is_in_whitelist(executable_path) {
+				break // break out of loop for this pid since the executable is in the whitelist
+			}
+
 			fmt.Println("executable_location:", executable_path)
 
 			if _, err := strconv.Atoi(my_port[0]); err == nil {
@@ -175,6 +190,7 @@ func entry(wg *sync.WaitGroup, pid_chan chan string, lsof_chan chan []string, pi
 								if child_pids[i] != "" {
 									c2_command_logger := setup_c2_logs(pid)
 									utils.Tracer(child_pids[i], c2_command_logger)
+									// ! need to test this especially if it actually logs how i think it will. new logs should be created on an on pid basis
 									// using tracer to log commands, feed the syscalls through something maybe like ollama to tell whether or not it is attempting malicious commands
 								}
 							}
@@ -185,7 +201,6 @@ func entry(wg *sync.WaitGroup, pid_chan chan string, lsof_chan chan []string, pi
 					defer wg.Done()
 					gatekeeper.Strings_Analysis(executable_path)
 					utils.Sniffer(my_port[0], PID_Field, pid_chan)
-					fmt.Println("does it get past snniffer")
 				}()
 
 			}
@@ -218,21 +233,14 @@ func main() {
 
 	fmt.Println("finished setting up logs")
 
-
 	for {
 		go func() {
-			fmt.Println("new lsof routine")
-			fmt.Println("new lsof routine")
-			fmt.Println("new lsof routine")
 			fmt.Println("new lsof routine")
 			lsof_stats(lsof_chan)
 			time.Sleep(time.Second * 5)
 		}()
 
 		go func() {
-			fmt.Println("new entry routine")
-			fmt.Println("new entry routine")
-			fmt.Println("new entry routine")
 			fmt.Println("new entry routine")
 			entry(&wg, pid_chan, lsof_chan, &pids_in_processing)
 		}()
